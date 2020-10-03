@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    height: 100vh;
+    color: #F9a825;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;   
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff5;
+}
+
+.progress-done{
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        font-family: cursive;
+        color: #283745;
+        border-radius: 20px;
+        box-shadow: 0 3px 3px -5px #00ff33,0 2px 5px #00ff33;
+
+        transition: 1.3s ease;
+        background: linear-gradient(to left, #00ff33, #00ff99);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
