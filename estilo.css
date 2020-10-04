@@ -223,7 +223,7 @@ footer {
 }
 
 .link_github:active{
-    -webkit-box-shadow: 0px 2px 0px #37a5a0;
+    -webkit-box-shadow: 0px 2px 0px #5c6464;
     -moz-box-shadow: 0px 2px 0px #37a5a0;
     box-shadow: 0px 2px 0px #8a8989;
     position:relative;
