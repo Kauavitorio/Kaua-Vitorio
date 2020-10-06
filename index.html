@@ -3,148 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauã Vitório - Portfólio</title>
-    <link rel="icon" type="image/x-icon" href="imgs/icone.ico"/>
+    <title>Kauã Vitório - Portifolio</title>
     <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript" src="animacoes.js"></script>
 </head>
 <body>
-    <header id="inicio">
-        <nav id="menunav">
-            <ul>
-                <a href="#inicio"><li class="logo">Kauã Vitório</li></a>
-                <a href="#sobre"><li class="barra">Sobre</li></a>
-                <a href="#contato"><li class="barra">Contato</li></a>
-                <a href="#projetos"><li class="barra">Projetos</li></a>
-            </ul>
-        </nav>
-        <div class="container">
-            <h1 >Kauã Vitório</h1>
-            <!--<h2>Programador mais brabo do Mundo</h2>--> 
-            <div class="middle">
-                <a href="#sobre" class="btnn btn33">Minha história</a>
-              </div>    
-        </div>
+    <header id="menu">
+        <a href="#parte1" class="logo"><h1>Kauã Vitório</h1></a>
+        <span class="openmenu" onClick="abreMenu()">&#9776;</span>
+        <ul id="menu2">
+            <li><a href="#parte1">Home</a></li>
+            <li><a href="#parte2">Sobre</a></li>
+            <li><a href="#parte3">Missão</a></li>
+            <li><a href="#parte4">Contato</a></li>
+            <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
+        </ul>
+       
     </header>
-    <section id="sobre">
-        <div class="container_sobre">
-            <h3>Olá! Sou o Kauã Vitório</h3>
-            <p>
-              Me chamo Kauã Vitório Da Silva Lima, tenho 16 anos, nasci em Lins interior de São Paulo cujo morei até meus 12 anos, <br/> 
-              Logo após me mudei para São Paulo capital, sempre tive interesse em computação mas não exatamente na área da programação
-              <br/>moro atualmente em Osasco e estou cursando desenvolvimento de sistema na Etec Basilides De Godoy. <br/>
-              Clicando no botão "Acesse meu Github" você será redirecionado ao meu Github:<br/>
-              Clicando no botão "Meus Projetos" você será redirecionado ao meus Projetos:
+    <div class="set">
+        <div><img src="imgs/img1.png" alt=""></div>
+        <div><img src="imgs/img2.png" alt=""></div>
+        <div><img src="imgs/img3.png" alt=""  style="width: 200px;"></div>
+        <div><img src="imgs/img4.png" alt=""></div>
+        <div><img src="imgs/img1.png" alt=""></div>
+        <div><img src="imgs/img2.png" alt=""></div>
+        <div><img src="imgs/img3.png" alt="" style="width: 200px;"></div>
+        <div><img src="imgs/img4.png" alt=""></div>
+    </div>
+    <section id="parte1">
+        <div class="banner">
+            <h1>KAUÃ VITÓRIO</h1>
+            <h3>Software Developer</h3>
+        </div>
+    </section>
+    <section id="parte2">
+        <div class="sobre">
+            <p>Olá! Me chamo Kauã Vitório da Silva Lima,
+                tenho 16 anos, nasci em Lins interior de SP
+                cujo morei até meus 12 anos.
+                Logo após me mudei para São Paulo capital,
+                sempre tive interesse em computação mas
+                não exatamente na área da programação.
+                Moro atualmente em Osasco e estou
+                cursando Desenvolvimento de Sistemas na
+                ETEC Basilides de Godoy. 
             </p>
         </div>
-        <div class="container_btnsobre">
-            <div class="center_btn">
-              <a href="https://github.com/Kauavitorio" target="_blank"><button class="btn_nvsobre">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                <span>Acesse meu Github</span>
-              </button></a>
-            </div>
-          </div>   
-          <div class="container_btnsobre2">
-            <div class="center_btn">
-              <a href="#projetos"><button class="btn_nvsobre">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                <span>Meus Projetos</span>
-              </button></a>
-            </div>
-          </div>   
-    </section>
-    <section id="projetos">
-        <form class="formprojetos">
-          <div class="imginterprog"></div><hr class="linhainter">
-          <div class="textinter">
-            <a>
-            Apos concluir o ensino medio, fazer um intercambio na california
-            </a>
-          </div>
-          <div class="imgfacuprog"></div><hr class="linhafacu"> 
-          <div class="textfacu">
-           <a>
-            Apos o intercambio, fazer uma faculdade de Engenharia de software
-           </a>
-          </div>
-          <div class="imgfullprog"></div><hr class="linhafull"> 
-          <div class="textfull">
-           <a>
-            Apos concluir a faculdade, me especializar em ser Fullstack
-           </a>
-          </div>
-          
-        </form>
-    </section>
-    <section id="contato">
-        <div class="container_contato">
-            <form>
-
-            </form>
-                    <h4 class="txtcontato">Duvidas e suporte !</h4>
-                        <input class="txtcont" onclick="aviso()" id="inputnome" type="text" placeholder="Insira seu nome...">
-                        <input class="txtcont" onclick="aviso()"" id="inputEmail" type="email" placeholder="Insira seu email..." />
-                        <textarea class="txttext" onclick="aviso()"" id="inputtext" placeholder="Insira sua mensagem..." cols="30" rows="5"></textarea>
-                        <!--<input class="txttext" id="inputtext" type="text" placeholder="Insira sua mensagem..." />-->
-                        <div class="container_btn2">
-                            <div class="center_btn">
-                              <button onclick="enviar()" class="btn_nv">
-                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                </svg>
-                                <span>Enviar</span>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="container_btn3">
-                            <div class="center_btn">
-                              <button onclick="limpar()" class="btn_nv">
-                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                </svg>
-                                <span>Limpar</span>
-                              </button>
-                            </div>
-                          </div>    
-                          <div class="formprojetos_email">
-                            <div class="anima formprojetos_email_text"><p class="txtemail">kauavitorioof@gmail.com</p></div>
-                          </div> 
-                          <div class="formprojetos_tell">
-                            <div class="anima formprojetos_tell_text"><a href="https://api.whatsapp.com/send?phone=5511998022004&text=Ola!!%20Tudo%20bem%3F%20Me%20chamo%3A"target="_blank"><p class="txtnum">(11) 99802-2004</p></a></div>
-                          </div> 
-                          <div class="formprojetos_linkedin">
-                            <div class="anima formprojetos_linkedin_text"><p class="textlinkedin"><a href="https://www.linkedin.com/in/kaua-vitorio-42024b1a3/"target="_blank">kauã Vitório</a></p></div>
-                          </div> 
+        <div class="btns">
+            <a href="http://"><input type="button" value="ACESSE MEU GITHUB" id="btn_github"/></a>
+            <a href="http://"><input type="button" value="MEUS PROJETOS" id="btn_projetos"/></a> 
         </div>
     </section>
-    <div class="rede" id="facebook"><a href="https://www.facebook.com/kaua.vitorio.1"target="_blank" class="icone"></a> </div>
-    <div class="rede" id="github"><a href="https://github.com/Kauavitorio" target="_blank" class="icone"></a></div>
-    <div class="rede" id="twitter"><a href="https://twitter.com/kauavitorioofc" target="_blank" class="icone"></a></div>
-    <footer>
-        <div class="copyright">Copyright © Developed by Kauã Vitório, 2020</div>
-    </footer>
+    <script src="animacoes.js"></script>
+</body>
 </html>
-
-
-<!--Estamos recontruindo-->
-
-<!--<div class="container_btn">
-    <div class="center">
-      <button class="btn">
-        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        </svg>
-        <span>HOVER ME</span>
-      </button>
-    </div>
-  </div>-->
