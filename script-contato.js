@@ -1,13 +1,44 @@
-function loading(){
-    const progress = document.querySelector('.progress-done');
+/*Copyright (c) 2020 Kauã Vitorio*/
+const inputs = document.querySelectorAll(".input");
 
-setTimeout(() => {
-    progress.style.opacity =1;
-    progress.style.width = progress.getAttribute('data-done') + '%';
-    progress.innerHTML = progress.getAttribute('data-done') + '%';
-}, 500);
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
 }
 
-function btnalert(){
-    alert(`⚙️A pagina de contato ainda está em desenvolvimento!!🔧\nÉ possivel acompanhar o progresso do desenvolvimento do site pela barra abaixo,\ncom o indicativo do porcentual de progresso que esta em 38% no momento.\nNo momento estamos fazendo o corpo do site para a melhor visualização do publico\nCaso haja mais alguma duvida pode estar entrando em contato com este email: kauavitorioof@gmail.com`)
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
 }
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+$("#telefone, #celular").mask("(00) 00000-0000");
+
+function validacaoEmail(field) {
+    usuario = field.value.substring(0, field.value.indexOf("@"));
+    dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+    
+    if ((usuario.length >=1) &&
+        (dominio.length >=3) &&
+        (usuario.search("@")==-1) &&
+        (dominio.search("@")==-1) &&
+        (usuario.search(" ")==-1) &&
+        (dominio.search(" ")==-1) &&
+        (dominio.search(".")!=-1) &&
+        (dominio.indexOf(".") >=1)&&
+        (dominio.lastIndexOf(".") < dominio.length - 1)) {
+    document.getElementById("msgemail").innerHTML="E-mail válido";
+    alert("E-mail valido");
+    }
+    else{
+    document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
+    alert("E-mail invalido");
+    }
+    }
+    /*Copyright (c) 2020 Kauã Vitorio*/

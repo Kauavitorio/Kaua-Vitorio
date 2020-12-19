@@ -6,17 +6,87 @@
     <title>Kauã Vitorio - Contato</title>
     <link rel="sortcut icon" href="imgs/logo_felizdupla_contato.png" type="image/x-icon">
     <link rel="stylesheet" href="style-contato.css">
-    <script src="script-contato.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 </head>
-<body onload="loading()">
-    <h1>&nbsp&nbsp&nbsp&nbspA aba de Contato<br/> esta em desenvolvimento!!</h1>
-
-    <div class="progress">
-        <div class="progress-done" data-done="59">
-
+<body>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="imgs/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Entre em contato</h3>
+            <p class="text">
+                Aqui você pode entrar em contato comigo pelas minhas redes sociais ou 
+                mesmo me mandando uma mensagem aqui ao lado.
+            </p>
+  
+            <div class="info">
+              
+              <div class="information">
+                <img src="imgs/email.png" class="icon" alt="" />
+                <p>kauavitorioof@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="imgs/phone.png" class="icon" alt="" />
+                <p>(11) 99802-2004</p>
+              </div>
             </div>
+  
+            <div class="social-media">
+              <p>Redes sociais:</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/kaua.vitorio.1/" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/kauavitorioofc" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/ka_vitorio/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kaua-vitorio-42024b1a3/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+            <form action="https://formspree.io/f/mqkggzjl" method="POST" autocomplete="off">
+              <h3 class="title">Contate-me</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Nome*</label>
+                <span>Nome</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email*</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input id="celular" name="celular" type="tel"  class="input" />
+                <label for="">Telefone</label>
+                <span>Telefone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Mensagem*</label>
+                <span>Mensagem</span>
+              </div>
+              <input type="submit" value="Enviar" class="btn" />
+            </form>
+          </div>
         </div>
-        <a onclick="btnalert()" class="btn btn1">Saiba Mais</a>
-
-        <script src="script-loadingprojetos.js"></script>
+      </div>
+      <script src="script-contato.js"></script>
+    </body>
 </html>
+
+<!--Copyright (c) 2020 Kauã Vitorio-->
