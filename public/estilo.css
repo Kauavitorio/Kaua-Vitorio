@@ -32,7 +32,7 @@ ul li a {
   font: normal 16px Segoe UI;
   color: white;
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 ul li a:hover {
   color: #00ffee;
@@ -357,7 +357,7 @@ footer p:hover{
     font: normal 16px Segoe UI;
     color: white;
     text-decoration: none;
-    margin-left: 45px;
+    margin-left: 40px;
   }
 
   .set {
@@ -490,7 +490,7 @@ footer p:hover{
     font: normal 16px Segoe UI;
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 20px;
   }
 
   .set {
