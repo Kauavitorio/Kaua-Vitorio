@@ -570,8 +570,8 @@ footer p:hover{
   }
   .openmenu {
     visibility: visible;
-    margin-top: 2px;
-    margin-left: 100px;
+    margin-top: -1px;
+    margin-left: 80px;
     font-size: 30px;
   }
   .logo {
@@ -867,6 +867,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
   .navTrigger {
     display: block;
   }
