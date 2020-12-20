@@ -1,6 +1,15 @@
 {
     "hosting": {
       "site": "kauavitorio",
-      "public": "public"
+      "public": "public", 
+
+      "rewrites": [ {
+        "source": "**",
+        "destination": "/index.html"
+      } ],
+
+      "cleanUrls": true
+
     }
+    
   }

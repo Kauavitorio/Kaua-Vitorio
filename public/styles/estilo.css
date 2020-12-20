@@ -186,7 +186,7 @@ ul li a:hover {
   height: 400px;
   display: inline-block;
   margin-left: 5%;
-  margin-top: 9%;
+  margin-top: 4%;
 }
 a #btn_github,
 a #btn_projetos {
@@ -549,6 +549,7 @@ footer p:hover{
 }
 
 @media only screen and (max-width: 581px) {
+
   ul {
     visibility: hidden;
   }
@@ -650,7 +651,7 @@ footer p:hover{
   .base_projetos {
     margin-top: 2%;
     background-color: transparent;
-    width: 330px;
+    width: 332px;
     height: 330px;
     border: solid 3px #00ffee;
     display: inline-block;
@@ -694,7 +695,7 @@ footer p:hover{
     width: 310px;
     height: 220px;
     display: inline-block;
-    margin-top: -80%;
+    margin-top: -35%;
     margin-left: 1px;
   }
 
