@@ -607,6 +607,223 @@ footer p:hover{
   .banner {
     position: absolute;
     transform: translate(5%, 80%);
+    width: 365px;
+    height: 200px;
+    background: linear-gradient(#111111, #111111, #000000);
+    border: solid 3px #00ffee;
+  }
+  .banner h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    font: bold 40px Segoe UI;
+    letter-spacing: 10px;
+  }
+  .banner h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font: bold 32px Segoe UI;
+  }
+  .sobre {
+    margin-top: -120%;
+    background-color: transparent;
+    width: 365px;
+    height: 300px;
+    border: solid 3px #00ffee;
+    display: flex;
+    margin-left: 5%;
+  }
+  .sobre p {
+    font: normal 14pt Segoe UI;
+    text-align: center;
+  }
+  .btns {
+    position: absolute;
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .base_projetos {
+    margin-top: 2%;
+    background-color: transparent;
+    width: 365px;
+    height: 280px;
+    border: solid 3px #00ffee;
+    display: inline-block;
+    margin-left: 6%;
+  }
+
+  .base_projetos h1 {
+    color: #fff;
+    text-align: center;
+    font: bold 20pt Segoe UI;
+    margin-top: 10px;
+  }
+
+  .base_projetos h2 {
+    color: #fff;
+    text-align: center;
+    font: 13pt Segoe UI;
+    margin-top: 10px;
+  }
+
+  .base_projetos h3 {
+    visibility: hidden;
+    margin-top: -15px;
+  }
+
+  .base_projetos h4 {
+    visibility: visible;
+    color: #fff;
+    text-align: center;
+    font: 15pt Segoe UI;
+    margin-top: 10px;
+  }
+
+  .base_projetos iframe {
+    visibility: hidden;
+  }
+
+  .btns2 {
+    position: relative;
+    background-color: transparent;
+    width: 310px;
+    height: 220px;
+    display: inline-block;
+    margin-top: -35%;
+    margin-left: 4%;
+  }
+
+  a #btn_projetos2 {
+    position: relative;
+    background-color: #1d1d1d;
+    color: white;
+    font: bold 19pt Segoe UI;
+    border: solid 1.5px #707070;
+    box-shadow: 6px 8px 10px #00ffee;
+    margin-left: 12%;
+    margin-top: 10%;
+    width: 300px;
+    height: 70px;
+    transition: ease 0.5s;
+  }
+
+  a #btn_projetos2:hover {
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+    background-color: #181818;
+    transition: ease 0.5s;
+    border: solid 2px #ffffff;
+    box-shadow: 4px 6px 8px #00ffee;
+    padding-bottom: 10px;
+  }
+
+  .btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 11vw;
+    height: 11vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 17vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+  }
+  .btn_face:hover{
+    background: rgb(56, 126, 255);
+  }
+  .btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+  }
+  .btn_link:hover{
+    background: rgb(0, 77, 179);
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+    line-height: 12vw;
+    font-size: 6.8vw;
+    transition: 0.2s linear;
+  }
+  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+  }
+  footer p{
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+  }
+  footer p:hover{
+    color: rgb(182, 182, 182);
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  ul {
+    visibility: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  header.sticky {
+    padding: 20px 100px;
+    background-color: rgba(0, 0, 0, 0.992);
+    border-bottom: 1px solid (0, 0, 0, 0.1);
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.6s;
+  }
+  .openmenu {
+    visibility: visible;
+    margin-top: -1px;
+    margin-left: 80px;
+    font-size: 30px;
+  }
+  .logo {
+    float: left;
+    margin-left: -50px;
+    text-decoration: none;
+    color: white;
+    font: bold 15px Segoe UI;
+    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  }
+  .set {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 22%;
+    left: 0;
+  }
+  .set div {
+    position: absolute;
+    display: block;
+  }
+  .set div:nth-child(1),
+  .set div:nth-child(2),
+  .set div:nth-child(3),
+  .set div:nth-child(4),
+  .set div:nth-child(5),
+  .set div:nth-child(6),
+  .set div:nth-child(7),
+  .set div:nth-child(8) {
+    visibility: hidden;
+  }
+  .banner {
+    position: absolute;
+    transform: translate(5%, 80%);
     width: 330px;
     height: 200px;
     background: linear-gradient(#111111, #111111, #000000);
@@ -763,7 +980,6 @@ footer p:hover{
   footer p:hover{
     color: rgb(182, 182, 182);
   }
-
 }
 
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
