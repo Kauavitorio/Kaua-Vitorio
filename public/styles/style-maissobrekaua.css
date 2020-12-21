@@ -9,7 +9,7 @@ body {
 
 header {
   position: fixed;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
   padding: 3px 50px;
   z-index: 1000;
@@ -17,24 +17,16 @@ header {
   background-color: rgba(53, 53, 53, 0.315);
 }
 
-#menu::before{
-  -webkit-filter: blur(15px);
-  -moz-filter: blur(15px);
-  -o-filter: blur(15px);
-  -ms-filter: blur(15px);
-  filter: blur(15px);
-}
-
 ul {
   display: flex;
   list-style: none;
-  margin: 1.5% 60%;
+  margin: 1.5% 70%;
 }
 ul li a {
-  font: normal 16px Segoe UI;
+  font: normal 24px Segoe UI;
   color: white;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 ul li a:hover {
   color: #00ffee;
@@ -42,61 +34,78 @@ ul li a:hover {
 }
 .logo {
   float: left;
-  text-decoration: none;
-  color: white;
-  font: bold 17px Segoe UI;
-  text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  margin-top: 1%;
   margin-left: 5%;
 }
 
-.openmenu {
-  float: left;
-  font-size: 3vw;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  visibility: hidden;
+.logo a{
+  color: white;
+  font: bold 40px Segoe UI;
+  text-decoration: none;
+  text-shadow: 8px 10px 12px rgba(68, 68, 68);
 }
-.closebtn {
-  visibility: hidden;
+
+.hamburguer{
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0;
+  position: relative;
+  cursor: block;
+
+  display: none;
+}
+
+.hamburguer::after{
+  content: "";
+
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 70%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .base_foto_principal {
   background-color: transparent;
-  width: 650px;
-  height: 500px;
+  width: 960px;
+  height: 600px;
   border-radius: 20px;
   border: solid 3px #00ffee;
   display: inline-block;
-  margin-left: 25%;
-  margin-top: 90px;
+  margin-left: 35%;
+  margin-top: 140px;
 }
 
 .base_foto_principal img{
   background-color: transparent;
-  width: 650px;
-  height: 500px;
+  width: 960px;
+  height: 600px;
   border-radius: 20px;
   display: inline-block;
 }
 
 .base_texto_sobre_mim{
-    width: 600px;
+    width: 900px;
     position: relative;
-    margin-left: 27%;
+    margin-left: 36.2%;
 }
 
 #parte_sobre_01 h1{
     color: azure;
     text-align: start;
     margin-top: 2%;
-    font: normal 14pt Segoe UI;
+    font: normal 23pt Segoe UI;
 }
 
 #parte_sobre_01 h2{
     color: azure;
     text-align: start;
     margin-top: 2%;
-    font: normal 14pt Segoe UI;
+    font: normal 23pt Segoe UI;
 }
 
 #parte_sobre_01 a{
@@ -104,12 +113,7 @@ ul li a:hover {
     text-align: center;
     color: rgb(0, 217, 255);
     text-decoration: none;
-    font: bold 14pt Segoe UI;
-}
-
-.linha_divisoria{
-  margin-top: 15%;
-  background-color: #00ffee;
+    font: bold 20pt Segoe UI;
 }
 
 /*Footer*/
@@ -119,7 +123,7 @@ ul li a:hover {
   height: 4vw;
   background: #cececec5;
   margin-top: 1vw;
-  margin-left: 21vw;
+  margin-left: 23.3vw;
   border-radius: 30%;
   text-align: center;
   color: #fefeff;
@@ -145,10 +149,10 @@ ul li a:hover {
 footer p{
   color: white;
   text-align: center;
-  margin-left: -35px;
+  margin-left: 5%;
   margin-top: 10px;
   font-style: italic;
-  font-size: 20px;
+  font-size: 34px;
 }
 footer p:hover{
   color: rgb(182, 182, 182);
@@ -162,13 +166,370 @@ footer p:hover{
   }
 }
 
+#linha-horizontal {
+  width: 950px;
+  margin-left: 35%;
+  border: 1px solid rgb(68, 200, 240);
+}
 
 /*Minimo*/
 #parte_sobre_01{
-  min-height: 90vw;
+  min-height: 65vw;
 }
 
 /*Reponsivo*/
+@media only screen and (max-width: 1440px){
+  header {
+    position: fixed;
+    width: 95%;
+    overflow: hidden;
+    padding: 3px 50px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: rgba(53, 53, 53, 0.315);
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 1.5% 60%;
+  }
+  ul li a {
+    font: normal 20px Segoe UI;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+  ul li a:hover {
+    color: #00ffee;
+    transition: ease-in 0.6s;
+  }
+  .logo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  
+  .logo a{
+    color: white;
+    font: bold 34px Segoe UI;
+    text-decoration: none;
+    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  }
+  
+  .hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+    position: relative;
+    cursor: block;
+  
+    display: none;
+  }
+  
+  .hamburguer::after{
+    content: "";
+  
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .base_foto_principal {
+    background-color: transparent;
+    width: 750px;
+    height: 600px;
+    border-radius: 20px;
+    border: solid 3px #00ffee;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 95px;
+  }
+  
+  .base_foto_principal img{
+    background-color: transparent;
+    width: 750px;
+    height: 600px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .base_texto_sobre_mim{
+      width: 710px;
+      position: relative;
+      margin-left: 27%;
+  }
+  
+  #parte_sobre_01 h1{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 14pt Segoe UI;
+  }
+  
+  #parte_sobre_01 h2{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 14pt Segoe UI;
+  }
+  
+  #parte_sobre_01 a{
+      color: azure;
+      text-align: center;
+      color: rgb(0, 217, 255);
+      text-decoration: none;
+      font: bold 14pt Segoe UI;
+  }
+  
+  /*Footer*/
+  .btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 21vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+  }
+  .btn_face:hover{
+    background: rgb(56, 126, 255);
+  }
+  .btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+  }
+  .btn_link:hover{
+    background: rgb(0, 77, 179);
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+    line-height: 4vw;
+    font-size: 2.1vw;
+    transition: 0.2s linear;
+  }
+  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+  }
+  footer p{
+    color: white;
+    text-align: center;
+    margin-left: -35px;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+  }
+  footer p:hover{
+    color: rgb(182, 182, 182);
+  }
+  @keyframes ani_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  
+  #linha-horizontal {
+    width: 750px;
+    margin-left: 25%;
+    border: 1px solid rgb(68, 200, 240);
+  }
+  
+  /*Minimo*/
+  #parte_sobre_01{
+    min-height: 80vw;
+  }
+}
+
+
+@media only screen and (max-width: 1366px) {
+  header {
+    position: fixed;
+    width: 95%;
+    overflow: hidden;
+    padding: 3px 50px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: rgba(53, 53, 53, 0.315);
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 1.5% 60%;
+  }
+  ul li a {
+    font: normal 16px Segoe UI;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  ul li a:hover {
+    color: #00ffee;
+    transition: ease-in 0.6s;
+  }
+  .logo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  
+  .logo a{
+    color: white;
+    font: bold 28px Segoe UI;
+    text-decoration: none;
+    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  }
+  
+  .hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+    position: relative;
+    cursor: block;
+  
+    display: none;
+  }
+  
+  .hamburguer::after{
+    content: "";
+  
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .base_foto_principal {
+    background-color: transparent;
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+    border: solid 3px #00ffee;
+    display: inline-block;
+    margin-left: 25%;
+    margin-top: 90px;
+  }
+  
+  .base_foto_principal img{
+    background-color: transparent;
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .base_texto_sobre_mim{
+      width: 600px;
+      position: relative;
+      margin-left: 27%;
+  }
+  
+  #parte_sobre_01 h1{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 14pt Segoe UI;
+  }
+  
+  #parte_sobre_01 h2{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 14pt Segoe UI;
+  }
+  
+  #parte_sobre_01 a{
+      color: azure;
+      text-align: center;
+      color: rgb(0, 217, 255);
+      text-decoration: none;
+      font: bold 14pt Segoe UI;
+  }
+  
+  .linha_divisoria{
+    margin-top: 15%;
+    background-color: #00ffee;
+  }
+  
+  /*Footer*/
+  .btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 21vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+  }
+  .btn_face:hover{
+    background: rgb(56, 126, 255);
+  }
+  .btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+  }
+  .btn_link:hover{
+    background: rgb(0, 77, 179);
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+    line-height: 4vw;
+    font-size: 2.1vw;
+    transition: 0.2s linear;
+  }
+  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+  }
+  footer p{
+    color: white;
+    text-align: center;
+    margin-left: -35px;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+  }
+  footer p:hover{
+    color: rgb(182, 182, 182);
+  }
+  @keyframes ani_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  
+  #linha-horizontal {
+    width: 650px;
+    margin-left: 25%;
+    border: 1px solid rgb(68, 200, 240);
+  }
+
+  #parte_sobre_01{
+    min-height: 90vw;
+  }
+
+}
+
+
+
 @media only screen and (max-width: 984px) {
   * {
     margin: 0;
@@ -186,14 +547,6 @@ footer p:hover{
     z-index: 1000;
     transition: 0.6s;
     background-color: rgba(53, 53, 53, 0.315);
-  }
-
-  #menu::before{
-    -webkit-filter: blur(15px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
   }
   
   ul {
@@ -213,22 +566,38 @@ footer p:hover{
   }
   .logo {
     float: left;
-    text-decoration: none;
+    margin-left: 5%;
+  }
+  
+  .logo a{
     color: white;
-    font: bold 17px Segoe UI;
+    font: bold 24px Segoe UI;
+    text-decoration: none;
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
-    margin-left: 1%;
   }
-
-  .openmenu {
-    float: left;
-    font-size: 3vw;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
+  
+  .hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    position: relative;
+    cursor: block;
+  
+    display: none;
   }
-  .closebtn {
-    visibility: hidden;
+  
+  .hamburguer::after{
+    content: "";
+  
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #fff;
   }
 
   .base_foto_principal {
@@ -323,6 +692,12 @@ footer p:hover{
     color: rgb(182, 182, 182);
   }
 
+  #linha-horizontal {
+    width: 650px;
+    margin-left: 17%;
+    border: 1px solid rgb(68, 200, 240);
+  }
+
 }
 
 @media only screen and (max-width: 581px) {
@@ -333,11 +708,11 @@ footer p:hover{
     scroll-behavior: smooth;
     width: 100%;
   }
-  header.sticky {
-    padding: 20px 100px;
+  /*header.sticky {
+    padding: 2px 90px;
     background-color: rgba(0, 0, 0, 0.992);
     border-bottom: 1px solid (0, 0, 0, 0.1);
-  }
+  }*/
   header {
     position: fixed;
     width: 100%;
@@ -346,20 +721,39 @@ footer p:hover{
     z-index: 1000;
     transition: 0.6s;
   }
-  .openmenu {
-    visibility: visible;
-    margin-top: -1px;
-    margin-left: 140px;
-    font-size: 30px;
-  }
   .logo {
     float: left;
-    margin-left: -50px;
-    text-decoration: none;
+    margin-left: -15%;
+  }
+  
+  .logo a{
     color: white;
-    font: bold 15px Segoe UI;
+    font: bold 24px Segoe UI;
+    text-decoration: none;
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
   }
+  
+  .hamburguer{
+    display: block;
+    z-index: 999;
+    margin-left: 65%;
+  }
+  
+ .menu{
+   width: 100%;
+   max-width: 200px;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   height: 100vh;
+   background-color: #fff;
+   padding: 100px 20px;
+   flex-direction: column;
+ }
+
+ .menu.active{
+  right: 0;
+ }
 
 .base_foto_principal {
   background-color: transparent;
@@ -453,46 +847,74 @@ footer p:hover{
   color: rgb(182, 182, 182);
 }
 
+#linha-horizontal {
+  width: 390px;
+  margin-left: 2%;
+  margin-top: 8%;
+  border: 1px solid rgb(68, 200, 240);
+}
+
 }
 
 @media only screen and (max-width: 400px) {
-  ul {
-    visibility: hidden;
-  }
   html {
     scroll-behavior: smooth;
     width: 100%;
   }
-  header.sticky {
-    padding: 20px 100px;
+  /*header.sticky {
+    padding: 12px 100px;
     background-color: rgba(0, 0, 0, 0.992);
     border-bottom: 1px solid (0, 0, 0, 0.1);
-  }
+  }*/
   header {
     position: fixed;
     width: 100%;
+    height: 50px;
     overflow: hidden;
-    padding: 10px 90px;
+    padding: 10px 80px;
     z-index: 1000;
     transition: 0.6s;
   }
-  .openmenu {
-    visibility: visible;
-    margin-top: -1px;
-    margin-left: 80px;
-    font-size: 30px;
-  }
+
   .logo {
     float: left;
-    margin-left: -50px;
-    text-decoration: none;
+    margin-left: -15%;
+  }
+  
+  .logo a{
     color: white;
-    font: bold 15px Segoe UI;
+    font: bold 24px Segoe UI;
+    text-decoration: none;
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
   }
-
-
   
+  .hamburguer{
+    display: block;
+    z-index: 999;
+    margin-left: 60%;
+  }
+  
+ .menu{
+   width: 100%;
+   max-width: 200px;
+   position: fixed;
+   top: 0;
+   right: -90%;
+   height: 100vh;
+   background-color: #fff;
+   padding: 100px 20px;
+   flex-direction: column;
+ }
+
+ .menu.active{
+  right: 0;
+  
+ }
+ .menu.active ul{
+  right: 0;
+  
+ }
+
 .base_foto_principal {
   background-color: transparent;
   width: 350px;
@@ -583,6 +1005,13 @@ footer p{
 }
 footer p:hover{
   color: rgb(182, 182, 182);
+}
+
+#linha-horizontal {
+  width: 340px;
+  margin-left: 4%;
+  margin-top: 8%;
+  border: 1px solid rgb(68, 200, 240);
 }
 
 }
