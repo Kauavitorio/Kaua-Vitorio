@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="styles/estilo.css">
     <link rel="sortcut icon" href="imgs/logo_feliz_principal.png" type="image/x-icon">
 </head>
-<body>
+<body onload="desativar_btn_ptbr()">
     <header id="menu">
         <a href="#parte1" class="logo"><h1>Kauã Vitório</h1></a>
         <span class="openmenu" onClick="abreMenu()">&#9776;</span>
         <ul id="menu2">
-            <li><a href="#parte1">Home</a></li>
-            <li><a href="#parte2">Sobre</a></li>
-            <li><a href="#parte3">Projetos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="index-login.html">Ingles</a></li>
+            <li><a id="txt_titulo_home"  class="pt1" href="#parte1">Home</a></li>
+            <li><a id="txt_titulo_sobre" class="pt2"  href="#parte2">Sobre</a></li>
+            <li><a id="txt_titulo_projetos" class="pt3"  href="#parte3">Projetos</a></li>
+            <li><a id="txt_titulo_contato" href="contato.html">Contato</a></li>
+            <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="trocar_idioma_ingles()">Ingles</a></li>
+            <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="trocar_idioma_ptbr()">Portugues</a></li>
             <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
         </ul>
     </header>
@@ -39,7 +40,7 @@
     </section>
     <section id="parte2">
         <div class="sobre">
-            <p>Olá! Me chamo Kauã Vitório da Silva Lima,
+            <p id="txt_mini_sobre_principal" >Olá! Me chamo Kauã Vitório da Silva Lima,
                 tenho 16 anos, nasci em Lins interior de SP
                 onde morei até meus 12 anos.
                 Logo após me mudei para São Paulo capital,
@@ -53,24 +54,24 @@
         <div class="btns">
             <a href="https://github.com/Kauavitorio"><input type="button" value="ACESSE MEU GITHUB" id="btn_github"/></a>
             <a href="#parte3"><input type="button" value="MEUS PROJETOS" id="btn_projetos"/></a> 
-            <a href="MaisSobreKaua.html"><input type="button" value="MAIS SOBRE MIM" id="btn_projetos"/></a> 
+            <a id="btn_irpara_maissobrekaua" href="MaisSobreKaua.html"><input type="button" value="MAIS SOBRE MIM" id="btn_mais_sobre_mim"/></a> 
         </div>
     </section>
     <section id="parte3">
         <div class="base_projetos">
-            <h1>Projetos Recentes</h1>
+            <h1 id="txt_titulo_projetos_recentes" >Projetos Recentes</h1>
 
-            <h2>Iniciei minha meus projetos em 03 de maio de 2020, com intensão de aprender e poder divulgar meu trabalho e meu aprendizado, 
+            <h2 id="txt_txt_projetos_recentes" >Iniciei minha meus projetos em 03 de maio de 2020, com intensão de aprender e poder divulgar meu trabalho e meu aprendizado, 
                 estou focando atualmente em desenvolvimento mobile mas tenho conhecimento em Windows Forms, ASP .NET MVC, HTML, CSS, JS e PHP.</h2>
 
-            <h3>Trabalho de Conclusão de Módulo Etec:</h3>
-            <h4>Click em projetos para ver meus projetos</h4>
+            <h3 id="txt_trabalho_conclusao" >Trabalho de Conclusão de Módulo Etec:</h3>
+            <h4 id="txt_click_em_projetos">Click em projetos para ver meus projetos</h4>
 
-            <iframe width="650" height="275" src="https://www.youtube.com/embed/Ev8JU6nxcO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video_ultimo_projeto" width="650" height="275" src="https://www.youtube.com/embed/Ev8JU6nxcO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="btns2">
             <a href="projetos.html"><input type="button" value="MAIS PROJETOS" id="btn_projetos2"/></a> 
-            <a href="http://systemstrength.rf.gd/index1.html"><input type="button" value="SYSTEM STRENGTH" id="btn_projetos2"/></a> 
+            <a href="http://systemstrength.rf.gd/index1.html"><input type="button" value="SYSTEM STRENGTH" id="btn_projetos2_system"/></a> 
         </div>
     </section>
     <footer>

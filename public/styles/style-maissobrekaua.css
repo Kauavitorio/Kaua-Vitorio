@@ -178,7 +178,354 @@ footer p:hover{
 }
 
 /*Reponsivo*/
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 2088px){
+  header {
+    position: fixed;
+    width: 95%;
+    overflow: hidden;
+    padding: 2px 50px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: rgba(53, 53, 53, 0.315);
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 1.5% 65%;
+  }
+  ul li a {
+    font: normal 21px Segoe UI;
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+  }
+  ul li a:hover {
+    color: #00ffee;
+    transition: ease-in 0.6s;
+  }
+  .logo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  
+  .logo a{
+    color: white;
+    font: bold 40px Segoe UI;
+    text-decoration: none;
+    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  }
+  
+  .hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+    position: relative;
+    cursor: block;
+  
+    display: none;
+  }
+  
+  .hamburguer::after{
+    content: "";
+  
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .base_foto_principal {
+    background-color: transparent;
+    width: 750px;
+    height: 550px;
+    border-radius: 20px;
+    border: solid 3px #00ffee;
+    display: inline-block;
+    margin-left: 31%;
+    margin-top: 95px;
+    margin-top: 120px;
+  }
+  
+  .base_foto_principal img{
+    background-color: transparent;
+    width: 750px;
+    height: 550px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .base_texto_sobre_mim{
+      width: 700px;
+      position: relative;
+      margin-left: 32%;
+  }
+  
+  #parte_sobre_01 h1{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 16pt Segoe UI;
+  }
+  
+  #parte_sobre_01 h2{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 16pt Segoe UI;
+  }
+  
+  #parte_sobre_01 a{
+      color: azure;
+      text-align: center;
+      color: rgb(0, 217, 255);
+      text-decoration: none;
+      font: bold 16pt Segoe UI;
+  }
+  
+  /*Footer*/
+  .btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 22vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+  }
+  .btn_face:hover{
+    background: rgb(56, 126, 255);
+  }
+  .btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+  }
+  .btn_link:hover{
+    background: rgb(0, 77, 179);
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+    line-height: 4vw;
+    font-size: 2.1vw;
+    transition: 0.2s linear;
+  }
+  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+  }
+  footer p{
+    color: white;
+    text-align: center;
+    margin-left: -20px;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 34px;
+  }
+  footer p:hover{
+    color: rgb(182, 182, 182);
+  }
+  @keyframes ani_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  
+  #linha-horizontal {
+    width: 950px;
+    margin-left: 26%;
+    border: 1px solid rgb(68, 200, 240);
+  }
+  
+  /*Minimo*/
+  #parte_sobre_01{
+    min-height: 75vw;
+  }
+}
+
+@media only screen and (max-width: 1836px){
+  header {
+    position: fixed;
+    width: 95%;
+    overflow: hidden;
+    padding: 2px 50px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: rgba(53, 53, 53, 0.315);
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 1.5% 63%;
+  }
+  ul li a {
+    font: normal 22px Segoe UI;
+    color: white;
+    text-decoration: none;
+    margin-left: 55px;
+  }
+  ul li a:hover {
+    color: #00ffee;
+    transition: ease-in 0.6s;
+  }
+  .logo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  
+  .logo a{
+    color: white;
+    font: bold 40px Segoe UI;
+    text-decoration: none;
+    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+  }
+  
+  .hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0;
+    position: relative;
+    cursor: block;
+  
+    display: none;
+  }
+  
+  .hamburguer::after{
+    content: "";
+  
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .base_foto_principal {
+    background-color: transparent;
+    width: 650px;
+    height: 550px;
+    border-radius: 20px;
+    border: solid 3px #00ffee;
+    display: inline-block;
+    margin-left: 32%;
+    margin-top: 95px;
+    margin-top: 130px;
+  }
+  
+  .base_foto_principal img{
+    background-color: transparent;
+    width: 650px;
+    height: 550px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .base_texto_sobre_mim{
+      width: 600px;
+      position: relative;
+      margin-left: 34%;
+  }
+  
+  #parte_sobre_01 h1{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 15pt Segoe UI;
+  }
+  
+  #parte_sobre_01 h2{
+      color: azure;
+      text-align: start;
+      margin-top: 2%;
+      font: normal 15pt Segoe UI;
+  }
+  
+  #parte_sobre_01 a{
+      color: azure;
+      text-align: center;
+      color: rgb(0, 217, 255);
+      text-decoration: none;
+      font: bold 15pt Segoe UI;
+  }
+  
+  /*Footer*/
+  .btn_face, .btn_insta, .btn_link{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background: #cececec5;
+    margin-top: 1vw;
+    margin-left: 22vw;
+    border-radius: 30%;
+    text-align: center;
+    color: #fefeff;
+  }
+  .btn_face:hover{
+    background: rgb(56, 126, 255);
+  }
+  .btn_insta:hover{
+    background: rgba(243, 70, 104, 0.795);
+  }
+  .btn_link:hover{
+    background: rgb(0, 77, 179);
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+    line-height: 4vw;
+    font-size: 2.1vw;
+    transition: 0.2s linear;
+  }
+  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
+    transform: scale(1.5);
+    color: #f1f1f1;
+  }
+  footer p{
+    color: white;
+    text-align: center;
+    margin-left: -1%;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 34px;
+  }
+  footer p:hover{
+    color: rgb(182, 182, 182);
+  }
+  @keyframes ani_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  
+  #linha-horizontal {
+    width: 700px;
+    margin-left: 31%;
+    border: 1px solid rgb(68, 200, 240);
+  }
+  
+  /*Minimo*/
+  #parte_sobre_01{
+    min-height: 70vw;
+  }
+}
+
+
+@media only screen and (max-width: 1668px){
   header {
     position: fixed;
     width: 95%;
@@ -248,8 +595,8 @@ footer p:hover{
     border-radius: 20px;
     border: solid 3px #00ffee;
     display: inline-block;
-    margin-left: 25%;
-    margin-top: 95px;
+    margin-left: 27%;
+    margin-top: 100px;
   }
   
   .base_foto_principal img{
@@ -263,7 +610,7 @@ footer p:hover{
   .base_texto_sobre_mim{
       width: 710px;
       position: relative;
-      margin-left: 27%;
+      margin-left: 29%;
   }
   
   #parte_sobre_01 h1{
@@ -321,10 +668,10 @@ footer p:hover{
   footer p{
     color: white;
     text-align: center;
-    margin-left: -35px;
+    margin-left: -4%;
     margin-top: 10px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 23px;
   }
   footer p:hover{
     color: rgb(182, 182, 182);
@@ -339,14 +686,14 @@ footer p:hover{
   }
   
   #linha-horizontal {
-    width: 750px;
-    margin-left: 25%;
+    width: 780px;
+    margin-left: 26%;
     border: 1px solid rgb(68, 200, 240);
   }
   
   /*Minimo*/
   #parte_sobre_01{
-    min-height: 80vw;
+    min-height: 70vw;
   }
 }
 
@@ -422,7 +769,7 @@ footer p:hover{
     border: solid 3px #00ffee;
     display: inline-block;
     margin-left: 25%;
-    margin-top: 90px;
+    margin-top: 100px;
   }
   
   .base_foto_principal img{

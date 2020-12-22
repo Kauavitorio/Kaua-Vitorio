@@ -200,7 +200,7 @@ p {
     display: inline-block;
     width: 4vw;
     height: 4vw;
-    background: transparent;
+    background: rgb(88, 85, 85);
     margin-top: 1vw;
     margin-left: 21vw;
     border-radius: 30%;
@@ -217,6 +217,7 @@ p {
     background: rgb(0, 77, 179);
   }
   .btn_face i, .btn_insta i, .btn_link i{
+	background: transparent;
     line-height: 4vw;
     font-size: 1.8vw;
     transition: 0.2s linear;
