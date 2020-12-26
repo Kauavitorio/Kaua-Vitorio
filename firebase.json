@@ -9,6 +9,9 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+
+  "cleanUrls": true
+
   }
 }
