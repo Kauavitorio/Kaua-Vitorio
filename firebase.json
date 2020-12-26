@@ -1,15 +1,14 @@
 {
-    "hosting": {
-      "site": "kauavitorio",
-      "public": "public", 
+  "hosting": {
+    "site": "Kauavitorio",
+    "public": "public",
 
-      "rewrites": [ {
+    
+    "rewrites": [
+      {
         "source": "**",
         "destination": "/index.html"
-      } ],
-
-      "cleanUrls": true
-
-    }
-    
+      }
+    ]
   }
+}
