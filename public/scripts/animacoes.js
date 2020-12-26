@@ -46,15 +46,16 @@ function abreMenu(){
 
     var pt5 = window.document.querySelector('.pt5')
     pt5.addEventListener('click', parte1)
+
+    var pt1 = window.document.querySelector('.pt1')
+    pt1.addEventListener('click', parte1)   
+
+    var pt2 = window.document.querySelector('.pt2')
+    pt2.addEventListener('click', parte2)
+
+    var pt3 = window.document.querySelector('.pt3')
+    pt3.addEventListener('click', parte3)
 }
-var pt1 = window.document.querySelector('.pt1')
-pt1.addEventListener('click', parte1)
-
-var pt2 = window.document.querySelector('.pt2')
-pt2.addEventListener('click', parte2)
-
-var pt3 = window.document.querySelector('.pt3')
-pt3.addEventListener('click', parte3)
 
 
 function parte1(){
