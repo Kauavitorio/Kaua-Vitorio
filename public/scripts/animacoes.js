@@ -1,3 +1,4 @@
+//  All ids
 var btn_mudar_idioma_ingles = document.getElementById("btn_mudar_idioma_ingles");
 var btn_mudar_idioma_ptbr = document.getElementById("btn_mudar_idioma_ptbr");
 var txt_titulo_home = document.getElementById("txt_titulo_home");
@@ -14,6 +15,14 @@ var txt_trabalho_conclusao = document.getElementById("txt_trabalho_conclusao");
 var txt_click_em_projetos = document.getElementById("txt_click_em_projetos");
 var btn_projetos2 = document.getElementById("btn_projetos2");
 var btn_irpara_maissobrekaua = document.getElementById("btn_irpara_maissobrekaua");
+
+//  Ids of menu
+var pt1 = window.document.querySelector('.pt1')
+var pt2 = window.document.querySelector('.pt2')
+var pt3 = window.document.querySelector('.pt3')
+var pt4 = window.document.querySelector('.pt4')
+var pt5 = window.document.querySelector('.pt5')
+
 
 function desativar_btn_ptbr(){
     btn_mudar_idioma_ptbr.style.display = "none";
@@ -41,19 +50,15 @@ function abreMenu(){
     document.getElementById("menu2").style.display = "inline-block";
     document.getElementById("menu2").style.visibility = "visible";
     document.getElementById("close").style.visibility = "visible";
-    var pt4 = window.document.querySelector('.pt4')
+
     pt4.addEventListener('click', parte1)
 
-    var pt5 = window.document.querySelector('.pt5')
     pt5.addEventListener('click', parte1)
 
-    var pt1 = window.document.querySelector('.pt1')
     pt1.addEventListener('click', parte1)   
 
-    var pt2 = window.document.querySelector('.pt2')
     pt2.addEventListener('click', parte2)
 
-    var pt3 = window.document.querySelector('.pt3')
     pt3.addEventListener('click', parte3)
 }
 
@@ -85,7 +90,7 @@ function parte3(){
 }
 
 
-
+//  Function to tranlate Index
 function trocar_idioma_ingles(){
     btn_mudar_idioma_ingles.style.display = "none",
     btn_mudar_idioma_ptbr.style.display = "block",
@@ -104,6 +109,7 @@ function trocar_idioma_ingles(){
     btn_projetos2.value = "MORE PROJECTS"
 }
 
+//  Function to reload page
 function trocar_idioma_ptbr(){
     window.location.reload();
 }
