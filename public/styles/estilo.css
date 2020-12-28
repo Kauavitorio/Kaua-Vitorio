@@ -408,10 +408,20 @@ img{
   margin: 10px 0 15px 0;
 }
 .details>p{
-  color: #a0a0a0;
-  font-size: 15px;
-  line-height: 30px;
+  color: #d1d1d1;
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 28px;
   font-weight: 400;
+}
+
+.details>h2{
+  color: #d1d1d1;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+
 }
 
 
@@ -848,6 +858,40 @@ img{
     color: rgb(182, 182, 182);
   }
 
+    /*Social Cards*/
+    .cards{
+      margin-top: -45%;
+    }
+    .card{
+      background-color: #1c1b29;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    }
+    .container{
+      position: relative;
+      clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    }
+    img{
+      width: 100%;
+      display: block;
+      border-radius: 20px 20px 0 0;
+    }
+    .container:after{
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 20px 20px 0 0;
+      opacity: 0.7;
+    }
+  
+    #partesocial{
+      min-height: 100vh;
+      padding: 5px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -1071,6 +1115,30 @@ img{
   /*Social Cards*/
   .cards{
     margin-top: -40%;
+  }
+  .card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+  }
+  .container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+  }
+  img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+  }
+  .container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
   }
 
   #partesocial{
