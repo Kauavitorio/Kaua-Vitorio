@@ -164,6 +164,11 @@ ul li a:hover {
   min-height: 110vh;
 }
 
+#partesocial{
+  min-height: 100vh;
+  padding: 100px;
+}
+
 .sobre {
   margin-top: 9%;
   background-color: transparent;
@@ -340,6 +345,76 @@ footer p:hover{
       transform: translateY(0);
   }
 }
+
+/*Social Cards*/
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  padding: 20px;
+  grid-gap: 30px;
+}
+.card{
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+  position: relative;
+  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.container:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+.card1>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #0100ec,
+      #fb36f4
+  );
+}
+.card2>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #3d2be3,
+      #ffa742
+  );
+}
+.card3>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #3d2be3,
+      #c97304
+  );
+}
+.details{
+  padding: 20px 10px;
+}
+.details>a{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 10px 0 15px 0;
+}
+.details>p{
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
 
 /* Responsivo */
 @media only screen and (max-width: 1259px) {
@@ -991,6 +1066,16 @@ footer p:hover{
   }
   footer p:hover{
     color: rgb(182, 182, 182);
+  }
+
+  /*Social Cards*/
+  .cards{
+    margin-top: -40%;
+  }
+
+  #partesocial{
+    min-height: 100vh;
+    padding: 5px;
   }
 }
 

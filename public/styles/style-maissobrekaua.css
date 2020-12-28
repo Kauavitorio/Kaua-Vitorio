@@ -116,6 +116,44 @@ ul li a:hover {
     font: bold 20pt Segoe UI;
 }
 
+/*.card_projetos{
+  background-color: transparent;
+  width: 600px;
+  height: 190px;
+  border-radius: 20px;
+  border: solid 3px #00ffee;
+  display: inline-block;
+  margin-left: 27%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card_projetos img{
+  background-color: transparent;
+  width: 600px;
+  height: 190px;
+  border-radius: 20px;
+  border: solid 3px #00ffee;
+}
+
+.base_primaria_card_projetos{
+  background-color: #00615a9d;
+  width: 250px;
+  height: 185px;
+  border-radius: 20px;
+  border: solid 3px transparent;
+  display: inline-block;
+}
+
+
+.base_primaria_card_projetos:hover{
+  background-color: #00e4d59d;
+  width: 600px;
+  height: 185px;
+  transition: ease 0.5s;
+  display: inline-block;
+}*/
+
 /*Footer*/
 .btn_face, .btn_insta, .btn_link{
   display: inline-block;
