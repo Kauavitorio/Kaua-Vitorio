@@ -143,13 +143,42 @@ ul li a:hover {
   background: linear-gradient(#111111, #111111, #000000);
   border: solid 3px #00ffee;
 }
-.banner h1 {
+.linha_meunome{
   color: #fff;
   text-align: center;
   margin-top: 30px;
-  font: bold 60px Segoe UI;
+  font: bold 40px Segoe UI;
   letter-spacing: 10px;
+  border-right: solid 3px rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+.typing-animation{
+  animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(60) 1s infinite normal both;
+}
+
+@keyframes typing {
+  from{
+    margin-left: 50%;
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: rgb(255,255,255);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
 .banner h3 {
   color: #fff;
   text-align: center;
@@ -469,13 +498,18 @@ img{
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
   }
-  .banner h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: 50px;
-    font: bold 40px Segoe UI;
-    letter-spacing: 10px;
-  }
+
+  .linha_meunome{
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font: bold 40px Segoe UI;
+  letter-spacing: 10px;
+  border-right: solid 3px rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
   .banner h3 {
     color: #fff;
     text-align: center;
@@ -604,12 +638,15 @@ img{
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
   }
-  .banner h1 {
+  .linha_meunome{
     color: #fff;
     text-align: center;
     margin-top: 50px;
     font: bold 40px Segoe UI;
     letter-spacing: 10px;
+    border-right: solid 3px rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
   }
   .banner h3 {
     color: #fff;
@@ -704,17 +741,20 @@ img{
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
   }
-  .banner h1 {
+  .linha_meunome{
     color: #fff;
     text-align: center;
-    margin-top: 25px;
-    font: bold 40px Segoe UI;
+    margin-top: 35px;
+    font: bold 20px Segoe UI;
     letter-spacing: 10px;
+    border-right: solid 3px rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
   }
   .banner h3 {
     color: #fff;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 25px;
     font: bold 32px Segoe UI;
   }
   .sobre {
@@ -958,17 +998,25 @@ img{
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
   }
-  .banner h1 {
+  .linha_meunome{
     color: #fff;
     text-align: center;
-    margin-top: 20px;
-    font: bold 39px Segoe UI;
+    margin-top: 58px;
+    font: bold 20px Segoe UI;
     letter-spacing: 10px;
+    border-right: solid 3px rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
   }
+
+  .typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(60) 1s infinite normal;
+  }
+
   .banner h3 {
     color: #fff;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     font: bold 28px Segoe UI;
   }
   .sobre {
