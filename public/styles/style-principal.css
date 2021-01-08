@@ -941,12 +941,12 @@ img{
   .openmenu {
     visibility: visible;
     margin-top: -1px;
-    margin-left: 80px;
+    margin-left: 55px;
     font-size: 30px;
   }
   .logo {
     float: left;
-    margin-left: -50px;
+    margin-left: -60px;
     text-decoration: none;
     color: white;
     font: bold 15px Segoe UI;
@@ -1076,19 +1076,21 @@ img{
     margin-left: 1px;
   }
 
-  a #btn_projetos2,
-  a #btn_projetos2_system {
+  a #btn_projetos2 {
     position: relative;
-    background-color: #1d1d1d;
-    color: white;
     font: bold 19pt Segoe UI;
-    border: solid 1.5px #707070;
-    box-shadow: 6px 8px 10px #00ffee;
     margin-left: 12%;
     margin-top: 10%;
     width: 300px;
     height: 70px;
-    transition: ease 0.5s;
+  }
+
+  a #btn_projetos2_system{
+    font: bold 16pt Segoe UI;
+    margin-left: 12%;
+    margin-top: 10%;
+    width: 300px;
+    height: 70px;
   }
 
   a #btn_projetos2:hover,
@@ -1113,28 +1115,15 @@ img{
     text-align: center;
     color: #fefeff;
   }
-  .btn_face:hover{
-    background: rgb(56, 126, 255);
-  }
-  .btn_insta:hover{
-    background: rgba(243, 70, 104, 0.795);
-  }
-  .btn_link:hover{
-    background: rgb(0, 77, 179);
-  }
   .btn_face i, .btn_insta i, .btn_link i{
     line-height: 12vw;
     font-size: 6.8vw;
     transition: 0.2s linear;
   }
-  .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
-    transform: scale(1.5);
-    color: #f1f1f1;
-  }
   footer p{
     color: white;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-top: 10px;
     font-style: italic;
     font-size: 20px;
@@ -1188,11 +1177,11 @@ body {
   font-size: 62.5%;
   font-size: 10px;
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+/* -------- Inspiration taken from abdo steif -------- >
+-- https://codepen.io/abdosteif/pen/bRoyMb?editors=1100 *
+---------------------------------------------------------*/
 
 /* Navbar section */
-
 .nav {
   width: 100%;
   height: 65px;

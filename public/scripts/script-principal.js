@@ -15,6 +15,12 @@ var txt_trabalho_conclusao = document.getElementById("txt_trabalho_conclusao");
 var txt_click_em_projetos = document.getElementById("txt_click_em_projetos");
 var btn_projetos2 = document.getElementById("btn_projetos2");
 var btn_irpara_maissobrekaua = document.getElementById("btn_irpara_maissobrekaua");
+var txt_desc_twitch = document.getElementById("txt_desc_twitch");
+var txt_click_twitch = document.getElementById("txt_click_twitch");
+var txt_desc_instagram = document.getElementById("txt_desc_instagram");
+var txt_click_instagram = document.getElementById("txt_click_instagram");
+var txt_desc_youtube = document.getElementById("txt_desc_youtube");
+var txt_click_youtube = document.getElementById("txt_click_youtube")
 
 //  Ids of menu
 var pt1 = window.document.querySelector('.pt1')
@@ -34,7 +40,7 @@ window.addEventListener("scroll", function(){
 })
 
 function abreMenu(){
-    document.getElementById("menu").style.left = "-53%";
+    document.getElementById("menu").style.left = "-56%";
     document.getElementById("menu").style.textAlign = "center";
     document.querySelector(".closebtn").style.fontSize = "50px"
     txt_titulo_home.style.fontSize = "26px"
@@ -106,7 +112,14 @@ function trocar_idioma_ingles(){
     txt_txt_projetos_recentes.innerHTML = "I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.",
     txt_trabalho_conclusao.innerHTML = "Conclusion of Etec Module:",
     txt_click_em_projetos.innerHTML = "Click on projec to see my projects",
-    btn_projetos2.value = "MORE PROJECTS"
+    btn_projetos2.value = "MORE PROJECTS",
+    txt_desc_twitch.innerHTML = "I stream almost every day on the twitch about programming and developing projects, I started a short time ago but I am striving to bring the best quality and fun possible.",
+    txt_click_twitch.innerHTML = "* Click on “Twitch” to be redirected to my channel.",
+    txt_desc_instagram.innerHTML = "Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.",
+    txt_click_instagram.innerHTML = "* Click on ”Instagram” to be redirected to my channel.",
+    txt_desc_youtube.innerHTML = "On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.",
+    txt_click_youtube.innerHTML = "* Click on ”Youtube” to be redirected to my channel."
+
 }
 
 //  Function to reload page
