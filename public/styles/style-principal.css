@@ -10,6 +10,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/*=======================
+          Header
+=========================*/
 header {
   max-width: 100%;
   position: fixed;
@@ -455,21 +459,14 @@ img{
 
 
 
-/* Responsivo */
+/* ========================================
+            Start  Responsivo
+=========================================== */
 @media only screen and (max-width: 1259px) {
   header {
-    position: fixed;
     width: 90%;
-    overflow: hidden;
     padding: 30px 40px;
     z-index: 800;
-    transition: 0.6s;
-  }
-
-  header.sticky {
-    padding: 10px 50px;
-    background-color: rgba(0, 0, 0, 0.992);
-    border-bottom: 1px solid (0, 0, 0, 0.1);
   }
 
   ul li a {
@@ -598,18 +595,9 @@ img{
 
 @media only screen and (max-width: 983px) {
   header {
-    position: fixed;
     width: 90%;
-    overflow: hidden;
     padding: 30px 40px;
     z-index: 800;
-    transition: 0.6s;
-  }
-
-  header.sticky {
-    padding: 10px 50px;
-    background-color: rgba(0, 0, 0, 0.992);
-    border-bottom: 1px solid (0, 0, 0, 0.1);
   }
 
   ul li a {
@@ -691,12 +679,9 @@ img{
     border-bottom: 1px solid (0, 0, 0, 0.1);
   }
   header {
-    position: fixed;
     width: 100%;
-    overflow: hidden;
     padding: 40px 100px;
     z-index: 1000;
-    transition: 0.6s;
   }
   .openmenu {
     visibility: visible;
@@ -941,19 +926,17 @@ img{
   html {
     scroll-behavior: smooth;
   }
+
+  header {
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+  }
+
   header.sticky {
     padding: 20px 100px;
     background-color: rgba(0, 0, 0, 0.992);
     border-bottom: 1px solid (0, 0, 0, 0.1);
-  }
-  header {
-    max-width: 100%;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
   }
   .openmenu {
     visibility: visible;
