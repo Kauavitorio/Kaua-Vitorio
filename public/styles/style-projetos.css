@@ -279,6 +279,23 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
+	/*Footer*/
+.btn_face, .btn_insta, .btn_link{
+    width: 7vw;
+    height: 7vw;
+    margin-left: 19vw;
+  }
+  .btn_face i, .btn_insta i, .btn_link i{
+	background: transparent;
+    line-height: 7vw;
+    font-size: 5.1vw;
+    transition: 0.2s linear;
+  }
+
+  footer p{
+    font-size:  32px;
+  }
+
     /* End Project */
 }
  
