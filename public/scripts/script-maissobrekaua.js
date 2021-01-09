@@ -10,6 +10,45 @@ var txt_names = document.getElementById("txt_names");
 var cfc = document.getElementById("cfc");
 
 
+function abreMenu(){
+    document.getElementById("menu").style.left = "-75%";
+    document.getElementById("menu").style.textAlign = "center";
+    document.querySelector(".closebtn").style.fontSize = "50px"
+    txt_titulo_home.style.fontSize = "26px"
+    txt_titulo_sobre.style.fontSize = "26px"
+    txt_titulo_projetos.style.fontSize = "26px"
+    txt_titulo_contato.style.fontSize = "26px"
+    btn_mudar_idioma_ingles.style.fontSize = "26px"
+    btn_mudar_idioma_ptbr.style.fontSize = "27px"
+    document.getElementById("menu").style.height = "100%";
+    document.getElementById("menu").style.backgroundColor = "black";
+    document.getElementById("menu2").style.left = "10%";
+    document.getElementById("menu2").style.height = "80%";
+    document.getElementById("menu2").style.display = "inline-block";
+    document.getElementById("menu2").style.visibility = "visible";
+    document.getElementById("close").style.visibility = "visible";
+
+    pt4.addEventListener('click', parte1)
+
+    pt5.addEventListener('click', parte1)
+
+    pt1.addEventListener('click', parte1)   
+
+    pt2.addEventListener('click', parte2)
+
+    pt3.addEventListener('click', parte3)
+}
+
+function parte1(){
+    fechaMenu()
+    document.getElementById("txt_titulo_home")
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+}
+
+
 function desativar_btn_ptbr(){
     btn_mudar_idioma_ptbr.style.display = "none";
     txt_dentro_subdesc_sistema.style.visibility = "hidden";

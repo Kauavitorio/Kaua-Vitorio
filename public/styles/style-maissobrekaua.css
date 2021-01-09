@@ -45,28 +45,12 @@ ul li a:hover {
   text-shadow: 8px 10px 12px rgba(68, 68, 68);
 }
 
-.hamburguer{
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border-radius: 10px;
-  border: 0;
-  position: relative;
-  cursor: block;
-
-  display: none;
-}
-
-.hamburguer::after{
-  content: "";
-
-  position: absolute;
-  top: 35%;
-  left: 15%;
-  width: 70%;
-  height: 5%;
-  border-radius: 5px;
-  background-color: #fff;
+.openmenu {
+  float: left;
+  font-size: 5vw;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
 }
 
 .base_foto_principal {
@@ -78,6 +62,10 @@ ul li a:hover {
   display: inline-block;
   margin-left: 35%;
   margin-top: 140px;
+}
+
+.closebtn {
+  visibility: hidden;
 }
 
 .base_foto_principal img{
@@ -215,7 +203,7 @@ footer p:hover{
   min-height: 65vw;
 }
 
-/*Reponsivo*/
+/* =========== Start Responsivo ============== */
 @media only screen and (max-width: 2088px){
   header {
     position: fixed;
@@ -753,10 +741,10 @@ footer p:hover{
     margin: 1.5% 60%;
   }
   ul li a {
-    font: normal 16px Segoe UI;
+    font: normal 20px Segoe UI;
     color: white;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   ul li a:hover {
     color: #00ffee;
@@ -773,30 +761,6 @@ footer p:hover{
     font: bold 28px Segoe UI;
     text-decoration: none;
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
-  }
-  
-  .hamburguer{
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 0;
-    position: relative;
-    cursor: block;
-  
-    display: none;
-  }
-  
-  .hamburguer::after{
-    content: "";
-  
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    width: 70%;
-    height: 5%;
-    border-radius: 5px;
-    background-color: #fff;
   }
   
   .base_foto_principal {
@@ -1118,10 +1082,11 @@ footer p:hover{
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
   }
   
-  .hamburguer{
-    display: block;
-    z-index: 999;
-    margin-left: 65%;
+  .openmenu {
+    visibility: visible;
+    margin-top: -1px;
+    margin-left: 180px;
+    font-size: 30px;
   }
   
  .menu{
@@ -1263,7 +1228,8 @@ footer p:hover{
 
   .logo {
     float: left;
-    margin-left: -15%;
+    margin-left: -13%;
+    margin-top:  3%;
   }
   
   .logo a{
@@ -1273,10 +1239,11 @@ footer p:hover{
     text-shadow: 8px 10px 12px rgba(68, 68, 68);
   }
   
-  .hamburguer{
-    display: block;
-    z-index: 999;
-    margin-left: 60%;
+  .openmenu {
+    visibility: visible;
+    margin-top: 6px;
+    margin-left: 135px;
+    font-size: 30px;
   }
   
  .menu{
