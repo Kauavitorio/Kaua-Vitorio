@@ -50,6 +50,7 @@ ul li a:hover {
   font: bold 17px Segoe UI;
   text-shadow: 8px 10px 12px rgba(68, 68, 68);
   margin-left: 5%;
+  margin-top: 5px;
 }
 .openmenu {
   float: left;
