@@ -21,6 +21,7 @@ var txt_desc_instagram = document.getElementById("txt_desc_instagram");
 var txt_click_instagram = document.getElementById("txt_click_instagram");
 var txt_desc_youtube = document.getElementById("txt_desc_youtube");
 var txt_click_youtube = document.getElementById("txt_click_youtube")
+var btn_projetos2_mysocialmedias = document.getElementById("btn_projetos2_mysocialmedias");
 
 //  Ids of menu
 var pt1 = window.document.querySelector('.pt1')
@@ -118,7 +119,9 @@ function trocar_idioma_ingles(){
     txt_desc_instagram.innerHTML = "Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.",
     txt_click_instagram.innerHTML = "* Click on ”Instagram” to be redirected to my channel.",
     txt_desc_youtube.innerHTML = "On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.",
-    txt_click_youtube.innerHTML = "* Click on ”Youtube” to be redirected to my channel."
+    txt_click_youtube.innerHTML = "* Click on ”Youtube” to be redirected to my channel.",
+    btn_projetos2_mysocialmedias.value = "MY SOCIAL MEDIAS"
+    btn_projetos2_mysocialmedias.style.fontSize = "20px"
 
 }
 

@@ -211,6 +211,7 @@ ul li a:hover {
   border: solid 3px #00ffee;
   display: inline-block;
   margin-left: 10%;
+  box-shadow: 2px 1px 6px #fff;
 }
 .sobre p {
   display: flex;
@@ -263,6 +264,7 @@ a #btn_mais_sobre_mim:hover {
   border: solid 3px #00ffee;
   display: inline-block;
   margin-left: 10%;
+  box-shadow: 2px 1px 6px #fff;
 }
 
 .base_projetos h1 {
@@ -320,8 +322,23 @@ a #btn_projetos2_system {
   transition: ease 0.5s;
 }
 
+a #btn_projetos2_mysocialmedias{
+  position: relative;
+  background-color: #1d1d1d;
+  color: white;
+  font: bold 14pt Segoe UI;
+  border: solid 1.5px #707070;
+  box-shadow: 6px 8px 10px #00ffee;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 300px;
+  height: 70px;
+  transition: ease 0.5s;
+}
+
 a #btn_projetos2:hover,
-a #btn_projetos2_system:hover  {
+a #btn_projetos2_system:hover,
+a #btn_projetos2_mysocialmedias:hover {
   cursor: pointer;
   color: rgb(230, 230, 230);
   background-color: #181818;
@@ -563,12 +580,12 @@ img{
     width: 310px;
     height: 220px;
     display: inline-block;
-    margin-top: 24%;
+    margin-top: 15%;
     margin-left: 1px;
   }
 
   a #btn_projetos2,
-  a #btn_projetos2_system {
+  a #btn_projetos2_system{
     position: relative;
     background-color: #1d1d1d;
     color: white;
@@ -576,22 +593,18 @@ img{
     border: solid 1.5px #707070;
     box-shadow: 6px 8px 10px #00ffee;
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 13%;
     width: 300px;
     height: 70px;
     transition: ease 0.5s;
   }
 
-  a #btn_projetos2:hover
-  a #btn_projetos2_system:hover {
-    cursor: pointer;
-    color: rgb(230, 230, 230);
-    background-color: #181818;
-    transition: ease 0.5s;
-    border: solid 2px #ffffff;
-    box-shadow: 4px 6px 8px #00ffee;
-    padding-bottom: 10px;
+  a #btn_projetos2_mysocialmedias{
+    margin-left: 8%;
+    margin-top: 13%;
   }
+
+
 }
 
 @media only screen and (max-width: 983px) {
@@ -726,6 +739,7 @@ img{
     height: 200px;
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
+    box-shadow: 2px 1px 6px #fff;
   }
   .linha_meunome{
     color: #fff;
@@ -832,15 +846,9 @@ img{
     transition: ease 0.5s;
   }
 
-  a #btn_projetos2:hover,
-  a #btn_projetos2_system:hover  {
-    cursor: pointer;
-    color: rgb(230, 230, 230);
-    background-color: #181818;
-    transition: ease 0.5s;
-    border: solid 2px #ffffff;
-    box-shadow: 4px 6px 8px #00ffee;
-    padding-bottom: 10px;
+  a #btn_projetos2_mysocialmedias{
+    margin-left: 12%;
+    margin-top: 13%;
   }
 
   .btn_face, .btn_insta, .btn_link{
@@ -951,7 +959,8 @@ img{
     text-decoration: none;
     color: white;
     font: bold 15px Segoe UI;
-    text-shadow: 8px 10px 12px rgba(68, 68, 68);
+    text-shadow: 6px 6px 12px rgba(68, 68, 68);
+    margin-top: -1px;
   }
   .set {
     position: absolute;
@@ -1092,6 +1101,11 @@ img{
     margin-top: 10%;
     width: 300px;
     height: 70px;
+  }
+
+  a #btn_projetos2_mysocialmedias{
+    margin-left: 12%;
+    margin-top: 13%;
   }
 
   a #btn_projetos2:hover,
