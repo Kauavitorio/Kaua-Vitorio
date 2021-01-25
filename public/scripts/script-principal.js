@@ -106,7 +106,7 @@ function trocar_idioma_ingles(){
     txt_titulo_projetos.innerHTML = "Projects",
     txt_titulo_contato.innerHTML = "Contact",
     txt_mini_sobre_principal.innerHTML = "Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming. I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.",
-    btn_github.value = "ACCESS MY GITHU",
+    btn_github.value = "ACCESS MY GITHUB",
     btn_projetos.value = "MY PROJECTS",
     btn_mais_sobre_mim.value = "MORE ABOUT ME",
     txt_titulo_projetos_recentes.innerHTML = "Recent Projects",
