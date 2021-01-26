@@ -62,7 +62,7 @@ nav a {
 	position: relative;
 	top: 450px;
 	background: #ebebeb;
-	height: 1500px;
+	height: 100%;
 }
 .content-area h2 {
 	font-family: poppins;
@@ -72,9 +72,14 @@ nav a {
 	margin: 0;
 }
 .content-area p {
-	padding: 2% 0px;
+	padding: 2% 10px;
 	font-family: poppins;
 	line-height: 30px;
+}
+
+#txt_seja_parceiro{
+	font-family: poppins;
+	color: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 581px) {
