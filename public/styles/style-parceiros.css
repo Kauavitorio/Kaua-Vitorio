@@ -76,3 +76,10 @@ nav a {
 	font-family: poppins;
 	line-height: 30px;
 }
+
+@media only screen and (max-width: 581px) {
+
+	nav a{
+		margin-left: -50%;
+	}
+}
