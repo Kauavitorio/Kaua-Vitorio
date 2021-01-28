@@ -20,16 +20,16 @@
   * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
   ======================================================== -->
 </head>
-<body onload="desativar_btn_ptbr()">
+<body onload="desativar_btn_in()">
 
     <header id="menu"><!--Start Header-->
         <a href="#parte1" class="logo"><h1>Kauã Vitório</h1></a>
         <span class="openmenu" onClick="abreMenu()">&#9776;</span>
         <ul id="menu2">
             <li><a id="txt_titulo_home"  class="pt1" href="#parte1">Home</a></li>
-            <li><a id="txt_titulo_sobre" class="pt2"  href="#parte2">Sobre</a></li>
-            <li><a id="txt_titulo_projetos" class="pt3"  href="#parte3">Projetos</a></li>
-            <li><a id="txt_titulo_contato" href="contato.html">Contato</a></li>
+            <li><a id="txt_titulo_sobre" class="pt2"  href="#parte2">About</a></li>
+            <li><a id="txt_titulo_projetos" class="pt3"  href="#parte3">Projects</a></li>
+            <li><a id="txt_titulo_contato" href="contato.html">Contact</a></li>
             <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="trocar_idioma_ingles()">Ingles</a></li>
             <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="trocar_idioma_ptbr()">Portugues</a></li>
             <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
@@ -57,39 +57,34 @@
     
     <section id="parte2">
         <div class="sobre">
-            <p id="txt_mini_sobre_principal" >Olá! Me chamo Kauã Vitório da Silva Lima,
-                tenho 16 anos, nasci em Lins interior de SP
-                onde morei até meus 12 anos.
-                Logo após me mudei para São Paulo capital,
-                sempre tive interesse em computação mas
-                não exatamente na área da programação.
-                Moro atualmente em Osasco e estou
-                cursando Desenvolvimento de Sistemas na
-                ETEC Basilides de Godoy. 
+            <p id="txt_mini_sobre_principal" >Hi! My name is Kauã Vitório da Silva Lima,
+                 I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. 
+                 Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming.
+                 I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.
             </p>
         </div>
         <div class="btns">
-            <a href="https://github.com/Kauavitorio"><input type="button" value="ACESSE MEU GITHUB" id="btn_github"/></a>
-            <a href="#parte3"><input type="button" value="MEUS PROJETOS" id="btn_projetos"/></a> 
-            <a id="btn_irpara_maissobrekaua" href="MaisSobreKaua.html"><input type="button" value="MAIS SOBRE MIM" id="btn_mais_sobre_mim"/></a> 
+            <a href="https://github.com/Kauavitorio"><input type="button" value="ACCESS MY GITHUB" id="btn_github"/></a>
+            <a href="#parte3"><input type="button" value="MY PROJECTS" id="btn_projetos"/></a> 
+            <a id="btn_irpara_maissobrekaua" href="MaisSobreKaua.html"><input type="button" value="MORE ABOUT ME" id="btn_mais_sobre_mim"/></a> 
         </div>
     </section>
     <section id="parte3">
         <div class="base_projetos">
-            <h1 id="txt_titulo_projetos_recentes" >Projetos Recentes</h1>
+            <h1 id="txt_titulo_projetos_recentes" >Recent Projects</h1>
 
-            <h2 id="txt_txt_projetos_recentes" >Iniciei minha meus projetos em 03 de maio de 2020, com intensão de aprender e poder divulgar meu trabalho e meu aprendizado, 
-                estou focando atualmente em desenvolvimento mobile mas tenho conhecimento em Windows Forms, ASP .NET MVC, HTML, CSS, JS e PHP.</h2>
+            <h2 id="txt_txt_projetos_recentes" >I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, 
+                I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.</h2>
 
-            <h3 id="txt_trabalho_conclusao" >Trabalho de Conclusão de Módulo Etec:</h3>
-            <h4 id="txt_click_em_projetos">Click em projetos para ver meus projetos</h4>
+            <h3 id="txt_trabalho_conclusao" >Conclusion of Etec Module:</h3>
+            <h4 id="txt_click_em_projetos">Click on projec to see my projects</h4>
 
             <iframe id="video_ultimo_projeto" width="650" height="275" src="https://www.youtube.com/embed/Ev8JU6nxcO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="btns2">
-            <a href="projetos.html"><input type="button" value="MAIS PROJETOS" id="btn_projetos2"/></a> 
+            <a href="projetos.html"><input type="button" value="MORE PROJECTS" id="btn_projetos2"/></a> 
             <a href="http://systemstrength.rf.gd/index1.html"><input type="button" value="SYSTEM STRENGTH" id="btn_projetos2_system"/></a> 
-            <a href="#partesocial"><input type="button" value="MINHAS REDES SOCIAIS" id="btn_projetos2_mysocialmedias"/></a> 
+            <a href="#partesocial"><input type="button" value="MY SOCIAL MEDIAS" id="btn_projetos2_mysocialmedias"/></a> 
         </div>
     </section>
     <section id="partesocial">
@@ -100,8 +95,8 @@
                 </div>
                 <div class="details">
                     <a href="https://www.twitch.tv/kauavitoriodev"><h3>Twitch</h3></a>
-                    <p id="txt_desc_twitch">Faço stream quase todos os dias na twitch sobre programação e desenvolvendo projetos, comecei a pouco tempo mas estou me esforçando para trazer a melhor qualidade e diversão possível.</p>
-                    <h2 id="txt_click_twitch">*Clique em “Twitch” para ser redirecionado ao meu canal.</h2>
+                    <p id="txt_desc_twitch">I stream almost every day on the twitch about programming and developing projects, I started a short time ago but I am striving to bring the best quality and fun possible.</p>
+                    <h2 id="txt_click_twitch">* Click on “Twitch” to be redirected to my channel.</h2>
                 </div>
             </div>
             <div class="card card2">
@@ -110,8 +105,8 @@
                 </div>
                 <div class="details">
                     <a href="https://www.instagram.com/ka_vitorio/"><h3>Instagram</h3></a>
-                    <p id="txt_desc_instagram" >Instagram é a rede social que mais passo meu tempo e onde mais interajo, porém não faço publicações com muita frequência.</p>
-                    <h2 id="txt_click_instagram">*Clique em "Instagram" para ser redirecionado ao meu canal.</h2>
+                    <p id="txt_desc_instagram" >Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.</p>
+                    <h2 id="txt_click_instagram">* Click on ”Instagram” to be redirected to my channel.</h2>
                 </div>
             </div>
             <div class="card card3">
@@ -120,7 +115,7 @@
                 </div>
                 <div class="details">
                     <a href="https://www.youtube.com/c/KauaVitorio"><h3>Youtube</h3></a>
-                    <p id="txt_desc_youtube">No Youtube estarei postando alguns momentos das minhas streams onde ensino algumas dicas ou algo de meu conhecimento sobre programação.</p>
+                    <p id="txt_desc_youtube">On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.</p>
                     <h2 id="txt_click_youtube">*Clique em "Youtube" para ser redirecionado ao meu canal.</h2>
                 </div>
             </div>

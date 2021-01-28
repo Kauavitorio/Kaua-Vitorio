@@ -31,8 +31,8 @@ var pt4 = window.document.querySelector('.pt4')
 var pt5 = window.document.querySelector('.pt5')
 
 
-function desativar_btn_ptbr(){
-    btn_mudar_idioma_ptbr.style.display = "none";
+function desativar_btn_in(){
+    btn_mudar_idioma_ingles.style.display = "none";
 }
 
 window.addEventListener("scroll", function(){
@@ -99,35 +99,35 @@ function parte3(){
 
 //  Function to tranlate Index
 function trocar_idioma_ingles(){
-    btn_mudar_idioma_ingles.style.display = "none",
-    btn_mudar_idioma_ptbr.style.display = "block",
-    txt_titulo_home.innerHTML = "Home",
-    txt_titulo_sobre.innerHTML = "About",
-    txt_titulo_projetos.innerHTML = "Projects",
-    txt_titulo_contato.innerHTML = "Contact",
-    txt_mini_sobre_principal.innerHTML = "Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming. I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.",
-    btn_github.value = "ACCESS MY GITHUB",
-    btn_projetos.value = "MY PROJECTS",
-    btn_mais_sobre_mim.value = "MORE ABOUT ME",
-    txt_titulo_projetos_recentes.innerHTML = "Recent Projects",
-    txt_txt_projetos_recentes.innerHTML = "I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.",
-    txt_trabalho_conclusao.innerHTML = "Conclusion of Etec Module:",
-    txt_click_em_projetos.innerHTML = "Click on projec to see my projects",
-    btn_projetos2.value = "MORE PROJECTS",
-    txt_desc_twitch.innerHTML = "I stream almost every day on the twitch about programming and developing projects, I started a short time ago but I am striving to bring the best quality and fun possible.",
-    txt_click_twitch.innerHTML = "* Click on “Twitch” to be redirected to my channel.",
-    txt_desc_instagram.innerHTML = "Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.",
-    txt_click_instagram.innerHTML = "* Click on ”Instagram” to be redirected to my channel.",
-    txt_desc_youtube.innerHTML = "On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.",
-    txt_click_youtube.innerHTML = "* Click on ”Youtube” to be redirected to my channel.",
-    btn_projetos2_mysocialmedias.value = "MY SOCIAL MEDIAS"
-    btn_projetos2_mysocialmedias.style.fontSize = "20px"
+    window.location.reload();
 
 }
 
 //  Function to reload page
 function trocar_idioma_ptbr(){
-    window.location.reload();
+    btn_mudar_idioma_ingles.style.display = "block",
+    btn_mudar_idioma_ptbr.style.display = "none",
+    txt_titulo_home.innerHTML = "Home",
+    txt_titulo_sobre.innerHTML = "Sobre",
+    txt_titulo_projetos.innerHTML = "Projetos",
+    txt_titulo_contato.innerHTML = "Contato",
+    txt_mini_sobre_principal.innerHTML = "Olá! Me chamo Kauã Vitório da Silva Lima, tenho 16 anos, nasci em Lins interior de SP onde morei até meus 12 anos. Logo após me mudei para São Paulo capital, sempre tive interesse em computação mas não exatamente na área da programação. Moro atualmente em Osasco e estou cursando Desenvolvimento de Sistemas na ETEC Basilides de Godoy. ",
+    btn_github.value = "ACESSE MEU GITHUB",
+    btn_projetos.value = "MEUS PROJETOS",
+    btn_mais_sobre_mim.value = "MAIS SOBRE MIM",
+    txt_titulo_projetos_recentes.innerHTML = "Projetos Recentes",
+    txt_txt_projetos_recentes.innerHTML = "Iniciei minha meus projetos em 03 de maio de 2020, com intensão de aprender e poder divulgar meu trabalho e meu aprendizado, estou focando atualmente em desenvolvimento mobile mas tenho conhecimento em Windows Forms, ASP .NET MVC, HTML, CSS, JS e PHP.",
+    txt_trabalho_conclusao.innerHTML = "Trabalho de Conclusão de Módulo Etec:",
+    txt_click_em_projetos.innerHTML = "Click em projetos para ver meus projetos",
+    btn_projetos2.value = "MAIS PROJETOS",
+    txt_desc_twitch.innerHTML = "Faço stream quase todos os dias na twitch sobre programação e desenvolvendo projetos, comecei a pouco tempo mas estou me esforçando para trazer a melhor qualidade e diversão possível.",
+    txt_click_twitch.innerHTML = "*Clique em “Twitch” para ser redirecionado ao meu canal.",
+    txt_desc_instagram.innerHTML = "Instagram é a rede social que mais passo meu tempo e onde mais interajo, porém não faço publicações com muita frequência.",
+    txt_click_instagram.innerHTML = "*Clique em ”Instagram” para ser redirecionado ao meu canal.",
+    txt_desc_youtube.innerHTML = "No Youtube estarei postando alguns momentos das minhas streams onde ensino algumas dicas ou algo de meu conhecimento sobre programação.",
+    txt_click_youtube.innerHTML = "*Clique em ”Youtube” para ser redirecionado ao meu canal.",
+    btn_projetos2_mysocialmedias.value = "MINHAS REDES SOCIAIS"
+    btn_projetos2_mysocialmedias.style.fontSize = "14pt"
 }
 
 function fechaMenu()
