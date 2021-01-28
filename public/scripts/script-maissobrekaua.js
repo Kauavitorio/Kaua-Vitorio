@@ -49,8 +49,8 @@ function parte1(){
 }
 
 
-function desativar_btn_ptbr(){
-    btn_mudar_idioma_ptbr.style.display = "none";
+function desativar_btn_in(){
+    btn_mudar_idioma_ingles.style.display = "none";
     txt_dentro_subdesc_sistema.style.visibility = "hidden";
     txt_dentro_subdesc_systemmobile.style.visibility = "hidden";
     txt_names.style.visibility ="hidden"
@@ -83,10 +83,19 @@ function trocar_idioma_ingles(){
     txt_apos_subdesc.innerHTML = "We are currently working on a project called, where the purpose is our learning and improvement in programming."
     txt_names.style.visibility ="visible"
     cfc.style.visibility ="visible"
-
-
+    window.location.reload();
 }
 
 function trocar_idioma_ptbr(){
-    window.location.reload();
+    btn_mudar_idioma_ingles.style.display = "block",
+    btn_mudar_idioma_ptbr.style.display = "none"
+    txt_titulo.innerHTML =  "👋 Sou estudante de desenvolvimento de software, atualmente moro em Osasco."
+    txt_desc_about_me.innerHTML = "Atualmente estou cursando o ensino medio em São Paulo e o curso técnico em desenvolvimento de Software na Etec, no futuro pretendo fazer faculdade de engenharia de software me especializando em desenvolvimento para mobile e após cursar segurança da informação."
+    txt_subdesc.innerHTML = "Comecei meu primeiro projeto em meu curso de desenvolvimento de software que foi o Sistema Windows Forms para Palace Petz após esse projeto comecei a programar aplicações mobile e até hoje me interesso muito pela área de desenvolvimento mobile, o ultimo projeto que desenvolvi para mobile junto com minha equipe de desenvolvimento foi o System Strength App cujo a ideia da aplicação é um agenda para os seus funcionários."
+    txt_dentro_subdesc_sistema.style.visibility = "visible"
+    txt_dentro_subdesc_systemmobile.style.visibility = "visible"
+    txt_apos_subdesc.style.marginTop = "1%";
+    txt_apos_subdesc.innerHTML = "Atualmente estamos(Eu, Matheus e Yuri) trabalhando em um projeto chamado Coffee For Code, onde o intuito é nosso aprendizado e o aperfeiçoamento na programação."
+    txt_names.style.visibility ="visible"
+    cfc.style.visibility ="visible";
 }
