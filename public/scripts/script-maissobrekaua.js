@@ -8,6 +8,10 @@ var txt_dentro_subdesc_systemmobile = document.getElementById("txt_dentro_subdes
 var txt_apos_subdesc = document.getElementById("txt_apos_subdesc");
 var txt_names = document.getElementById("txt_names");
 var cfc = document.getElementById("cfc");
+var txt_topo = document.getElementById("txt_topo");
+var txt_inicio = document.getElementById("txt_inicio");
+var txt_projetos = document.getElementById("txt_projetos");
+var txt_contato = document.getElementById("txt_contato");
 
 
 function abreMenu(){
@@ -72,23 +76,16 @@ $('.hamburguer').click(function(){
 });
 
 function trocar_idioma_ingles(){
-    btn_mudar_idioma_ingles.style.display = "none",
-    btn_mudar_idioma_ptbr.style.display = "block"
-    txt_titulo.innerHTML =  "👋 I am a software development student, currently I live in Osasco."
-    txt_desc_about_me.innerHTML = "I am currently attending high school in São Paulo and the technical course in Software Development at Etec, in the future i intend to go to software engineering college specializing in mobile development and after studying information security."
-    txt_subdesc.innerHTML = "I started my first project in my software development course which was the after this project i started programming mobile applications and even today i am very interested in mobile development area, the last project I developed for mobile along with my development team was the idea of the application is an agenda for your employees."
-    txt_dentro_subdesc_sistema.style.visibility = "visible"
-    txt_dentro_subdesc_systemmobile.style.visibility = "visible"
-    txt_apos_subdesc.style.marginTop = "1%";
-    txt_apos_subdesc.innerHTML = "We are currently working on a project called, where the purpose is our learning and improvement in programming."
-    txt_names.style.visibility ="visible"
-    cfc.style.visibility ="visible"
     window.location.reload();
 }
 
 function trocar_idioma_ptbr(){
     btn_mudar_idioma_ingles.style.display = "block",
     btn_mudar_idioma_ptbr.style.display = "none"
+    txt_topo.innerHTML = "Topo"
+    txt_inicio.innerHTML = "Inicio"
+    txt_projetos.innerHTML = "Projetos"
+    txt_contato.innerHTML = " Contato"
     txt_titulo.innerHTML =  "👋 Sou estudante de desenvolvimento de software, atualmente moro em Osasco."
     txt_desc_about_me.innerHTML = "Atualmente estou cursando o ensino medio em São Paulo e o curso técnico em desenvolvimento de Software na Etec, no futuro pretendo fazer faculdade de engenharia de software me especializando em desenvolvimento para mobile e após cursar segurança da informação."
     txt_subdesc.innerHTML = "Comecei meu primeiro projeto em meu curso de desenvolvimento de software que foi o Sistema Windows Forms para Palace Petz após esse projeto comecei a programar aplicações mobile e até hoje me interesso muito pela área de desenvolvimento mobile, o ultimo projeto que desenvolvi para mobile junto com minha equipe de desenvolvimento foi o System Strength App cujo a ideia da aplicação é um agenda para os seus funcionários."
