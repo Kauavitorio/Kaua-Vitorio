@@ -24,17 +24,12 @@ var txt_click_youtube = document.getElementById("txt_click_youtube")
 var btn_projetos2_mysocialmedias = document.getElementById("btn_projetos2_mysocialmedias");
 
 
-/**
- *  Create Cookies
- *  By Kaua
- */
 
-
+ // ------------  Start Cookie create --------------------
 function createCookie(lang, value, expira){
     var dtExpira = "expires="+ expira;
     document.cookie = lang + "=" + value + "; " + dtExpira;     
 }
-
 
 function ReadCookie(lang){
     var linguagem = lang + "=";
@@ -50,44 +45,30 @@ function ReadCookie(lang){
     return "";
 }
 
-
 function initCookie(){
     var linguagemDef = ReadCookie("linguagem")
-    if(linguagemDef != ""){
-        if (linguagemDef == "English"){
-            alert("Welcome");
+    if(linguagemDef == "English" || linguagemDef == "EN-US"){
+        change_to_en();
             btn_mudar_idioma_ingles.style.display = "none";
-        }else if(linguagemDef == "Portugues"){
-            trocar_idioma_ptbr();
-        }else{
-            linguagemDef = prompt('Escolha um idioma,\nChoose a language,\nPT-BR = "Portugues",\nEN-US = "English"', "" );
-            if (linguagemDef == "" && linguagemDef == null){
-                window.location.reload();
-            }else if (linguagemDef == "English"){
-                createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
-            }else if (linguagemDef == "Portugues"){
-                createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
-            }else {
-                window.location.reload();
-            }
+    }else if(linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+        change_to_ptbr();
+    }
+    else{
+        // linguagemDef = prompt('Escolha um idioma\nChoose a language\nPT-BR = "Português",\nEN-US = "English"', "" );
+        linguagemDef = prompt('Escolha um idioma || Choose a language\nPT-BR = "Português" || EN-US = "English"', "" );
+        if (linguagemDef == "" && linguagemDef == null){
+            window.location.reload();
+        }else if (linguagemDef == "English" || linguagemDef == "EN-US"){
+            createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            window.location.reload();
+        }else if (linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+            createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            window.location.reload();
+        }else {
+            window.location.reload();
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}// -------------------- End Cookie Create   --------------------
 
 //  Ids of menu
 var pt1 = window.document.querySelector('.pt1')
@@ -95,11 +76,6 @@ var pt2 = window.document.querySelector('.pt2')
 var pt3 = window.document.querySelector('.pt3')
 var pt4 = window.document.querySelector('.pt4')
 var pt5 = window.document.querySelector('.pt5')
-
-
-function desativar_btn_in(){
-    btn_mudar_idioma_ingles.style.display = "none";
-}
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
@@ -135,7 +111,6 @@ function abreMenu(){
     pt3.addEventListener('click', parte3)
 }
 
-
 function parte1(){
     fechaMenu()
     document.getElementById("txt_titulo_home")
@@ -162,14 +137,33 @@ function parte3(){
     })
 }
 
-
-//  Function to tranlate Index
-function trocar_idioma_ingles(){
-    window.location.reload();
+function change_to_en(){
+    btn_mudar_idioma_ptbr.style.display = "block",
+    btn_mudar_idioma_ingles.style.display = "none",
+    txt_titulo_home.innerHTML = "Home",
+    txt_titulo_sobre.innerHTML = "About",
+    txt_titulo_projetos.innerHTML = "Projects",
+    txt_titulo_contato.innerHTML = "Contact",
+    txt_mini_sobre_principal.innerHTML = "Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming. I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.",
+    btn_github.value = "ACCESS MY GITHUB",
+    btn_projetos.value = "MY PROJECTS",
+    btn_mais_sobre_mim.value = "MORE ABOUT ME",
+    txt_titulo_projetos_recentes.innerHTML = "Recent Projects",
+    txt_txt_projetos_recentes.innerHTML = "I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.",
+    txt_trabalho_conclusao.innerHTML = "Conclusion of Etec Module:",
+    txt_click_em_projetos.innerHTML = "Click on projec to see my projects",
+    btn_projetos2.value = "MORE PROJECTS",
+    txt_desc_twitch.innerHTML = "I stream almost every day on the twitch about programming and developing projects, I started a short time ago but I am striving to bring the best quality and fun possible.",
+    txt_click_twitch.innerHTML = "* Click on “Twitch” to be redirected to my channel.",
+    txt_desc_instagram.innerHTML = "Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.",
+    txt_click_instagram.innerHTML = "* Click on ”Instagram” to be redirected to my channel.",
+    txt_desc_youtube.innerHTML = "On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.",
+    txt_click_youtube.innerHTML = "*Clique em ”Youtube” para ser redirecionado ao meu canal.",
+    btn_projetos2_mysocialmedias.value = "MY SOCIAL MEDIAS"
+    btn_projetos2_mysocialmedias.style.fontSize = "20px"
 }
 
-//  Function to reload page
-function trocar_idioma_ptbr(){
+function change_to_ptbr(){
     btn_mudar_idioma_ingles.style.display = "block",
     btn_mudar_idioma_ptbr.style.display = "none",
     txt_titulo_home.innerHTML = "Home",
