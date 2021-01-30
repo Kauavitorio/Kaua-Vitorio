@@ -23,6 +23,72 @@ var txt_desc_youtube = document.getElementById("txt_desc_youtube");
 var txt_click_youtube = document.getElementById("txt_click_youtube")
 var btn_projetos2_mysocialmedias = document.getElementById("btn_projetos2_mysocialmedias");
 
+
+/**
+ *  Create Cookies
+ *  By Kaua
+ */
+
+
+function createCookie(lang, value, expira){
+    var dtExpira = "expires="+ expira;
+    document.cookie = lang + "=" + value + "; " + dtExpira;     
+}
+
+
+function ReadCookie(lang){
+    var linguagem = lang + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++){
+        var c = ca[i];
+        while (c.charAt(0)==' '){
+            c = c.substring(1);
+        }
+        if(c.indexOf(linguagem) == 0)
+        return c.substring(linguagem.length,c.length);
+    }
+    return "";
+}
+
+
+function initCookie(){
+    var linguagemDef = ReadCookie("linguagem")
+    if(linguagemDef != ""){
+        if (linguagemDef == "English"){
+            alert("Welcome");
+            btn_mudar_idioma_ingles.style.display = "none";
+        }else if(linguagemDef == "Portugues"){
+            trocar_idioma_ptbr();
+        }else{
+            linguagemDef = prompt('Escolha um idioma,\nChoose a language,\nPT-BR = "Portugues",\nEN-US = "English"', "" );
+            if (linguagemDef == "" && linguagemDef == null){
+                window.location.reload();
+            }else if (linguagemDef == "English"){
+                createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            }else if (linguagemDef == "Portugues"){
+                createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            }else {
+                window.location.reload();
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  Ids of menu
 var pt1 = window.document.querySelector('.pt1')
 var pt2 = window.document.querySelector('.pt2')
@@ -100,7 +166,6 @@ function parte3(){
 //  Function to tranlate Index
 function trocar_idioma_ingles(){
     window.location.reload();
-
 }
 
 //  Function to reload page
