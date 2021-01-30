@@ -53,7 +53,7 @@ function parte1(){
 }
 
 
-function desativar_btn_in(){
+function fix_itens(){
     btn_mudar_idioma_ingles.style.display = "none";
     txt_dentro_subdesc_sistema.style.visibility = "hidden";
     txt_dentro_subdesc_systemmobile.style.visibility = "hidden";
@@ -75,11 +75,75 @@ $('.hamburguer').click(function(){
     });
 });
 
-function trocar_idioma_ingles(){
-    window.location.reload();
+ // ------------  Start Cookie create --------------------
+ function createCookie(lang, value, expira){
+    var dtExpira = "expires="+ expira;
+    document.cookie = lang + "=" + value + "; " + dtExpira;     
 }
 
-function trocar_idioma_ptbr(){
+function ReadCookie(lang){
+    var linguagem = lang + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++){
+        var c = ca[i];
+        while (c.charAt(0)==' '){
+            c = c.substring(1);
+        }
+        if(c.indexOf(linguagem) == 0)
+        return c.substring(linguagem.length,c.length);
+    }
+    return "";
+}
+
+function initCookie(){
+    var linguagemDef = ReadCookie("linguagem")
+    if(linguagemDef == "English" || linguagemDef == "EN-US"){
+        if (txt_inicio.innerHTML == "Home"){
+            fix_itens()
+            btn_mudar_idioma_ingles.style.display = "none";
+            }else {
+            change_to_en();
+            btn_mudar_idioma_ingles.style.display = "none";
+            }
+    }else if(linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+        change_to_ptbr();
+    }
+    else{
+        // linguagemDef = prompt('Escolha um idioma\nChoose a language\nPT-BR = "Português",\nEN-US = "English"', "" );
+        linguagemDef = prompt('Escolha um idioma || Choose a language\nPT-BR = "Português" || EN-US = "English"', "" );
+        if (linguagemDef == "" && linguagemDef == null){
+            window.location.reload();
+        }else if (linguagemDef == "English" || linguagemDef == "EN-US"){
+            createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            window.location.reload();
+        }else if (linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+            createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
+            window.location.reload();
+        }else {
+            window.location.reload();
+        }
+    }
+}// -------------------- End Cookie Create   --------------------
+
+function change_to_en(){
+    btn_mudar_idioma_ptbr.style.display = "block",
+    btn_mudar_idioma_ingles.style.display = "none"
+    txt_topo.innerHTML = "Top"
+    txt_inicio.innerHTML = "Home"
+    txt_projetos.innerHTML = "Project"
+    txt_contato.innerHTML = " Contact"
+    txt_titulo.innerHTML =  "👋 I am a software development student, currently I live in Osasco"
+    txt_desc_about_me.innerHTML = "I am currently attending high school in São Paulo and the technical course in Software Development at Etec, in the future i intend to go to software engineering college specializing in mobile development and after studying information security. "
+    txt_subdesc.innerHTML = "I started my first project in my software development course which was the Sistema Windows Forms for Palace Petz after this project i started programming mobile applications and even today i am very interested in after this project i started programming mobile applications and until today i am very interested in the area of mobile development, the last project that i developed for mobile together with my development team was theSystem Strength App whose idea of the application is an agenda for your employees."
+    txt_dentro_subdesc_sistema.style.visibility = "visible"
+    txt_dentro_subdesc_systemmobile.style.visibility = "visible"
+    txt_apos_subdesc.style.marginTop = "1%";
+    txt_apos_subdesc.innerHTML = "We are currently(I, Matheus and Yuri) working on a project called Coffee For Code, where the purpose is our learning and the improvement in programming."
+    txt_names.style.visibility ="visible"
+    cfc.style.visibility ="visible";
+}
+
+function change_to_ptbr(){
     btn_mudar_idioma_ingles.style.display = "block",
     btn_mudar_idioma_ptbr.style.display = "none"
     txt_topo.innerHTML = "Topo"

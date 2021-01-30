@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="styles/style-maissobrekaua.css">
 
 </head>
-<body onload="desativar_btn_in()">
+<body onload="fix_itens(), initCookie()">
     <header id="menu"><!--Start Header-->
         <div class="logo"><a href="index.html">Kauã Vitório</a></div>
         <span class="openmenu" onClick="abreMenu()">&#9776;</span>
@@ -23,8 +23,8 @@
             <li><a id="txt_inicio" href="index.html">Home</a></li>
             <li><a id="txt_projetos" href="projetos.html">Project</a></li>
             <li><a id="txt_contato" href="contato.html">Contact</a></li>
-            <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="trocar_idioma_ingles()">Ingles</a></li>
-            <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="trocar_idioma_ptbr()">Portugues</a></li>
+            <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="change_to_en()">Ingles</a></li>
+            <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="change_to_ptbr()">Portugues</a></li>
             <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
         </ul>
     </header><!--End Header-->
