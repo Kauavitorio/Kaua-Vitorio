@@ -23,6 +23,7 @@ function initCookie(){
     if(linguagemDef == "English" || linguagemDef == "EN-US"){
         if (document.getElementById("txt_btn_principal").innerHTML == "Main"){
             document.getElementById("translate_text_en").style.display = "none";
+            document.getElementById("txt_email_to_contact").style.display = "none";
         }else {
             change_to_en();
             document.getElementById("translate_text_en").style.display = "none";
