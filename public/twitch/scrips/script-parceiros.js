@@ -28,7 +28,7 @@ function initCookie(){
             change_to_en();
             document.getElementById("translate_text_en").style.display = "none";
         }
-    }else if(linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+    }else if(linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR" || linguagemDef == "português" || linguagemDef == "portugues"){
         change_to_ptbr();
     }
     else{
@@ -39,7 +39,7 @@ function initCookie(){
         }else if (linguagemDef == "English" || linguagemDef == "EN-US"){
             createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
             window.location.reload();
-        }else if (linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
+        }else if (linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR" || linguagemDef == "português" || linguagemDef == "portugues"){
             createCookie("linguagem", linguagemDef, " Tue, 01 Jan 2060 12:00:00 UTC");
             window.location.reload();
         }else {
