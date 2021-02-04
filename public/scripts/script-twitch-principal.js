@@ -62,7 +62,7 @@ function change_to_en(){
     document.getElementById("txt_desc_partner").innerHTML = "Partners are people in whom I have confidence and I like the content and that is why I closed a partnership with these people so that we can grow together, even though not all of them having content as a programming, I make partnerships in the same way. Being a partner does not mean that it is necessary to invest in my channel with money, no and that is what I am looking for ... I am looking for dissemination opportunities so that we can grow together"
     document.getElementById("btn_seePartners").value = "See Partners"
     document.getElementById("txt_title_design").innerHTML = "Design"
-    document.getElementById("txt_desc_design").innerHTML = "All the panels, banner and overlay of my channel were made by myself, I had the idea of doing something original, so I decided to make my own designs expired on Alanzoka's."
+    document.getElementById("txt_desc_design").innerHTML = "All the panels, banner and overlay of my channel were made by myself, I had the idea of doing something original, so I decided to make my own designs expired on Alanzoka's. The miniature of my head was developed by Gabriel, a great designer that I will be making available below, click on the button below to learn more about his work."
 }
 
 function change_to_ptbr(){
@@ -79,7 +79,7 @@ function change_to_ptbr(){
     document.getElementById("txt_desc_partner").innerHTML = "Parceiros são pessoas em quem tenho confiança e gosto do conteúdo e por isso fechei uma parceria com essas pessoas para que possamos crescer juntos, mesmo que nem todos tenham conteúdo como programação, faço parcerias da mesma forma . Ser parceiro não significa que seja preciso investir no meu canal com dinheiro, não e é isso que procuro ... Procuro oportunidades de divulgação para que possamos crescer juntos"
     document.getElementById("btn_seePartners").value = "Ver Parceiros"
     document.getElementById("txt_title_design").innerHTML = "Design"
-    document.getElementById("txt_desc_design").innerHTML = "Todos os painéis, banner e overlay de meu canal foram feitos por mim mesmo, tive a ideia de fazer algo original, então decidi fazer meus proprios design expirados no do Alanzoka."
+    document.getElementById("txt_desc_design").innerHTML = "Todos os painéis, banner e overlay do meu canal foram feitos por mim mesmo, tive a ideia de fazer algo original, então resolvi fazer meus próprios designs expirados no do Alanzoka. A miniatura da minha cabeça foi desenvolvida pelo Gabriel, um grande designer que estarei disponibilizando abaixo, clique no botão abaixo para saber mais sobre seu trabalho."
 }
 
   /** =======================================================
