@@ -4,35 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaua Vitorio - Twitch</title>
-	<link rel="sortcut icon" href="imgs/twitch_semfundo.svg" type="image/x-icon">
+
+    <!--Icon-->
+    <link rel="sortcut icon" href="imgs/twitch_semfundo.svg" type="image/x-icon">
+
+    <!--Main CSS-->
     <link rel="stylesheet" href="styles/style-index-twitch.css">
+
 </head>
-<body onload="">
+<!-- =======================================================
+  * WebSite Name: Kaua Vitorio - Protifolio v1.0.0
+  * WebSite URL: https://www.kauavitorio.com/
+  * Author: https://github.com/kauavitorio
+  * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+  ======================================================== -->
+<body onload="initCookie()">
     <div class="container">
-        <nav class="navbar">
+        <nav class="navbar"> <!--Start Header-->
             <ul>
-                <li><a href="https://www.kauavitorio.com">Principal</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="txt_main" href="https://www.kauavitorio.com">main</a></li>
+                <li><a id="txt_top" href="#home">Top</a></li>
+                <li><a id="txt_about" href="#about">About</a></li>
+                <li><a id="txt_partners" href="#partners">Partners</a></li>
+                <li><a id="txt_channel" href="https://www.twitch.tv/kauavitoriodev">channel</a></li>
+                <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="change_to_en()">Ingles</a></li>
+                <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="change_to_ptbr()">Portugues</a></li>
               </ul>
-            </nav>
-        <section id="home">
+            </nav> <!--Finish Header-->
+
+        <section id="home"><!--Start Section Home-->
         </section>
         <section id="about">
-            <h1>About</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
-        <section id="service">
-            <h1>Service</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
-        </section>
+            <div class="contenderAbout">
+                <h1 id="txt_title_about">About</h1>
+                <p id="text_desciption_about" class="lead">HI, my name is Kaua Vitorio, I'm 16 years old. I aim to make lives to rejoice and 
+                    rejoice those who assist me even though there are few or many people.
+                     Gradually the quality of the lives will improve</p>
+            </div>
+        </section><!--End Section Home-->
+
+        <section id="partners"><!--Start Section Partners-->
+            <div class="contenderPartner">
+            <h1 id="txt_title_partner">Partners</h1>
+            <p id="txt_desc_partner" class="lead">Partners are people in whom I have confidence and I like the content and that is why I 
+                closed a partnership with these people so that we can grow together, even though not all of them having content as a programming, 
+                I make partnerships in the same way. Being a partner does not mean that it is necessary to invest in my channel with money, 
+                no and that is what I am looking for ... 
+                I am looking for dissemination opportunities so that we can grow together</p>
+                <div class="contenderBtn">
+                    <a href="https://www.kauavitorio.com/twitch/parceiros"><input type="button" value="See Partners" id="btn_seePartners"/></a>
+                </div>
+            </div>
+        </section><!--End Section Partners-->
+
+        <section id="design"><!--Start Section Design-->
+            <div class="contenderDesign">
+            <h1 id="txt_title_design">Design</h1>
+            <p  id="txt_desc_design"  class="lead">All the panels, banner and overlay of my channel were made by myself, I had the idea of doing something original,
+                 so I decided to make my own designs expired on Alanzoka's.</p>
+            </div>
+        </section><!--End Section Design-->
       </div>
-<script src="scrips/script-principal.js"></script>
+<!-- ============ Host Scripts ============ -->
+<script src="/__/firebase/8.2.4/firebase-app.js"></script>
+<script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+<script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+<!-- ============= Main Script ============= -->
+<script src="scripts/script-twitch-principal.js"></script>
 </body>
 </html>
+
+<!--Copyright (c) 2020 Kauã Vitorio-->

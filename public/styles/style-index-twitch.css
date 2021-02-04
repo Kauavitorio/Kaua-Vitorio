@@ -1,3 +1,11 @@
+  /** =======================================================
+  * WebSite Name: Kaua Vitorio - Protifolio v1.0.0
+  * WebSite URL: https://www.kauavitorio.com/
+  * Author: https://github.com/kauavitorio
+  * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+  ======================================================== **/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +30,7 @@
   }
   
   .lead {
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
   }
   
@@ -48,6 +57,7 @@
   }
   
   .navbar ul li a {
+    font-family: 'Sriracha', cursive;
     text-decoration: none;
     text-transform: uppercase;
     color: #f4f4f4;
@@ -71,7 +81,75 @@
   }
   
   section h1 {
+    margin-left: auto;
     font-size: 4rem;
+  }
+
+    /* ================================
+  *       Start About Section      *
+  * ================================= */
+
+  .contenderAbout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .contenderAbout h1{
+    margin-top: 90px;
+  }
+
+  /* ================================
+  *       Start Partner Section      *
+  * ================================= */
+
+  .contenderPartner{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .contenderPartner h1{
+    margin-top: 90px;
+  }
+
+  #btn_seePartners  {
+    position: relative;
+    background-color: #1d1d1d;
+    color: white;
+    font: bold 19pt Segoe UI;
+    border: solid 1.5px #707070;
+    box-shadow: 6px 8px 10px #00ffee8c;
+    width: 300px;
+    height: 70px;
+    transition: ease 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  #btn_seePartners:hover {
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+    background-color: #181818;
+    transition: ease 0.5s;
+    border: solid 2px #ffffff;
+    box-shadow: 4px 6px 8px #00ffee;
+    font: bold 22pt Segoe UI;
+  }
+
+  /* ================================
+  *       Start Design Section      *
+  * ================================= */
+  .contenderDesign{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .contenderDesign h1{
+    margin-top: 90px;
   }
   
   /* Section Images */
@@ -80,14 +158,14 @@
   }
   
   section#about {
-    background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;;
+    background: url('https://cdn.discordapp.com/attachments/714246003842088962/806681299749568525/Sobre.png') no-repeat center center/cover;;
   }
   
-  section#service {
-    background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;
+  section#partners {
+    background: url('https://cdn.discordapp.com/attachments/714246003842088962/806689225118187550/Hand_Partnes.png') no-repeat center center/cover;;
   }
   
-  section#contact {
+  section#design {
     background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;;
   }
   
@@ -96,5 +174,20 @@
             Start  Responsivo
 =========================================== */
   @media only screen and (max-width: 581px) {
+    section#home{
+      background-size: 100%;
+      background-color: black;
+    }
 
+    .contenderPartner h1{
+      margin-top: 50px;
+  
+    }
   }
+
+  /** =======================================================
+  * WebSite Name: Kaua Vitorio - Protifolio v1.0.0
+  * WebSite URL: https://www.kauavitorio.com/
+  * Author: https://github.com/kauavitorio
+  * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+  ======================================================== **/
