@@ -227,17 +227,18 @@ ul li a:hover {
   height: 400px;
   display: inline-block;
   margin-left: 5%;
-  margin-top: 4%;
+  margin-top: 4.5%;
 }
 a #btn_github,
 a #btn_projetos,
 a #btn_mais_sobre_mim {
   position: relative;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d86;
   color: white;
   font: bold 16pt Segoe UI;
+  border-radius: 10px;
   border: solid 1.5px #707070;
-  box-shadow: 6px 8px 10px #00ffee;
+  box-shadow: 6px 8px 10px #00ffee8c;
   margin-left: 15%;
   margin-top: 15%;
   width: 300px;
@@ -249,7 +250,7 @@ a #btn_projetos:hover,
 a #btn_mais_sobre_mim:hover {
   cursor: pointer;
   color: rgb(230, 230, 230);
-  background-color: #181818;
+  background-color: #18181848;
   transition: ease 0.5s;
   border: solid 2px #ffffff;
   box-shadow: 4px 6px 8px #00ffee;
@@ -303,18 +304,19 @@ a #btn_mais_sobre_mim:hover {
   width: 310px;
   height: 220px;
   display: inline-block;
-  margin-top: 24%;
+  margin-top: 20%;
   margin-left: 23px;
 }
 
 a #btn_projetos2,
 a #btn_projetos2_system {
   position: relative;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d86;
   color: white;
   font: bold 19pt Segoe UI;
+  border-radius: 10px;
   border: solid 1.5px #707070;
-  box-shadow: 6px 8px 10px #00ffee;
+  box-shadow: 6px 8px 10px #00ffee8c;
   margin-left: 10%;
   margin-top: 10%;
   width: 300px;
@@ -324,11 +326,12 @@ a #btn_projetos2_system {
 
 a #btn_projetos2_mysocialmedias{
   position: relative;
-  background-color: #1d1d1d;
+  background-color: #1d1d1d86;
   color: white;
   font: bold 20px Segoe UI;
+  border-radius: 10px;
   border: solid 1.5px #707070;
-  box-shadow: 6px 8px 10px #00ffee;
+  box-shadow: 6px 8px 10px #00ffee8c;
   margin-left: 10%;
   margin-top: 10%;
   width: 300px;
@@ -644,6 +647,7 @@ img{
     transform: translate(28%, 130%);
     width: 630px;
     height: 200px;
+    border-radius: 10px;
     background: linear-gradient(#111111, #111111, #000000);
     border: solid 3px #00ffee;
   }
