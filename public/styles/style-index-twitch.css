@@ -115,9 +115,10 @@
 
   #btn_seePartners  {
     position: relative;
-    background-color: #1d1d1d;
+    background-color: #1d1d1d86;
     color: white;
     font: bold 19pt Segoe UI;
+    border-radius: 10px;
     border: solid 1.5px #707070;
     box-shadow: 6px 8px 10px #00ffee8c;
     width: 300px;
@@ -132,7 +133,7 @@
   #btn_seePartners:hover {
     cursor: pointer;
     color: rgb(230, 230, 230);
-    background-color: #181818;
+    background-color: #18181848;
     transition: ease 0.5s;
     border: solid 2px #ffffff;
     box-shadow: 4px 6px 8px #00ffee;
@@ -158,11 +159,11 @@
   }
   
   section#about {
-    background: url('https://cdn.discordapp.com/attachments/714246003842088962/806681299749568525/Sobre.png') no-repeat center center/cover;;
+    background: url('https://www.kauavitorio.com/host-itens/Img-about-twitch.png') no-repeat center center/cover;;
   }
   
   section#partners {
-    background: url('https://cdn.discordapp.com/attachments/714246003842088962/806689225118187550/Hand_Partnes.png') no-repeat center center/cover;;
+    background: url('https://www.kauavitorio.com/host-itens/Hand_Partnes.png') no-repeat center center/cover;;
   }
   
   section#design {
