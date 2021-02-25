@@ -51,6 +51,7 @@ function initCookie(){
 
 function change_to_en(){
     document.getElementById("txt_change_pt").style.display = "block"
+    document.getElementById("txt_change_pt").style.marginLeft = "-70%";
     document.getElementById("txt_change_en").style.display = "none"
     document.getElementById("txt_home").innerHTML = "Home"
     document.getElementById("txt_about").innerHTML = "About"
