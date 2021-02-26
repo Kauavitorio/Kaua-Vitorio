@@ -23,10 +23,11 @@
 
     <!--Main CSS-->
     <link rel="stylesheet" href="styles/style-contato.css">
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
+    
+    <!-- ============ Cookie Alert Style ============-->
+    <link rel="stylesheet" href="./CookieAlert/cookiealert.css">
+    
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 </head>
@@ -102,12 +103,27 @@
         </div>
       </div>
 
+      <!--Start Cookie ALert-->
+    <div class="cookie-container">
+      <p class="desc_cookie">
+          We use cookies in this website to give you the best experience on our
+          site. To find out more, read our
+        <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
+      </p>
+      <button class="cookie-btn">
+          I accept
+      </button>
+    </div>
+    <!--End Cookie ALert-->
+
 <!-- ============ Host Scripts ============ -->
 <script src="/__/firebase/8.2.4/firebase-app.js"></script>
 <script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
 <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
 <!-- ============= Main Script ============= -->
 <script src="scripts/script-contato.js"></script>
+<!-- ============ Cookie Alert Script ============-->
+<script src="./CookieAlert/cookiealert.js"></script>
     </body>
 </html>
 

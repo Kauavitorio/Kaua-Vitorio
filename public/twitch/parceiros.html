@@ -5,7 +5,13 @@
     <title>Kaua Vitorio - Parceiros</title>
 	<link rel="sortcut icon" href="imgs/icon_smile_closedeye.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	
+	<!--Main CSS-->
 	<link href="styles/style-parceiros.css" rel="stylesheet">
+
+    <!-- ============ Cookie Alert Style ============-->
+    <link rel="stylesheet" href="../CookieAlert/cookiealert.css">
+
 </head>
 <body onload="initCookie()">
 	<div class="box-area">
@@ -59,6 +65,19 @@
             </div>
 		</div>
     </div>
+
+	<!--Start Cookie ALert-->
+    <div class="cookie-container">
+		<p class="desc_cookie">
+			We use cookies in this website to give you the best experience on our
+			site. To find out more, read our
+		  <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
+		</p>
+		<button class="cookie-btn">
+			I accept
+		</button>
+	  </div>
+	  <!--End Cookie ALert-->
     
 <!-- ============ Host Scripts ============ -->
 <script src="/__/firebase/8.2.4/firebase-app.js"></script>
@@ -66,6 +85,8 @@
 <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
 <!-- ============= Main Script ============= -->
 <script src="scrips/script-parceiros.js"></script>
+<!-- ============ Cookie Alert Script ============-->
+<script src="../CookieAlert/cookiealert.js"></script>
 
 </body>
 </html>
