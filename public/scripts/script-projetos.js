@@ -54,4 +54,6 @@ function change_to_ptbr(){
     document.getElementById("txt_view_project_system_mobile").innerHTML = "Visualizar Projeto ->"
     document.getElementById("txt_desc_coffee_project").innerHTML = "Esse projeto está em desenvolvimento, ele está sendo desenvolvido no Android Studio com a linguagem Java. Seu intuito é minha aprendizagem e de meus companheiros de estudo."
     document.getElementById("txt_knowmore_project_coffee").innerHTML = "Saiba Mais..."
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }

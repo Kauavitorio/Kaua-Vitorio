@@ -159,4 +159,6 @@ function change_to_ptbr(){
     txt_apos_subdesc.innerHTML = "Atualmente estamos(Eu, Matheus e Yuri) trabalhando em um projeto chamado Coffee For Code, onde o intuito é nosso aprendizado e o aperfeiçoamento na programação."
     txt_names.style.visibility ="visible"
     cfc.style.visibility ="visible";
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }

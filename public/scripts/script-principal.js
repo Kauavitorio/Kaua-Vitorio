@@ -187,6 +187,8 @@ function change_to_ptbr(){
     txt_click_youtube.innerHTML = "*Clique em ”Youtube” para ser redirecionado ao meu canal.",
     btn_projetos2_mysocialmedias.value = "MINHAS REDES SOCIAIS"
     btn_projetos2_mysocialmedias.style.fontSize = "14pt"
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }
 
 function fechaMenu()

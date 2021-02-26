@@ -64,4 +64,6 @@ function change_to_ptbr(){
     document.getElementById("text_desciption_project").innerHTML = "Esse é um projeto que estou desenvolvendo para meu aprendizado e treinar oque estou apreendendo meu meu curso, esse projeto esta na versão 1.0, data de inicio 17/02/21."
     document.getElementById("btn_download").value = "Baixar aqui"
     document.getElementById("txt_desc_download").innerHTML = "Se você tem interesse no meu projeto, pode baixar o aplicativo agora mesmo clicando neste botão. Divirta-se<br/>Tamanho do aplicativo: 14 MB<br/>Precisa de rede para usar o aplicativo? Sim"
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }

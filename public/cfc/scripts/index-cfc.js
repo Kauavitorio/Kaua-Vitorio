@@ -70,6 +70,8 @@ function change_to_ptbr(){
     document.getElementById("txt_projects").innerHTML = "Projetos"
     document.getElementById("txt_slogan_cfc").innerHTML = "O Café para<br>começar seu dia!"
     document.getElementById("know_more").innerHTML = "Saiba mais"
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }
 
 function goToHome(){

@@ -80,6 +80,8 @@ function change_to_ptbr(){
     document.getElementById("btn_seePartners").value = "Ver Parceiros"
     document.getElementById("txt_title_design").innerHTML = "Design"
     document.getElementById("txt_desc_design").innerHTML = "Todos os painéis, banner e overlay do meu canal foram feitos por mim mesmo, tive a ideia de fazer algo original, então resolvi fazer meus próprios designs expirados no do Alanzoka. A miniatura da minha cabeça foi desenvolvida pelo Gabriel, um grande designer que estarei disponibilizando abaixo, clique no botão abaixo para saber mais sobre seu trabalho."
+    document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
+    document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
 }
 
   /** =======================================================
