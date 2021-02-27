@@ -53,6 +53,7 @@ function change_to_en(){
   document.getElementById("txt_input_phone") = "Phone"
   document.getElementById("txt_input_mensage").innerHTML = "Mensage*"
   document.getElementById("txt_btn_send").value = "Send"
+  document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -67,6 +68,7 @@ function change_to_ptbr(){
   document.getElementById("txt_btn_send").value = "Enviar"
   document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
   document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+  document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }
 
 

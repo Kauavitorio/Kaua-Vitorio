@@ -161,6 +161,7 @@ function change_to_en(){
     txt_click_youtube.innerHTML = "*Clique em ”Youtube” para ser redirecionado ao meu canal.",
     btn_projetos2_mysocialmedias.value = "MY SOCIAL MEDIAS"
     btn_projetos2_mysocialmedias.style.fontSize = "20px"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -189,6 +190,7 @@ function change_to_ptbr(){
     btn_projetos2_mysocialmedias.style.fontSize = "14pt"
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }
 
 function fechaMenu()

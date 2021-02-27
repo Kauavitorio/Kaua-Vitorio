@@ -11,3 +11,7 @@ setTimeout(() => {
     cookieContainer.classList.add("active");
   }
 }, 2000);
+
+function Gotowhyineedtoaccept(){
+  window.location.href = "https://www.kauavitorio.com/CookieAlert/whyineedtoaccept";
+}

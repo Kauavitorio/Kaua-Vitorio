@@ -141,6 +141,7 @@ function change_to_en(){
     txt_apos_subdesc.innerHTML = "We are currently(I, Matheus and Yuri) working on a project called Coffee For Code, where the purpose is our learning and the improvement in programming."
     txt_names.style.visibility ="visible"
     cfc.style.visibility ="visible";
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -161,4 +162,5 @@ function change_to_ptbr(){
     cfc.style.visibility ="visible";
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }

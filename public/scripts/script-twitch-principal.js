@@ -63,6 +63,7 @@ function change_to_en(){
     document.getElementById("btn_seePartners").value = "See Partners"
     document.getElementById("txt_title_design").innerHTML = "Design"
     document.getElementById("txt_desc_design").innerHTML = "All the panels, banner and overlay of my channel were made by myself, I had the idea of doing something original, so I decided to make my own designs expired on Alanzoka's. The miniature of my head was developed by Gabriel, a great designer that I will be making available below, click on the button below to learn more about his work."
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -82,6 +83,7 @@ function change_to_ptbr(){
     document.getElementById("txt_desc_design").innerHTML = "Todos os painéis, banner e overlay do meu canal foram feitos por mim mesmo, tive a ideia de fazer algo original, então resolvi fazer meus próprios designs expirados no do Alanzoka. A miniatura da minha cabeça foi desenvolvida pelo Gabriel, um grande designer que estarei disponibilizando abaixo, clique no botão abaixo para saber mais sobre seu trabalho."
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }
 
   /** =======================================================

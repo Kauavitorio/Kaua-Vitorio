@@ -59,6 +59,7 @@ function change_to_en(){
     document.getElementById("txt_projects").innerHTML = "Projects"
     document.getElementById("txt_slogan_cfc").innerHTML = "Coffee to start<br>your day!"
     document.getElementById("know_more").innerHTML = "Know more"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -72,6 +73,7 @@ function change_to_ptbr(){
     document.getElementById("know_more").innerHTML = "Saiba mais"
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }
 
 function goToHome(){

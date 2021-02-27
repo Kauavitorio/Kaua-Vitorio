@@ -44,6 +44,7 @@ function initCookie(){
 }// -------------------- End Cookie Create   --------------------
 
 function change_to_en(){
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -56,4 +57,5 @@ function change_to_ptbr(){
     document.getElementById("txt_knowmore_project_coffee").innerHTML = "Saiba Mais..."
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }

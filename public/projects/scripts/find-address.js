@@ -53,6 +53,7 @@ function change_to_en(){
     document.getElementById("text_desciption_project").innerHTML = "This is a project that I am developing for my learning and training what I am learning my course, this project is in version 1.0, start date 02/17/21."
     document.getElementById("btn_download").value = "Download here"
     document.getElementById("txt_desc_download").innerHTML = "If you have interest for my project, you can download app right now just clicking this button.Have a fun<br/>App size: 14 mb<br/>Need network to use app? Yes"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
 }
 
 function change_to_ptbr(){
@@ -66,4 +67,5 @@ function change_to_ptbr(){
     document.getElementById("txt_desc_download").innerHTML = "Se você tem interesse no meu projeto, pode baixar o aplicativo agora mesmo clicando neste botão. Divirta-se<br/>Tamanho do aplicativo: 14 MB<br/>Precisa de rede para usar o aplicativo? Sim"
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
+    document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
 }
