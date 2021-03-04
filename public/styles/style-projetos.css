@@ -218,12 +218,12 @@ p {
   }
   .btn_face i, .btn_insta i, .btn_link i{
 	background: transparent;
-    line-height: 4vw;
+    line-height: 3vw;
     font-size: 1.8vw;
     transition: 0.2s linear;
   }
   .btn_face:hover i, .btn_insta:hover i, .btn_link:hover i{
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: #f1f1f1;
   }
   footer p{
@@ -280,22 +280,21 @@ p {
 		height: 100%;
 	}
 	/*Footer*/
-.btn_face, .btn_insta, .btn_link{
-    width: 7vw;
-    height: 7vw;
-    margin-left: 19vw;
-  }
-  .btn_face i, .btn_insta i, .btn_link i{
-	background: transparent;
-    line-height: 7vw;
-    font-size: 5.1vw;
-    transition: 0.2s linear;
-  }
-
-  footer p{
-    font-size:  32px;
-  }
+	.btn_face, .btn_insta, .btn_link{
+		width: 5vw;
+		height: 5vw;
+		margin-left: 20vw;
+	}
+	.btn_face i, .btn_insta i, .btn_link i{
+		background: transparent;
+		line-height: 5vw;
+		font-size: 4.1vw;
+		transition: 0.2s linear;
+	}
+	
+	footer p{
+		font-size:  20px;
+	}
 
     /* End Project */
 }
- 
