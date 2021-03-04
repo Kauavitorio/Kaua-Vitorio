@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://www.kauavitorio.com/">
     <meta property="og:title" content="System Strength - API">
     <meta property="og:site_name" content="System Strength">
-    <meta property="og:description" content="API for System Strength">
+    <meta property="og:description" content="Welcome to version 1.2 of System Strength API.">
     <meta property="og:image" content="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" >
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="800px">
@@ -19,7 +19,7 @@
     <!--Icon-->
     <link rel="sortcut icon" href="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" type="image/x-icon">
 
-    <!-- Main CSS -->
+    <!-- ============ Main CSS ============ -->
     <link rel="stylesheet" href="https://www.kauavitorio.com/systemstrength/api/styles/systemAPI.css">
 
     <!-- ============ Loading Animation Script ============-->
@@ -27,36 +27,41 @@
 </head>
 <body>
     <div class="container">
+        <!-- Start NavBar -->
         <div class="navbar">
             <img onclick="AlertUnderDevelopment()" src="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" class="logo">
             <nav>
                 <ul>
-                    <li> <a href="https://www.kauavitorio.com">HOME</a> </li>
-                    <li> <a onclick="AlertUnderDevelopment()" >STATUS</a> </li>
-                    <li> <a onclick="AlertUnderDevelopment()" >ABOUT</a> </li>
+                    <li> <a id="BtnHome" href="https://www.kauavitorio.com">HOME</a> </li>
+                    <li> <a id="BtnStatus" onclick="AlertUnderDevelopment()" >STATUS</a> </li>
+                    <li> <a id="BtnSupport" onclick="AlertUnderDevelopment()" >SUPPORT</a> </li>
+                    <li> <a id="BtnTranslate" onclick="Translate()" >PORTUGUES</a> </li>
                 </ul>
             </nav>
             <img id="btnMenuLateral" src="https://www.kauavitorio.com/systemstrength/api/images/menu.png" onclick="OpenLateralMenu()" class="menu-icon">
-        </div>
+        </div><!-- End NavBar -->
 
-        <!-- Start New menu-->
+        <!-- Start Leteral menu-->
         <div id="menulateral" class="menulateral" style="display: none;">
             <ul class="ulMenuLateral">
                 <li onclick="CloseLateralMenu()" class="CloseMenu"></li>
                 <li class="HomeMenu"></li>
                 <li class="StatusMenu"></li>
                 <li class="UseAPIMenu"></li>
+                <li id="BtnTranslateMenu" onclick="Translate()" class="TranslateMenu"></li>
             </ul>
         </div>
-        <!-- End New menu-->
+        <!-- End Leteral menu-->
 
         <div class="row">
             <div class="col">
                 <h1 class="line AnimeText">System Strength API</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Distinctio sunt sequi quam necessitatibus officia possimus atque nihil 
-                    cupiditate dolores repellendus accusamus, rerum soluta fuga, architecto
-                    molestiae nostrum quos, eveniet modi!</p>
+                <p id="TxtIntroductionAPI">Welcome to version 1.2 of System Strength API. On below button
+                    you will find more information about api and how to use this api,
+                    you will see methods, paramiter and url. If you need help or support, please
+                    head over to our <a class="apisupporttext" href="">API support forum</a>.
+
+                </p>
                     <button id="btnExplore" type="button">+</button>
             </div>
             <div class="col">
@@ -108,9 +113,11 @@
         // spinnerWrapper.style.display = 'none';
         spinnerWrapper.parentElement.removeChild(spinnerWrapper);
     });
-</script>
+    </script>
+
     <!-- ============= Main Script ============= -->
     <script src="https://www.kauavitorio.com/systemstrength/api/scripts/systemAPI.js"></script>
+
     <!-- ============ Hover Aniamtion on Explore Button ============-->
     <script> 
     var btnExplore = document.getElementById('btnExplore');
@@ -119,7 +126,7 @@
     function hover(){
         setTimeout(() => {
         btnExplore.innerText = "Explore"
-        },100);
+        },120);
     }
     function hoverOut(){
         btnExplore.innerText = "+"

@@ -69,6 +69,11 @@ nav ul li a{
   font-size: 60px;
 }
 
+.apisupporttext{
+  color: aqua;
+  text-decoration: none;
+}
+
 /*  Text Animation   */
 .AnimeText{
   animation: apperText 1000ms steps(60) 3 alternate;
@@ -251,6 +256,27 @@ h5{
 }
 
 .UseAPIMenu:hover{
+  background-size: 35px;
+
+}
+
+.TranslateMenu{
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url('https://cdn.countryflags.com/thumbs/brazil/flag-3d-round-250.png');
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 20px;  
+}
+
+.TranslateMenu:hover{
   background-size: 35px;
 
 }
