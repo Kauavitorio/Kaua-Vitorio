@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:url" content="https://www.kauavitorio.com/">
+    <meta property="og:title" content="System Strength - API">
+    <meta property="og:site_name" content="System Strength">
+    <meta property="og:description" content="API for System Strength">
+    <meta property="og:image" content="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" >
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800px">
+    <meta property="og:image:height" content="700px">
+    <meta property="og:type" content="website">
+    <title>System Strength - API</title>
+
+    <!--Icon-->
+    <link rel="sortcut icon" href="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" type="image/x-icon">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://www.kauavitorio.com/systemstrength/api/styles/systemAPI.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img onclick="AlertUnderDevelopment()" src="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" class="logo">
+            <nav>
+                <ul>
+                    <li> <a href="https://www.kauavitorio.com">HOME</a> </li>
+                    <li> <a onclick="AlertUnderDevelopment()" >STATUS</a> </li>
+                    <li> <a onclick="AlertUnderDevelopment()" >ABOUT</a> </li>
+                </ul>
+            </nav>
+            <img id="btnMenuLateral" src="https://www.kauavitorio.com/systemstrength/api/images/menu.png" onclick="OpenLateralMenu()" class="menu-icon">
+        </div>
+
+        <!-- Start New menu-->
+        <div id="menulateral" class="menulateral" style="display: none;">
+            <ul class="ulMenuLateral">
+                <li onclick="CloseLateralMenu()" class="CloseMenu"></li>
+                <li class="HomeMenu"></li>
+                <li class="StatusMenu"></li>
+                <li class="UseAPIMenu"></li>
+            </ul>
+        </div>
+        <!-- End New menu-->
+
+        <div class="row">
+            <div class="col">
+                <h1 class="line AnimeText">System Strength API</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Distinctio sunt sequi quam necessitatibus officia possimus atque nihil 
+                    cupiditate dolores repellendus accusamus, rerum soluta fuga, architecto
+                    molestiae nostrum quos, eveniet modi!</p>
+                    <button id="btnExplore" type="button">+</button>
+            </div>
+            <div class="col">
+                <div class="card cardget">
+                    <h5>Rest Get</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    </p>
+                </div>
+
+                <div class="card cardpost">
+                    <h5>Rest Post</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    </p>
+                </div>
+
+                <div class="card cardpatch">
+                    <h5>Rest Pach</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    </p>
+                </div>
+
+                <div class="card carddelete">
+                    <h5>Rest Delete</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ Host Scripts ============ -->
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+    <!-- ============= Main Script ============= -->
+    <script src="https://www.kauavitorio.com/systemstrength/api/scripts/systemAPI.js"></script>
+    <script> 
+    var btnExplore = document.getElementById('btnExplore');
+    btnExplore.addEventListener("mouseenter", hover)
+    btnExplore.addEventListener("mouseout", hoverOut)
+    function hover(){
+        setTimeout(() => {
+        btnExplore.innerText = "Explore"
+        },100);
+    }
+    function hoverOut(){
+        btnExplore.innerText = "+"
+    }
+    </script>
+</body>
+</html>
