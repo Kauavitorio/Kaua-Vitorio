@@ -8,7 +8,7 @@
 .container{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://media3.giphy.com/media/QKWb49EBsGpDXdwt41/source.gif'); 
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://www.kauavitorio.com/systemstrength/api/images/background.gif'); 
   background-position: center;
   background-size: cover;
   padding-left: 4%;
@@ -26,7 +26,7 @@
 }
 
 .logo{
-  width: 95px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -124,19 +124,19 @@ button:hover{
 }
 
 .cardget{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.dribbble.com/users/662779/screenshots/5122311/server.gif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817036181157576744/server.gif');
 }
 
 .cardpost{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://blog.advids.co/wp-content/uploads//2017/06/server1.gif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817034613456109578/post.gif');
 }
 
 .cardpatch{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.dribbble.com/users/1523313/screenshots/13644062/media/26f54111a547f0310118dc9004f99d8b.gif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://www.kauavitorio.com/systemstrength/api/images/patch.gif');
 }
 
 .carddelete{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.dribbble.com/users/1206528/screenshots/6242140/comp_3.gif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817035357165846558/delete.gif');
 }
 
 .card:hover{
@@ -183,14 +183,14 @@ h5{
   right: 0;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url('https://cdn.discordapp.com/attachments/756546249901211749/816842052930764800/menu-close.png');
+  background-image: url('https://www.kauavitorio.com/systemstrength/api/images/icone-close.png');
   background-position: center;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 .CloseMenu:hover{
-  background-image: url('https://cdn.discordapp.com/attachments/756546249901211749/816842429092855839/menu-close-red.png');
+  background-image: url('https://www.kauavitorio.com/systemstrength/api/images/menu-close-red.png');
 }
 
 .HomeMenu{
@@ -200,7 +200,7 @@ h5{
   right: 0;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url('https://cdn.discordapp.com/attachments/756546249901211749/816843145387835392/menu-home.png');
+  background-image: url('https://www.kauavitorio.com/systemstrength/api/images/menu-home.png');
   background-position: center;
   background-size: 35px;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@ h5{
   right: 0;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url('https://cdn.discordapp.com/attachments/756546249901211749/816851161519882332/menu-status.png');
+  background-image: url('https://www.kauavitorio.com/systemstrength/api/images/menu-status.png');
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -241,7 +241,7 @@ h5{
   right: 0;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url('https://img.icons8.com/ios/50/000000/cloud-network.png');
+  background-image: url('https://www.kauavitorio.com/systemstrength/api/images/cloud-network.png');
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -254,9 +254,6 @@ h5{
   background-size: 35px;
 
 }
-
-
-
 
 
 /*------------- Start Responsive -------------*/

@@ -21,6 +21,9 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="https://www.kauavitorio.com/systemstrength/api/styles/systemAPI.css">
+
+    <!-- ============ Loading Animation Script ============-->
+    <link rel="stylesheet" href="https://www.kauavitorio.com/LoadingAnimation/style.css">
 </head>
 <body>
     <div class="container">
@@ -88,12 +91,27 @@
         </div>
     </div>
 
+    <!-- Start Loading Animation-->
+    <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div><!-- End Loading Animation-->
+
     <!-- ============ Host Scripts ============ -->
     <script src="/__/firebase/8.2.9/firebase-app.js"></script>
     <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
     <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+    <!-- ============ Loading Aniamtion Script ============ -->
+    <script>
+    let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+    window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    });
+</script>
     <!-- ============= Main Script ============= -->
     <script src="https://www.kauavitorio.com/systemstrength/api/scripts/systemAPI.js"></script>
+    <!-- ============ Hover Aniamtion on Explore Button ============-->
     <script> 
     var btnExplore = document.getElementById('btnExplore');
     btnExplore.addEventListener("mouseenter", hover)
