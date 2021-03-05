@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:url" content="https://www.kauavitorio.com/systemstrength/api/Status">
+    <meta property="og:title" content="System Strength - Status">
+    <meta property="og:site_name" content="System Strength">
+    <meta property="og:description" content="Server Status of System Strength API.">
+    <meta property="og:image" content="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" >
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800px">
+    <meta property="og:image:height" content="700px">
+    <meta property="og:type" content="website">
+    <title>System Strength - Status</title>
+
+    <!--Icon-->
+    <link rel="sortcut icon" href="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" type="image/x-icon">
+
+    <!-- ============ Main CSS ============ -->
+    <link rel="stylesheet" href="./status/styles/index.css">
+</head>
+<body onload="DoRequest()">
+
+    <div class="container">
+        <!-- Start NavBar -->
+        <div class="navbar">
+            <img onclick="AlertUnderDevelopment()" src="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" class="logo">
+            <nav>
+                <ul>
+                    <li> <a id="BtnHome" href="https://www.kauavitorio.com/">HOME</a> </li>
+                    <li> <a id="BtnSupport" >SUPPORT</a> </li>
+                    <li> <a id="BtnTranslate" onclick="Translate()" >PORTUGUES</a> </li>
+                </ul>
+            </nav>
+            <img id="btnMenuLateral" src="https://www.kauavitorio.com/systemstrength/api/images/menu.png" onclick="OpenLateralMenu()" class="menu-icon">
+        </div><!-- End NavBar -->
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <!-- Start Loading Animation-->
+                    <div class='spinner-wrapper'>
+                    <div class="spinner"></div>
+                    </div><!-- End Loading Animation-->
+
+                    <div id="BaseStatus">
+                        <div class="status-title">
+                            <div class="status-box-img">
+                                <img id="status-img-geral"  class="status-img" src="./status/images/check-mark.png">
+    
+                            </div>
+                            <div class="status-description">
+                                <span class="status-title-text">Services are operational.</span>
+    
+                            </div>
+                        </div>
+    
+                        <div id="BaseServices" class="statusServices">
+                            <div class="status-services-content">
+                                <div class="status-ball1">
+                                </div>
+                                <div class="status-description">
+                                    <span class="statusdesctext">User registration</span>
+        
+                                </div>
+                            </div>
+    
+                            <div class="status-services-content">
+                                <div class="status-ball2">
+                                </div>
+                                <div class="status-description">
+                                    <span class="statusdesctext">Receiving information</span>
+        
+                                </div>
+                            </div>
+    
+                            <div class="status-services-content">
+                                <div class="status-ball3">
+                                </div>
+                                <div class="status-description">
+                                    <span class="statusdesctext">Database</span>
+        
+                                </div>
+                            </div>
+    
+                            <div class="status-services-content">
+                                <div class="status-ball4">
+                                </div>
+                                <div class="status-description">
+                                    <span class="statusdesctext">Image Storage</span>
+        
+                                </div>
+                            </div>
+    
+                            <div class="status-services-content">
+                                <div class="status-ball5">
+                                </div>
+                                <div class="status-description">
+                                    <span class="statusdesctext">Encryption System</span>
+        
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card cardpost">
+                    <h5>Rest Post</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="./status/script/index.js"></script>
+</html>
