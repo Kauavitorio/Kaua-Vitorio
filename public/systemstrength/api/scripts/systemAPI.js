@@ -72,3 +72,13 @@ function Translate(){
         console.log('WebSite is translated in English')
     }
 }
+
+function GoToStatus(){
+    console.log('Going to status')
+    window.location.href = "https://www.kauavitorio.com/systemstrength/api/status";
+}
+
+function GoToHome(){
+    console.log('Going to home')
+    window.location.href = "https://www.kauavitorio.com";
+}

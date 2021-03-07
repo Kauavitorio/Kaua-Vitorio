@@ -20,7 +20,7 @@
     <link rel="sortcut icon" href="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" type="image/x-icon">
 
     <!-- ============ Main CSS ============ -->
-    <link rel="stylesheet" href="./api/styles/systemAPI.css">
+    <link rel="stylesheet" href="./styles/systemAPI.css">
 
     <!-- ============ Loading Animation Script ============-->
     <link rel="stylesheet" href="https://www.kauavitorio.com/LoadingAnimation/style.css">
@@ -33,7 +33,7 @@
             <nav>
                 <ul>
                     <li> <a id="BtnHome" href="https://www.kauavitorio.com">HOME</a> </li>
-                    <li> <a id="BtnStatus" href="./api/status/index.html" >STATUS</a> </li>
+                    <li> <a id="BtnStatus" href="https://www.kauavitorio.com/systemstrength/api/status/index.html" >STATUS</a> </li>
                     <li> <a id="BtnSupport" onclick="AlertUnderDevelopment()" >SUPPORT</a> </li>
                     <li> <a id="BtnTranslate" onclick="Translate()" >PORTUGUES</a> </li>
                 </ul>
@@ -45,10 +45,10 @@
         <div id="menulateral" class="menulateral" style="display: none;">
             <ul class="ulMenuLateral">
                 <li onclick="CloseLateralMenu()" class="CloseMenu"></li>
-                <li class="HomeMenu"></li>
-                <li class="StatusMenu"></li>
-                <li class="UseAPIMenu"></li>
-                <li id="BtnTranslateMenu" onclick="Translate()" class="TranslateMenu"></li>
+                <li onclick="GoToHome()" class="HomeMenu"></li>
+                <li onclick="GoToStatus()" class="StatusMenu"></li>
+                <li onclick="AlertUnderDevelopment()" class="UseAPIMenu"></li>
+                <li onclick="Translate()" id="BtnTranslateMenu" class="TranslateMenu"></li>
             </ul>
         </div>
         <!-- End Leteral menu-->
@@ -116,7 +116,7 @@
     </script>
 
     <!-- ============= Main Script ============= -->
-    <script src="./api/scripts/systemAPI.js"></script>
+    <script src="./scripts/systemAPI.js"></script>
 
     <!-- ============ Hover Aniamtion on Explore Button ============-->
     <script> 

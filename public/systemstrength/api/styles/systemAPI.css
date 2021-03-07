@@ -52,6 +52,12 @@ nav ul li a{
   text-decoration: none;
   color: #fff;
   font-size: 13px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav ul li a:hover{
+  color: rgba(0, 255, 255, 0.842);
 }
 
 .row{
