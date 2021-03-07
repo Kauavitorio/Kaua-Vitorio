@@ -52,6 +52,12 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 13px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+  color: aquamarine;
 }
 
 .row{
@@ -107,34 +113,28 @@ nav ul li a{
     transition: transform 0.2s;
   }
   
-  .cardget{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817036181157576744/server.gif');
+  .card{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.dribbble.com/users/346181/screenshots/2787882/my-diamo-loop-2.gif');
   }
   
   .cardpost{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817034613456109578/post.gif');
-  }
-  
-  .cardpatch{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://www.kauavitorio.com/systemstrength/api/images/patch.gif');
-  }
-  
-  .carddelete{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://cdn.discordapp.com/attachments/756546249901211749/817035357165846558/delete.gif');
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url('https://i.pinimg.com/originals/d1/35/c8/d135c84953d0961883ab30fc8051a7f4.gif');
   }
   
   .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   
   h5{
     color: rgb(255, 196, 148);
-    text-shadow: 0 0 5px #999;
+    text-shadow: 0 0 6px #999;
   }
   
   .card p {
     text-shadow: 0 0 15px #000;
-    font-size: 10px;
+    font-size: 15px;
+    line-height: 130%;
     padding-top: 10px;
   }
 
@@ -181,7 +181,7 @@ nav ul li a{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgb(9, 255, 0);
+    background-color: rgb(255, 196, 0);
   }
   
   .status-services-content{
@@ -196,65 +196,16 @@ nav ul li a{
     font: 100 14px RocknRoll One;
   }
 
-  /*------- Loading Animation -------*/
-.spinner-wrapper{
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.spinner {
-  position: relative;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-}
-
-.spinner::before,
-.spinner:after{
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-}
-
-.spinner:before {
-  width: 100%;
-  height: 100%;
-  background-image:linear-gradient(90deg, #5BD9F0 0%,#1944a0 100% );
-  animation: spin .4s infinite linear;
-}
-.spinner:after {
-  width: 91%;
-  height: 91%;
-  background-color: #000000ab;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes spin {
-  to {
-      transform: rotate(360deg);
-  }
-}
-  
-
-
 /*------------- Start Responsive -------------*/
 @media only screen and (max-width: 1040px){
     .card{
-      width: 180px;
+      width: 60%;
     }
 }
   
   @media only screen and (max-width: 938px){
     .card{
-      width: 170px;
+      width: 30%;
     }
   }
   
@@ -294,9 +245,9 @@ nav ul li a{
   
     .card{
       text-align: start;
-      width: 350px;
+      width: 100%;
       height: 270px;
-      margin: 18px 12px;
+      margin: 18px 2px;
     }
   
     nav ul li{
@@ -330,6 +281,9 @@ nav ul li a{
   }
   
   @media only screen and (max-width: 360px){
+    .container{
+      height: 99%;
+    }
     .card{
         height: 240px;
         margin: 18px 9px;
@@ -344,8 +298,11 @@ nav ul li a{
   }
   
   @media only screen and (max-width: 320px){
+    .container{
+      height: 100%;
+    }
     .card{
-      width: 150px;
-      margin: 18px 9px;
+      width: 100%;
+      margin: 18px 1px;
     }
 }

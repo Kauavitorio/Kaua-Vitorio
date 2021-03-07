@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="en-us">
-    <meta property="og:url" content="https://www.kauavitorio.com/systemstrength/api/Status">
+    <meta property="og:url" content="https://www.kauavitorio.com/systemstrength/api/status">
     <meta property="og:title" content="System Strength - Status">
     <meta property="og:site_name" content="System Strength">
     <meta property="og:description" content="Server Status of System Strength API.">
@@ -20,19 +20,22 @@
     <link rel="sortcut icon" href="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" type="image/x-icon">
 
     <!-- ============ Main CSS ============ -->
-    <link rel="stylesheet" href="./status/styles/index.css">
+    <!--https://www.kauavitorio.com/systemstrength/api/status/-->
+    <link rel="stylesheet" href="https://www.kauavitorio.com/systemstrength/api/status/styles/index.css">
+
+    <!-- ============ Loading Animation Script ============-->
+    <!--<link rel="stylesheet" href="https://www.kauavitorio.com/LoadingAnimation/style.css">-->
 </head>
 <body onload="DoRequest()">
-
     <div class="container">
         <!-- Start NavBar -->
         <div class="navbar">
             <img onclick="AlertUnderDevelopment()" src="https://www.kauavitorio.com/systemstrength/images/S_no_bg.png" class="logo">
             <nav>
                 <ul>
-                    <li> <a id="BtnHome" href="https://www.kauavitorio.com/">HOME</a> </li>
-                    <li> <a id="BtnSupport" >SUPPORT</a> </li>
-                    <li> <a id="BtnTranslate" onclick="Translate()" >PORTUGUES</a> </li>
+                    <li> <a id="BtnHome" href="https://www.kauavitorio.com/systemstrength/api">HOME</a> </li>
+                    <li> <a  onclick="AlertUnderDevelopment()" id="BtnSupport" >SUPPORT</a> </li>
+                    <!--<li> <a id="BtnTranslate" onclick="Translate()" >PORTUGUES</a> </li>-->
                 </ul>
             </nav>
             <img id="btnMenuLateral" src="https://www.kauavitorio.com/systemstrength/api/images/menu.png" onclick="OpenLateralMenu()" class="menu-icon">
@@ -41,19 +44,14 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <!-- Start Loading Animation-->
-                    <div class='spinner-wrapper'>
-                    <div class="spinner"></div>
-                    </div><!-- End Loading Animation-->
-
                     <div id="BaseStatus">
                         <div class="status-title">
                             <div class="status-box-img">
-                                <img id="status-img-geral"  class="status-img" src="./status/images/check-mark.png">
+                                <img id="status-img-geral"  class="status-img" src="https://www.kauavitorio.com/systemstrength/api/status/images/check-mark.png">
     
                             </div>
                             <div class="status-description">
-                                <span class="status-title-text">Services are operational.</span>
+                                <span class="status-title-text">Loading...</span>
     
                             </div>
                         </div>
@@ -109,16 +107,21 @@
                 </div>
 
                 <div class="card cardpost">
-                    <h5>Rest Post</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Cum atque voluptatum aspernatur ducimus hic recusandae error accusantium corrupti 
+                    <h5>General Information</h5>
+                    <p>This page contains performance information for the System Strength API Services.
+                        Unless otherwise stated, this status information applies to services
+                        for consumers and services for organizations using the System Strength API.
                     </p>
                 </div>
             </div>
         </div>
-
+        <!-- Start Loading Animation-->
+       <!-- <div class='spinner-wrapper'>
+        <div class="spinner"></div> -->
+        </div><!-- End Loading Animation-->
     </div>
     
 </body>
-<script src="./status/script/index.js"></script>
+<!--https://www.kauavitorio.com/systemstrength/api/status/-->
+<script src="https://www.kauavitorio.com/systemstrength/api/status/script/index.js"></script>
 </html>
