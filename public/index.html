@@ -1,4 +1,4 @@
-<!--Copyright (c) 2020 Kauã Vitorio-->
+<!--Copyright (c) 2021 Kauã Vitorio-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,96 +14,53 @@
     <meta property="og:image:width" content="800px">
     <meta property="og:image:height" content="700px">
     <meta property="og:type" content="website">
-
-    <title>Kauã Vitório</title>
+    <title>Kaua Vitorio</title>
 
     <!--Icon-->
     <link rel="sortcut icon" href="imgs/logo_feliz_principal.png" type="image/x-icon">
 
-    <!--Main CSS-->
-    <link rel="stylesheet" href="styles/style-principal.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./styles/index-style.css">
 
     <!-- ============ Cookie Alert Style ============-->
     <link rel="stylesheet" href="./CookieAlert/cookiealert.css">
 
-     <!-- =======================================================
-  * WebSite Name: Kaua Vitorio - Protifolio v1.0.0
-  * WebSite URL: https://kauavitorio.com/
-  * Author: https://github.com/kauavitorio
-  * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
-  ======================================================== -->
+    <!-- =======================================================
+ * WebSite Name: Kaua Vitorio - Protifolio v2.0.0
+ * WebSite URL: https://kauavitorio.com/
+ * Author: https://github.com/kauavitorio
+ * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+    ======================================================== -->
 </head>
 <body onload="initCookie()">
-    <header id="menu"><!--Start Header-->
-        <a href="#parte1" class="logo"><h1>Kauã Vitório</h1></a>
-        <span class="openmenu" onClick="abreMenu()">&#9776;</span>
-        <ul id="menu2">
-            <li><a id="txt_titulo_home"  class="pt1" href="#parte1">Home</a></li>
-            <li><a id="txt_titulo_sobre" class="pt2"  href="#parte2">About</a></li>
-            <li><a id="txt_titulo_projetos" class="pt3"  href="#parte3">Projects</a></li>
-            <li><a id="txt_titulo_contato" href="contato.html">Contact</a></li>
-            <li><a id="btn_mudar_idioma_ingles" class="pt4" onclick="change_to_en()">Ingles</a></li>
-            <li><a id="btn_mudar_idioma_ptbr" class="pt5" onclick="change_to_ptbr()">Portugues</a></li>
-            <li><a href="" id="close" class="closebtn" onClick="fechaMenu()">&times;</a></li>
-        </ul>
-    </header> <!--Finish Header-->
-
-    <!-- ============ Image animation on Section 1 ============ -->
-    <div class="set">
-        <div><img src="imgs/img1.png" alt=""></div>
-        <div><img src="imgs/img2.png" alt=""></div>
-        <div><img src="imgs/img3.png" alt=""  style="width: 200px;"></div>
-        <div><img src="imgs/img4.png" alt=""></div>
-        <div><img src="imgs/img1.png" alt=""></div>
-        <div><img src="imgs/img2.png" alt=""></div>
-        <div><img src="imgs/img3.png" alt="" style="width: 200px;"></div>
-        <div><img src="imgs/img4.png" alt=""></div>
-    </div> <!-- End Image animation on Section 1 -->
-
-    <section id="parte1">
-        <div class="banner">
-            <p class="linha_meunome typing-animation">KAUÃ VITÓRIO</p>
-            <h3>Software Developer</h3>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <div class="content">
+            <h2 id="title_kaua" >Kaua Vitorio</h2><br/>
+            <h3 id="title_softwaredev">Software Developer</h3>
+            <p id="title_dec">Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming. 
+                I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.</p>
+                <a id="BtnReadMore" href="#recent_projects">Read More</a>
         </div>
     </section>
-    
-    <section id="parte2">
-        <div class="sobre">
-            <p id="txt_mini_sobre_principal" >Hi! My name is Kauã Vitório da Silva Lima,
-                 I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. 
-                 Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming.
-                 I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.
-            </p>
-        </div>
-        <div class="btns">
-            <a href="https://github.com/Kauavitorio"><input type="button" value="ACCESS MY GITHUB" id="btn_github"/></a>
-            <a href="#parte3"><input type="button" value="MY PROJECTS" id="btn_projetos"/></a> 
-            <a id="btn_irpara_maissobrekaua" href="MaisSobreKaua.html"><input type="button" value="MORE ABOUT ME" id="btn_mais_sobre_mim"/></a> 
-        </div>
-    </section>
-    <section id="parte3">
-        <div class="base_projetos">
-            <h1 id="txt_titulo_projetos_recentes" >Recent Projects</h1>
-
-            <h2 id="txt_txt_projetos_recentes" >I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, 
-                I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.</h2>
-
-            <h3 id="txt_trabalho_conclusao" >Conclusion of Etec Module:</h3>
-            <h4 id="txt_click_em_projetos">Click on projec to see my projects</h4>
-
-            <iframe id="video_ultimo_projeto" width="650" height="275" src="https://www.youtube.com/embed/Ev8JU6nxcO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="btns2">
-            <a href="projetos.html"><input type="button" value="MORE PROJECTS" id="btn_projetos2"/></a> 
-            <a href="http://systemstrength.rf.gd/index1.html"><input type="button" value="SYSTEM STRENGTH" id="btn_projetos2_system"/></a> 
-            <a href="#partesocial"><input type="button" value="MY SOCIAL MEDIAS" id="btn_projetos2_mysocialmedias"/></a> 
+    <section id="recent_projects">
+        <div id="contentRecentProjects" class="content">
+            <img class="img_recent_projects" src="./imgs/systemstrengthlogosemfundo.png">
+            <h2 id="txtRecentProjects">Recent Projects</h2><br/>
+            <h3 id="txtMobileDeveloper">Mobile Developer</h3>
+            <p id="txtDescRecentProjects">I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, 
+                I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, HTML, CSS, JS and PHP.</p>
+                <a id="BtnVeiwProjects" href="">View Recent Projects</a>
+                <a id="BtnVeiwProjects" href="">System Strength</a>
+                <a id="BtnVeiwProjects" href="">Last Project</a>
         </div>
     </section>
     <section id="partesocial">
         <div class="cards">
             <div class="card card1">
-                <div class="container">
-                    <img src="imgs/twitch_semfundo.svg" alt="twitch">
+                <div class="containerCard">
+                    <img src="https://www.kauavitorio.com/imgs/twitch_semfundo.svg" alt="twitch">
                 </div>
                 <div class="details">
                     <a href="https://www.twitch.tv/kauavitoriodev"><h3>Twitch</h3></a>
@@ -112,8 +69,8 @@
                 </div>
             </div>
             <div class="card card2">
-                <div class="container">
-                    <img src="imgs/instagram_semfundo.png" alt="instagram">
+                <div class="containerCard">
+                    <img src="https://www.kauavitorio.com/imgs/instagram_semfundo.png" alt="instagram">
                 </div>
                 <div class="details">
                     <a href="https://www.instagram.com/ka_vitorio/"><h3>Instagram</h3></a>
@@ -122,8 +79,8 @@
                 </div>
             </div>
             <div class="card card3">
-                <div class="container">
-                    <img src="imgs/Youtube_semfundo.png" alt="youtube">
+                <div class="containerCard">
+                    <img src="https://www.kauavitorio.com/imgs/Youtube_semfundo.png" alt="youtube">
                 </div>
                 <div class="details">
                     <a href="https://www.youtube.com/c/KauaVitorio"><h3>Youtube</h3></a>
@@ -132,7 +89,23 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>`
+
+    <!--Start Cookie ALert-->
+    <div class="cookie-container">
+        <p class="desc_cookie">
+            We use cookies in this website to give you the best experience on our
+            site. To find out more, read our
+        <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
+        </p>
+        <button class="cookie-btn">
+            I accept
+        </button>
+        <button id="btn_whyineedtoaccept" onclick="Gotowhyineedtoaccept()" class="cookie-btn">
+            Why i need to accept?
+        </button>
+    </div><!--End Cookie ALert-->
+
     <footer>
         <hr>
         <a href="https://github.com/Kauavitorio" target="_blank" rel="noopener noreferrer" class="btn_face"><i class="fa fa-github"></i></a>
@@ -141,31 +114,27 @@
         <p>&copy; Kauã Vitorio</p>
     </footer>  
     
-    <!--Start Cookie ALert-->
-    <div class="cookie-container">
-        <p class="desc_cookie">
-            We use cookies in this website to give you the best experience on our
-            site. To find out more, read our
-          <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
-        </p>
-        <button class="cookie-btn">
-            I accept
-        </button>
-        <button id="btn_whyineedtoaccept" onclick="Gotowhyineedtoaccept()" class="cookie-btn">
-            Why i need to accept?
-        </button>
-      </div>
-      <!--End Cookie ALert-->
-
-<!-- ============ Host Scripts ============ -->
-<script src="/__/firebase/8.2.9/firebase-app.js"></script>
-<script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-<script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
-<!-- ============= Main Script ============= -->
-<script src="scripts/script-principal.js"></script>
-<!-- ============ Cookie Alert Script ============-->
-<script src="./CookieAlert/cookiealert.js"></script>
+    <script src="./scripts/scroll-out.js"></script>
+    <script type="text/javascript">
+    ScrollOut({
+        targets: 'img,h2,h3,p,a'
+    })
+    </script>
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
+    <!-- ============ Host Scripts ============ -->
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+    <!-- ============= Main Script ============= -->
+    <script src="./scripts/index-script.js"></script>
+    <!-- ============ Cookie Alert Script ============-->
+    <script src="./CookieAlert/cookiealert.js"></script>
 </body>
 </html>
-
-<!--Copyright (c) 2020 Kauã Vitorio-->
