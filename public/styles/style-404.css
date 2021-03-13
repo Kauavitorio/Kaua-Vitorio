@@ -1,0 +1,85 @@
+body, html{
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 800;
+  display: block;
+}
+
+body{
+  background: #000;
+  font-family: cursive;
+  margin: 0 auto; 
+}
+
+svg {
+    font: 10.5em 'Monoton';
+    width: 100vw;
+    height: 50vh;
+    margin-top: 1em;
+}
+
+.content{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font: 2em 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #2f8f7f;
+  opacity: .6;
+}
+
+a{
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 1em 'Roboto';
+   font-weight: 300;
+   border: 1px solid #00e4d193;
+   border-radius: 4px;
+   color: #0e739b;
+   margin: 20px 0;
+   padding: 8px 14px;
+   text-decoration: none;
+   opacity: .6;
+}
+
+.text {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 8% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 1%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text:nth-child(1){
+	stroke: #1c234d;
+	animation-delay: -1;
+}
+
+.text:nth-child(2){
+	stroke: #008d8d;
+	animation-delay: -2s;
+}
+
+.text:nth-child(3){
+	stroke: #2f8f7f;
+	animation-delay: -3s;
+}
+
+.text:nth-child(4){
+	stroke: #2f8f7f;
+	animation-delay: -4s;
+}
+
+.text:nth-child(5){
+	stroke: #da2717;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {
+    stroke-dashoffset: -35%;
+  }
+}
