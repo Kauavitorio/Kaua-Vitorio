@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+/****   Start NavBar *****/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav{
+    background: rgb(34, 34, 34);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+nav > ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul li{
+    list-style: none;
+    position: relative;
+}
+
+nav > ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10% -1%;
+    font-weight: 600;
+    padding: 20px;
+}
+
+nav > ul li a:hover{
+    background: rgb(49, 49, 49);
+}
+/****   End NavBar *****/
+
+/****   Start container ****/
+.container{
+    padding: 2% 300px;
+}
+
+.titleInformation{
+    padding-top: 10%;
+    display: flex;
+}
+
+
+.colApiUser > h1{
+    font-size: 40pt;
+    padding-bottom: 5px;
+}
+
+.colApiUser > h3{
+    padding-left: 3px;
+}
+
+.colApiUser > p{
+    font-size: 14pt;
+    padding-top: 8px;
+    padding-left: 3px;
+}
+/****   End container ****/
+
+main{
+    padding: 3% 300px;
+}
+
+main > h2{
+    font-size: 35pt;
+    color: rgb(58, 58, 58);
+}
+
+main > hr{
+    background-color: #222222;
+    height: 1px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+main > input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: text;
+    font-size: 13pt;
+    color: #161616;
+}

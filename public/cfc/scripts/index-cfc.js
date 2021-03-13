@@ -50,9 +50,6 @@ function initCookie(){
 }// -------------------- End Cookie Create   --------------------
 
 function change_to_en(){
-    document.getElementById("txt_change_pt").style.display = "block"
-    document.getElementById("txt_change_pt").style.marginLeft = "-70%";
-    document.getElementById("txt_change_en").style.display = "none"
     document.getElementById("txt_home").innerHTML = "Home"
     document.getElementById("txt_about").innerHTML = "About"
     document.getElementById("txt_download").innerHTML = "Download"
@@ -63,8 +60,6 @@ function change_to_en(){
 }
 
 function change_to_ptbr(){
-    document.getElementById("txt_change_pt").style.display = "none"
-    document.getElementById("txt_change_en").style.display = "block"
     document.getElementById("txt_home").innerHTML = "Inicio"
     document.getElementById("txt_about").innerHTML = "Sobre"
     document.getElementById("txt_download").innerHTML = "Baixar"

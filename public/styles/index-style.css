@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Zilla+Slab:wght@300&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: DotGothic16;
+font-family: 'Zilla Slab', serif;
     background: #000;
 }
 
@@ -64,6 +65,30 @@ body{
 }
 /******** End Scroll Bar **********/
 
+#BtnTranslate{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    margin-top: 1%;
+    margin-right: 2%;
+    border-radius: 50%;
+    z-index: 10000;
+    background-color: rgba(255, 255, 255, 0.651);
+    background-image: url('https://cdn.countryflags.com/thumbs/brazil/flag-3d-round-250.png');
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#BtnTranslate:hover{
+    background-size: 35px;
+  
+  }
+
+
 section{
     position: relative;
     width: 100%;
@@ -71,7 +96,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: rgb(8, 8, 8);
     color: #fff;
 }
 
@@ -168,7 +193,7 @@ section .content #txtDescRecentProjects{
     font-size: 1.2em;
     transition: 1s;
     opacity: 0;
-    z-index: 10;
+    z-index: 9999;
 }
 
 /*P*/
@@ -183,6 +208,7 @@ section .content #BtnReadMore,
 section .content #BtnVeiwProjects{
     position: relative;
     background: #fff;
+    border-radius: 10px;
     color: #262626;
     padding: 12px 30px;
     font-size: 16px;
@@ -192,7 +218,8 @@ section .content #BtnVeiwProjects{
     transition: 1s;
     transform: translateX(100px);
     opacity: 0;
-}
+    z-index: 1000;
+} 
 /*A*/
 section .content #BtnReadMore[data-scroll="in"],
 section .content #BtnVeiwProjects[data-scroll="in"]{
@@ -209,10 +236,20 @@ section .content #BtnVeiwProjects[data-scroll="in"]{
 
 .img_recent_projects{
     position: absolute;
-    width: 10px;
+    width: 1px;
     transform: translate(900px, 50px) rotate(300deg);
     transition: 2s;
     opacity: 0;
+    z-index: 0;
+}
+
+.img_recent_projects_cfc{
+    position: absolute;
+    width: 1px;
+    transform: translate(900px, 50px) rotate(300deg);
+    transition: 2s;
+    opacity: 0;
+    z-index: 0;
 }
 
 section .content .img_recent_projects[data-scroll="in"]{
@@ -223,11 +260,19 @@ section .content .img_recent_projects[data-scroll="in"]{
 }
 
 
+section .content .img_recent_projects_cfc[data-scroll="in"]{
+    transform: translate(600px, -160px) rotate(370deg);
+    width: 250px;
+    transition-delay: 1.3s;
+    opacity: 1;
+}
+
+
 /*Social Cards*/
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 100px;
     grid-gap: 30px;
   }
   .card{
@@ -240,7 +285,7 @@ section .content .img_recent_projects[data-scroll="in"]{
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
   }
   img{
-    width: 100%;
+    width: 99%;
     display: block;
     border-radius: 20px 20px 0 0;
   }
@@ -348,6 +393,12 @@ section .content .img_recent_projects[data-scroll="in"]{
         height: 110vh;
     }
 
+
+    #BtnTranslate{
+        margin-top: 3%;
+        margin-right: 5%;
+    }
+
 /*  Start H2*/
 section .content #txtRecentProjects{
     transform: scaleX(1);
@@ -445,11 +496,26 @@ section .content #BtnVeiwProjects[data-scroll="in"]{
     opacity: 1;
 }
 
-section .content .img_recent_projects[data-scroll="in"]{
+
+.img_recent_projects_cfc{
     width: 180px;
-    transform: translate(-10px, -150px) rotate(360deg);
+    transform: translate(150px, -150px) rotate(360deg);
     opacity: 1;
 }
+
+section .content .img_recent_projects[data-scroll="in"]{
+    width: 180px;
+    transform: translate(-10px, -160px) rotate(360deg);
+    opacity: 1;
+}
+
+
+section .content .img_recent_projects_cfc[data-scroll="in"]{
+    width: 180px;
+    transform: translate(140px, -160px) rotate(360deg);
+    opacity: 1;
+}
+
 /*A*/
 section .content #BtnVeiwProjects{
     margin-top: 5px;

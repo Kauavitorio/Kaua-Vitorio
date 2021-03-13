@@ -1,3 +1,5 @@
+    var ImageBR = "https://cdn.countryflags.com/thumbs/brazil/flag-3d-round-250.png"
+    var ImageUsa = "https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/us-01.png"
 
  // ------------  Start Cookie create --------------------
  function createCookie(lang, value, expira){
@@ -23,7 +25,6 @@ function initCookie(){
     var linguagemDef = ReadCookie("linguagem")
     if(linguagemDef == "English" || linguagemDef == "EN-US"){
         change_to_en();
-            btn_mudar_idioma_ingles.style.display = "none";
     }else if(linguagemDef == "Portugues" || linguagemDef == "Português" || linguagemDef == "PT-BR"){
         change_to_ptbr();
     }
@@ -57,9 +58,10 @@ function change_to_en(){
     document.getElementById('txt_click_instagram').innerHTML = "* Click on ”Instagram” to be redirected to my channel."
     document.getElementById('txt_desc_youtube').innerHTML = "On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming."
     document.getElementById('txt_click_youtube').innerHTML = "*Clique em ”Youtube” para ser redirecionado ao meu canal."
-    document.getElementById('desc_cookie').innerHTML = "We use cookies in this website to give you the best experience on our site. To find out more, read our privacy policy and cookie policy"
-    document.getElementById('Btniaceept').innerHTML = "I accept"
+    document.querySelector(".desc_cookie").innerHTML = "We use cookies in this website to give you the best experience on our site. To find out more, read our privacy policy and cookie policy"
+    document.querySelector(".cookie-btn").innerHTML = "I accept"
     document.getElementById('btn_whyineedtoaccept').innerHTML = "Why i need to accept?"
+    document.getElementById('BtnTranslate').style.backgroundImage = "url(" + ImageBR +")"
 }
 
 function change_to_ptbr(){
@@ -73,9 +75,24 @@ function change_to_ptbr(){
     document.getElementById('txt_click_twitch').innerHTML = "* Clique em “Twitch” para ser redirecionado ao meu canal."
     document.getElementById('txt_desc_instagram').innerHTML = "Instagram é a rede social com a qual passo mais tempo e interajo, mas não faço publicações com muita frequência."
     document.getElementById('txt_click_instagram').innerHTML = "* Clique em ”Instagram” para ser redirecionado ao meu canal."
-    document.getElementById('txt_desc_youtub').innerHTML = "No Youtube estarei postando alguns momentos dos meus streams onde ensino algumas dicas ou alguns dos meus conhecimentos sobre programação."
+    document.getElementById('txt_desc_youtube').innerHTML = "No Youtube estarei postando alguns momentos dos meus streams onde ensino algumas dicas ou alguns dos meus conhecimentos sobre programação."
     document.getElementById('txt_click_youtube').innerHTML = "* Clique em ” Youtube” para ser redirecionado ao meu canal."
     document.querySelector(".desc_cookie").innerHTML = "Usamos cookies neste site para lhe dar a melhor experiência em nosso site. Para saber mais, leia nossa política de privacidade e política de cookies."
     document.querySelector(".cookie-btn").innerHTML = "Eu concordo"
     document.getElementById('btn_whyineedtoaccept').innerHTML = "Por que eu preciso aceitar?"
+    document.getElementById('BtnTranslate').style.backgroundImage = "url(" + ImageUsa +")"
+}
+
+
+function Translate(){
+    var BtnReadMore = document.getElementById("BtnReadMore");
+    if(BtnReadMore.innerHTML == "Read More"){
+    change_to_ptbr();
+    document.getElementById('BtnTranslate').style.backgroundImage = "url(" + ImageUsa +")"
+        console.log('WebSite is translated in Portuguese')
+    }else if(BtnReadMore.innerHTML == "Ler mais"){
+        change_to_en();
+        document.getElementById('BtnTranslate').style.backgroundImage = "url(" + ImageBR +")"
+        console.log('WebSite is translated in English')
+    }
 }
