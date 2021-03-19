@@ -47,7 +47,7 @@ function initCookie(){
 
 function change_to_en(){
     document.getElementById('title_softwaredev').innerHTML = "Software Developer"
-    document.getElementById('title_dec').innerHTML = "Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, always interested in gender, but not exactly in the area of programming. I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy."
+    document.getElementById('title_dec').innerHTML = "Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. Soon after I moved to São Paulo capital, i was always interested in programming area. I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy."
     document.getElementById('BtnReadMore').innerHTML = "Read More"
     document.getElementById('txtRecentProjects').innerHTML = "Recent Projects"
     document.getElementById('txtMobileDeveloper').innerHTML = "Mobile Developer"
@@ -66,7 +66,7 @@ function change_to_en(){
 
 function change_to_ptbr(){
     document.getElementById('title_softwaredev').innerHTML = "Desenvolvedor de Software"
-    document.getElementById('title_dec').innerHTML = "Oi! Meu nome é Kauã Vitório da Silva Lima, tenho 16 anos, nasci em Lins interior de SP onde morei até os 12 anos. Logo depois me mudei para a capital paulista, sempre interessado em gênero, mas não exatamente na área de programação. Atualmente moro em Osasco e estudo Desenvolvimento de Sistemas na ETEC Basilides de Godoy."
+    document.getElementById('title_dec').innerHTML = "Oi! Meu nome é Kauã Vitório da Silva Lima, tenho 16 anos, nasci em Lins interior de SP onde morei até os 12 anos. Logo depois que me mudei para a capital paulista, sempre me interessei pela área de programação. Atualmente moro em Osasco e estudo Desenvolvimento de Sistemas na ETEC Basilides de Godoy."
     document.getElementById('BtnReadMore').innerHTML = "Ler mais"
     document.getElementById('txtRecentProjects').innerHTML = "Projetos Recentes"
     document.getElementById('txtMobileDeveloper').innerHTML = "Desenvolviemntos"
