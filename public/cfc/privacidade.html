@@ -1,0 +1,76 @@
+<!--Copyright (c) 2021 Kauã Vitorio-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:url" content="https://www.kauavitorio.com/">
+    <meta property="og:title" content="Coffee For Code - Privacidade">
+    <meta property="og:site_name" content="Kaua Vitorio">
+    <meta property="og:description" content="Coffee for code privacy policy">
+    <meta property="og:image" content="https://www.kauavitorio.com/cfc/images/Logocfc.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800px">
+    <meta property="og:image:height" content="700px">
+    <meta property="og:type" content="website">
+    <title>Coffee For Code - Privacidade</title>
+
+    <!--Icon-->
+    <link rel="sortcut icon" href="https://www.kauavitorio.com/cfc/images/Logocfc.png" type="image/x-icon">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://www.kauavitorio.com/cfc/styles/privacidade-style.css">
+
+    <!-- =======================================================
+ * WebSite Name: Kaua Vitorio - Protifolio v2.0.0
+ * WebSite URL: https://kauavitorio.com/
+ * Author: https://github.com/kauavitorio
+ * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+    ======================================================== -->
+</head>
+<body onload="initCookie()">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <div id="BtnTranslateCFCPriv" onclick="Translate()"></div>
+    <section>
+        <div class="content">
+            <h2 id="title_kaua">Coffee For Code</h2><br/>
+            <h3 id="title_softwaredev">Mobile Application</h3>
+            <p id="title_dec_mobile">• When the user creates an account / profile on the Coffee For Code platform: these data are the basic identification data, such as name, CPF, E-mail, address. From them, we can identify the user and the visitor, in addition to ensuring greater security and well-being to their needs. • When a user and visitor accesses the OR pages of the Coffee For Code application: how information about interaction and access is collected by the company to ensure a better experience for the user and visitor. This data can deal with the keywords used in a search, the sharing of a specific document, comments, page views, profiles, a URL from which the user and visitor come from, the browser they use and their access IPs, among others that remain stored and retained.
+                <br/>A platform undertakes to apply technical and organizational measures to protect personal data from unauthorized access and from the location of destruction, loss, alteration, communication or dissemination of such data.</p>
+                <a id="BtnVisiteMobile" target="_blank" href="https://www.kauavitorio.com/cfc/documentation/politica_de_privacidade_coffee_for_code_mobile.pdf">Read Documentation</a>
+        </div>
+    </section>
+    <section id="recent_projects">
+        <div id="contentRecentProjects" class="content">
+            <h2 id="txtRecentProjects">Coffee For Code</h2><br/>
+            <h3 id="txtMobileDeveloper">WebSite</h3>
+            <p id="txtDescRecentProjects">The Coffee for code website is still under development, it will be a place for you to carry out more actions and for 
+                Coffee for code employees to insert new products</p>
+                <a id="BtnVeiwProjects" href="#">Visit WebSite</a>
+        </div>
+    </section>
+
+    <script src="https://www.kauavitorio.com/scripts/scroll-out.js"></script>
+    <script type="text/javascript">
+    ScrollOut({
+        targets: 'img,h2,h3,p,a'
+    })
+    </script>
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
+    <!-- ============ Host Scripts ============ -->
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+    <!-- ============= Main Script ============= -->
+    <script src="https://www.kauavitorio.com/cfc/scripts/privacidade-script.js"></script>
+</body>
+</html>
