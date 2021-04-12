@@ -27,7 +27,7 @@ function initCookie(){
       change_to_ptbr();
   }
   else{
-      // linguagemDef = prompt('Escolha um idioma\nChoose a language\nPT-BR = "Português",\nEN-US = "English"', "" );
+      /*// linguagemDef = prompt('Escolha um idioma\nChoose a language\nPT-BR = "Português",\nEN-US = "English"', "" );
       linguagemDef = prompt('Escolha um idioma || Choose a language\nPT-BR = "Português" || EN-US = "English"', "" );
       if (linguagemDef == "" && linguagemDef == null){
           window.location.reload();
@@ -39,7 +39,7 @@ function initCookie(){
           window.location.reload();
       }else {
           window.location.reload();
-      }
+      }*/
   }
 }// -------------------- End Cookie Create   --------------------
 
