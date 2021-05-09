@@ -1,0 +1,112 @@
+/*------- Loading Animation -------*/
+/*.loadingDiv-parent{
+    width: 100%;
+    height: 100%;
+    background-color: #111010c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #5BD9F0 0%,#1944a0 100% );
+    animation: spin .4s infinite linear;
+}
+.spinner:after {
+    width: 91%;
+    height: 91%;
+    background-color: #00000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}*/
+@keyframes load {
+    0%{
+        opacity: 0.08;
+/*         font-size: 10px; */
+/* 				font-weight: 400; */
+				filter: blur(5px);
+				letter-spacing: 3px;
+        }
+    100%{
+/*         opacity: 1; */
+/*         font-size: 12px; */
+/* 				font-weight:600; */
+/* 				filter: blur(0); */
+        }
+}
+
+.animate {
+	height:100%;
+	margin: 0;
+/* 	width: 350px; */
+/* 	font-size:26px; */
+	/*font-family: Helvetica, sans-serif, Arial;
+	animation: load 1.2s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 1px white;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+
+    width: 100%;
+    height: 100%;
+    background-color: #111010c9;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+	font-family: Helvetica, sans-serif, Arial;
+	animation: load 1.2s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 1px rgb(50, 179, 211);
+}
+
+.container_loading{
+    width: 100%;
+    height: 100%;
+    background-color: #111010c9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
