@@ -1,3 +1,4 @@
+<!--Copyright (c) 2021 Kauã Vitorio-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,84 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="en-us">
     <meta property="og:url" content="https://www.kauavitorio.com/">
-    <meta property="og:title" content="Kaua Vitorio - CFC">
+    <meta property="og:title" content="Coffee For Code - Privacidade">
     <meta property="og:site_name" content="Kaua Vitorio">
-    <meta property="og:description" content="CoffeeForCode o cafe para comecar seu dia">
+    <meta property="og:description" content="Coffee for code privacy policy">
     <meta property="og:image" content="https://www.kauavitorio.com/cfc/images/Logocfc.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="800px">
-    <meta property="og:image:height" content="650px">
+    <meta property="og:image:height" content="700px">
     <meta property="og:type" content="website">
-    <title>Kaua Vitorio - CFC</title>
+    <title>Coffee For Code - Privacidade</title>
 
     <!--Icon-->
     <link rel="sortcut icon" href="https://www.kauavitorio.com/cfc/images/Logocfc.png" type="image/x-icon">
-    
-    <!--Main CSS-->
-    <link rel="stylesheet" href="../cfc/styles/index-cfc.css">
 
-    <!-- ============ Cookie Alert Style ============-->
-    <link rel="stylesheet" href="../CookieAlert/cookiealert.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://www.kauavitorio.com/cfc/styles/privacidade-style.css">
 
+    <!-- =======================================================
+ * WebSite Name: Kaua Vitorio - Protifolio v2.0.0
+ * WebSite URL: https://kauavitorio.com/
+ * Author: https://github.com/kauavitorio
+ * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
+    ======================================================== -->
 </head>
 <body onload="initCookie()">
-    <div class="containder">
-        <div class="navbar">
-            <img src="https://www.kauavitorio.com/cfc/images/Logocfc.png"class="logo">
-            <nav>
-                <ul>
-                    <li><a href="../index.html" id="txt_home">Home</a></li>
-                    <li><a onclick="window.alert('Under development')" id="txt_about">About</a></li>
-                    <li><a href="https://play.google.com/store/apps/details?id=co.ex.coffeeforcodeapp" id="txt_download">Download</a></li>
-                    <li><a onclick="window.alert('Under development')" id="txt_projects">Projects</a></li>
-                </ul>
-            </nav>
-            <img onclick="goToHome()" src="https://www.kauavitorio.com/cfc/images/Home-cfc.png"class="returnHome">
-        </div>
-
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <div id="BtnTranslateCFCPriv" onclick="Translate()"></div>
+    <section>
         <div class="content">
-            <a href="./download.html" class="btn">2021 Coffee for Code</a>
-            <h1 id="txt_slogan_cfc">Coffee to start<br>your day</h1>
-            <p id="know_more">Know more</p>
+            <h2 id="title_kaua">Coffee For Code</h2><br/>
+            <h3 id="title_softwaredev">Mobile Application</h3>
+            <p id="title_dec_mobile">• When the user creates an account / profile on the Coffee For Code platform: these data are the basic identification data, such as name, CPF, E-mail, address. From them, we can identify the user and the visitor, in addition to ensuring greater security and well-being to their needs. • When a user and visitor accesses the OR pages of the Coffee For Code application: how information about interaction and access is collected by the company to ensure a better experience for the user and visitor. This data can deal with the keywords used in a search, the sharing of a specific document, comments, page views, profiles, a URL from which the user and visitor come from, the browser they use and their access IPs, among others that remain stored and retained.
+                <br/>A platform undertakes to apply technical and organizational measures to protect personal data from unauthorized access and from the location of destruction, loss, alteration, communication or dissemination of such data.</p>
+                <a id="BtnVisiteMobile" target="_blank" href="https://www.kauavitorio.com/cfc/documentation/politica_de_privacidade_coffee_for_code_mobile.pdf">Read Documentation</a>
         </div>
-
-        <div class="arrow-icons">
-            <img src="https://www.kauavitorio.com/cfc/images/back-arrow.png"/>
-            <img src="https://www.kauavitorio.com/cfc/images/next-arrow.png"/>
-        </div>
-
-        <img src="https://www.kauavitorio.com/cfc/images/Phone-cfc.png" class="feature-img">
-
-        <dev class="social-links">
-            <a href="https://www.facebook.com/System-Strength-109196077475056"  target="_blank">FACEBOOK</a>
-            <a href="https://www.instagram.com/systemstrength/"  target="_blank">INSTAGRAM</a>
-            <a onclick=" window.alert('Under development')">WEBSITE</a>
-        </dev>
-    </div>
-
-    <!--Start Cookie ALert-->
-    <div class="cookie-container">
-		<p class="desc_cookie">
-			We use cookies in this website to give you the best experience on our
-			site. To find out more, read our
-		  <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
-		</p>
-		<button class="cookie-btn">
-			I accept
-		</button>
-        <button id="btn_whyineedtoaccept" onclick="Gotowhyineedtoaccept()" class="cookie-btn">
-			Why i need to accept?
-		</button>
-	  </div>
-	  <!--End Cookie ALert-->
-
+    </section>
+    
+    <script src="https://www.kauavitorio.com/scripts/scroll-out.js"></script>
+    <script type="text/javascript">
+    ScrollOut({
+        targets: 'img,h2,h3,p,a'
+    })
+    </script>
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
+    <!-- ============ Host Scripts ============ -->
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
+    <!-- ============= Main Script ============= -->
+    <script src="https://www.kauavitorio.com/cfc/scripts/privacidade-script.js"></script>
 </body>
-<!-- ============ Host Scripts ============ -->
-<script src="/__/firebase/8.2.9/firebase-app.js"></script>
-<script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-<script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
-<!-- ============= Main Script ============= -->
-<script src="../cfc/scripts/index-cfc.js"></script>
-<!-- ============ Cookie Alert Script ============-->
-<script src="../CookieAlert/cookiealert.js"></script>
 </html>

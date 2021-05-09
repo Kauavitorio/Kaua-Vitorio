@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  background: rgba(10, 5, 24, 0.9);
+  transition: all 0.4s;
+}
+
+.transform {
+  transform: translateY(-150%);
+}
+
+.name-scroll {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  background: transparent;
+  z-index: 100;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.name-scroll a {
+  color: var(--color-lightWhite);
+  text-decoration: none;
+}
+
+.name-scroll span {
+  padding: 0px 2px 0px 2px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.scroll .anime {
+	opacity: 0;
+  transform: translateX(-100vw);
+}
+
+.scroll .anime-init {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s all ease;
+}
+
+.scroll .anime-opacity {
+	opacity: 0;
+}
+
+.scroll .init-opacity {
+  opacity: 1;
+  transition: 1s all ease;
+}
+
+.scroll .typing-anime {
+  animation: none;
+	visibility: hidden;
+}
+
+.scroll .typing-init {
+	visibility: visible;
+  border: none;
+	overflow: hidden;
+  white-space: nowrap;
+  animation: title-typing 2.5s steps(30, end);
+}
+
+@keyframes title-typing {
+  from {
+    border-right: .15em solid var(--color-lightWhite);
+    width: 0px;
+  }
+  to {
+    width: 200%;
+  }
+}
+
+.scroll-up {
+  text-decoration: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  transition: all 0.3s;
+}
+
+.scroll-up:hover {
+  background-color: var(--color-lightWhite);
+}
+
+.scroll-up:hover i {
+  color: var(--color-green);
+}
+
+.scroll-up i {
+  font-size: 2rem;
+  color: var(--background-color);
+}

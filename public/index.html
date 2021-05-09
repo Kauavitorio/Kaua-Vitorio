@@ -1,7 +1,6 @@
-<!--Copyright (c) 2021 Kauã Vitorio-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="en-us">
@@ -14,130 +13,658 @@
     <meta property="og:image:width" content="800px">
     <meta property="og:image:height" content="700px">
     <meta property="og:type" content="website">
-    <title>Kaua Vitorio</title>
-
-    <!--Icon-->
-    <link rel="sortcut icon" href="imgs/logo_feliz_principal.png" type="image/x-icon">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./styles/index-style.css">
-
-    <!-- ============ Cookie Alert Style ============-->
-    <link rel="stylesheet" href="./CookieAlert/cookiealert.css">
+    <title>&lt;Kauã Vitorio /&gt;</title>
+    
 
     <!-- =======================================================
- * WebSite Name: Kaua Vitorio - Protifolio v2.0.0
+ * WebSite Name: Kaua Vitorio - Protifolio v3.0.0
  * WebSite URL: https://kauavitorio.com/
  * Author: https://github.com/kauavitorio
  * License: https://github.com/Kauavitorio/Kaua-Vitorio/blob/main/LICENSE
     ======================================================== -->
-</head>
-<body onload="initCookie()">
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
-    <div id="BtnTranslate" onclick="Translate()"></div>
-    <section>
-        <div class="content">
-            <h2 id="title_kaua" >Kaua Vitorio</h2><br/>
-            <h3 id="title_softwaredev">Software Developer</h3>
-            <p id="title_dec">Hi! My name is Kauã Vitório da Silva Lima, I am 16 years old, I was born in Lins interior of SP where I lived until I was 12 years old. 
-                Soon after I moved to São Paulo capital, i was always interested in programming area. 
-                I currently live in Osasco and I am studying Systems Development at ETEC Basilides de Godoy.</p>
-                <a id="BtnReadMore" href="#recent_projects">Read More</a>
-        </div>
-    </section>
-    <section id="recent_projects">
-        <div id="contentRecentProjects" class="content">
-            <img class="img_recent_projects" src="./imgs/systemstrengthlogosemfundo.png">
-            <img class="img_recent_projects_cfc" src="https://www.kauavitorio.com/cfc/images/Logocfc.png">
-            <h2 id="txtRecentProjects">Recent Projects</h2><br/>
-            <h3 id="txtMobileDeveloper">Mobile Developer</h3>
-            <p id="txtDescRecentProjects">I started my projects on May 3, 2020, with the intention of learning and being able to disseminate my work and my learning, 
-                I am currently focusing on mobile development but I have knowledge in Windows Forms, ASP .NET MVC, JAVA, NODE JS, HTML, CSS and JS</p>
-                <a id="BtnVeiwProjects" href="https://www.kauavitorio.com/projetos">View Recent Projects</a>
-                <a id="BtnVeiwProjects" href="https://systemstrength.web.app">System Strength</a>
-                <a id="BtnVeiwProjects" href="https://www.kauavitorio.com/cfc">Last Project</a>
-        </div>
-    </section>
-    <section id="partesocial">
-        <div class="cards">
-            <div class="card card1">
-                <div class="containerCard">
-                    <img src="https://www.kauavitorio.com/imgs/twitch_semfundo.svg" alt="twitch">
-                </div>
-                <div class="details">
-                    <a href="https://www.twitch.tv/kauavitoriodev"><h3>Twitch</h3></a>
-                    <p id="txt_desc_twitch">I stream almost every day on the twitch about programming and developing projects, I started a short time ago but I am striving to bring the best quality and fun possible.</p>
-                    <h2 id="txt_click_twitch">* Click on “Twitch” to be redirected to my channel.</h2>
-                </div>
-            </div>
-            <div class="card card2">
-                <div class="containerCard">
-                    <img src="https://www.kauavitorio.com/imgs/instagram_semfundo.png" alt="instagram">
-                </div>
-                <div class="details">
-                    <a href="https://www.instagram.com/ka_vitorio/"><h3>Instagram</h3></a>
-                    <p id="txt_desc_instagram" >Instagram is the social network that I spend the most time and interact with the most, but I don't do publications very often.</p>
-                    <h2 id="txt_click_instagram">* Click on ”Instagram” to be redirected to my channel.</h2>
-                </div>
-            </div>
-            <div class="card card3">
-                <div class="containerCard">
-                    <img src="https://www.kauavitorio.com/imgs/Youtube_semfundo.png" alt="youtube">
-                </div>
-                <div class="details">
-                    <a href="https://www.youtube.com/c/KauaVitorio"><h3>Youtube</h3></a>
-                    <p id="txt_desc_youtube">On Youtube I will be posting some moments from my streams where I teach some tips or some of my knowledge about programming.</p>
-                    <h2 id="txt_click_youtube">*Clique em "Youtube" para ser redirecionado ao meu canal.</h2>
-                </div>
-            </div>
-        </div>
-    </section>`
 
-    <!--Start Cookie ALert-->
-    <div class="cookie-container">
-        <p class="desc_cookie">
-            We use cookies in this website to give you the best experience on our
-            site. To find out more, read our
-        <a href="#">privacy policy</a> and <a href="https://www.cookiesandyou.com" target="_blank">cookie policy</a>.
-        </p>
-        <button class="cookie-btn">
-            I accept
-        </button>
-        <button id="btn_whyineedtoaccept" onclick="Gotowhyineedtoaccept()" class="cookie-btn">
-            Why i need to accept?
-        </button>
-    </div><!--End Cookie ALert-->
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/me.svg"
+      type="image/x-icon"
+    />
 
-    <footer>
-        <hr>
-        <a href="https://github.com/Kauavitorio" target="_blank" rel="noopener noreferrer" class="btn_face"><i class="fa fa-github"></i></a>
-        <a href="https://www.instagram.com/ka_vitorio/" target="_blank" rel="noopener noreferrer" class="btn_insta"><i class="fa fa-instagram"></i></a>
-        <a href="https://twitter.com/kauavitorioofc" target="_blank" rel="noopener noreferrer" class="btn_link"><i class="fa fa-twitter"></i></a>
-        <p>&copy; Kauã Vitorio</p>
-    </footer>  
-    
-    <script src="./scripts/scroll-out.js"></script>
-    <script type="text/javascript">
-    ScrollOut({
-        targets: 'img,h2,h3,p,a'
-    })
-    </script>
-    <script type="text/javascript">
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-    }
-    </script>
-    <!-- ============ Host Scripts ============ -->
-    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
-    <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-    <script src="/__/firebase/init.js"></script><!-- End Host Scripts -->
-    <!-- ============= Main Script ============= -->
-    <script src="./scripts/index-script.js"></script>
-    <!-- ============ Cookie Alert Script ============-->
-    <script src="./CookieAlert/cookiealert.js"></script>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/menu.css" />
+    <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="src/css/overview.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/study.css" />
+    <link rel="stylesheet" href="src/css/open-source.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/scroll.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="navbar transform" id="navbar"></div>
+
+    <div class="name-scroll transform" id="name-scroll">
+      <a href="#home">
+        <span class="light-green">&lt;</span>Kauã Vitorio<span
+          class="light-green"
+          >/&gt;</span
+        >
+      </a>
+    </div>
+
+    <a class="scroll-up hidden" href="#home" id="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <div class="menu hidden" id="menu">
+      <ul>
+        <li id="li-menu">
+          <i class="fas fa-bars menu-icon"></i>
+          <ul class="dropdown" aria-label="submenu" id="dropdown">
+            <li>
+              <a href="#home">Início<i class="fas fa-home"></i></a>
+            </li>
+            <li>
+              <a href="#overview">Kauã<i class="fas fa-user-circle"></i></a>
+            </li>
+            <li>
+              <a href="#projects">Projetos<i class="fas fa-code"></i></a>
+            </li>
+            <li>
+              <a href="#study">Estudos<i class="fas fa-graduation-cap"></i></a>
+            </li>
+            <li>
+              <a href="#open-source">OpenSource<i style="font-weight: bold;" class="fab fa-osi"></i></a>
+            </li>
+            <li>
+              <a href="#about">Sobre<i class="fas fa-address-card"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home" id="home">
+      <div class="name">
+        <span
+          ><span class="light-green">&lt;</span>Kauã Vitorio<span
+            class="light-green"
+            >/&gt;</span
+          >
+        </span>
+        <span class="sub-name">Desenvolvedor <span>BackEnd</span></span>
+      </div>
+
+      <div class="start anime">
+        <a href="#overview">
+          <button><i class="fab fa-google-play"></i> Start</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="overview" id="overview">
+      <div class="title anime-opacity">
+        <div class="typing typing-anime" id="typing-overview">
+          <span class="white">$</span>
+          <span class="magenta">cat</span>
+          <span class="yellow">Kaua.json</span>
+        </div>
+      </div>
+
+      <div class="bar anime-opacity"></div>
+      <div class="divider-overview anime-opacity"></div>
+
+      <div class="rivaldo anime">
+        <span class="chave-0">{</span>
+
+        <span class="line">
+          <span class="tab key">"nome"</span><span class="two-point">:</span>
+          <span class="value">"Kauã Vitorio"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"estado"</span><span class="two-point">:</span>
+          <span class="value">"São Paulo"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"idade"</span><span class="two-point">:</span>
+          <span class="number">16</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"email"</span><span class="two-point">:</span>
+          <span class="value">"contato.kauavitorio@gmail.com"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"github"</span><span class="two-point">:</span>
+          <span class="value">"https://github.com/Kauavitorio"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"experiências"</span
+          ><span class="two-point">:</span>
+          <span class="value">"Curso técnico - DS"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"formação"</span
+          ><span class="two-point">:</span>
+          <span class="value">"Técnico em Desenvolvimento de sistema"</span
+          ><span class="comma">,</span>
+        </span>
+
+        <!--<span class="line">
+          <span class="tab key">"medalhas_olimpíadas"</span
+          ><span class="two-point">:</span>
+          <span class="number">[</span>
+          <span class="value tooltip"
+            >"OBA"<span class="tooltiptext"
+              ><p>Olimpíada Brasileira de Astronomia e Astronáutica</p>
+              <p class="medal-gold">Dois Ouros</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"ONC"<span class="tooltiptext"
+              ><p>Olimpíada Nacional de Ciências</p>
+              <p class="medal-gold">Ouro</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"OIMSF"<span class="tooltiptext"
+              ><p>Olimpíada Internacional Matemática Sem Fronteiras</p>
+              <p class="medal-gold">Ouro</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"TDM"<span class="tooltiptext"
+              ><p>Tubarão de Matemática</p>
+              <p class="medal-silver">Prata</p></span
+            ></span
+          >
+          <span class="number">]</span><span class="comma">,</span>
+        </span>-->
+
+        <span class="line">
+          <span class="tab key">"stack"</span><span class="two-point">:</span>
+          <span class="number">[</span>
+          <span class="value">"Java"</span><span class="comma">,</span>
+          <span class="value">"NodeJS/JavaScript/C#"</span
+          ><span class="comma">,</span>
+          <span class="value">"HTML/CSS/SCSS"</span>
+          <span class="number">]</span>
+        </span>
+
+        <span class="chave-1">}</span>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-projects">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Projetos</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="project pizza anime-opacity">
+        <div class="article pizza-progress">
+          <div class="link">
+            <a
+              href="https://pizzadelivery.vercel.app"
+              target="_blank"
+              title="Ir para PalacePetz"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a
+              href="https://github.com/Kauavitorio/PalacePetz"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">1.</span>PalacePetz 🐶
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação de vendas para
+                PetShop
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> API Propria desenvolvida
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> NodeJS, Java & C# 
+              </li>
+              <li><i class="fas fa-chevron-right"></i> API Interativas</li>
+
+              <li><i class="fas fa-chevron-right"></i> Projeto de TCC</li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="85"></div>
+                  <div class="progress-text">
+                    <div>Java</div>
+                    <div class="percentage">85 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="70"></div>
+                  <div class="progress-text">
+                    <div>C#</div>
+                    <div class="percentage">70 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="50"></div>
+                  <div class="progress-text">
+                    <div>NODEJS</div>
+                    <div class="percentage">50 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a
+            href="https://pizzadelivery.vercel.app"
+            target="_blank"
+            title="Ir para PalacePetz"
+          >
+            <img src="./src/assets/img/palacepetz.png" height="100%" alt="PalacePetz" />
+            <img src="./src/assets/img/palacepetz.png" height="100%" alt="PalacePetz" />
+            <img src="./src/assets/img/palacepetz.png" height="100%" alt="PalacePetz" />
+          </a>
+        </div>
+      </div>
+
+      <div class="divider anime-opacity">
+        <span></span><span><i class="fas fa-code"></i></span><span></span>
+      </div>
+
+      <div class="project textando anime-opacity">
+        <div class="article textando-progress">
+          <div class="link">
+            <a
+              href="https://pedrorivald.github.io/textando"
+              target="_blank"
+              title="Ir para CoffeeForCode"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a
+              href="https://github.com/System-Strength/Mobile_CoffeeForCode"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">2.</span>CoffeeForCode
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação para
+                cafeteria
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> API Propria|Design Original
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Fins didáticos
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="85"></div>
+                  <div class="progress-text">
+                    <div>JAVA</div>
+                    <div class="percentage">85 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="75"></div>
+                  <div class="progress-text">
+                    <div>XML</div>
+                    <div class="percentage">75 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="60"></div>
+                  <div class="progress-text">
+                    <div>NODEJS</div>
+                    <div class="percentage">60 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <a
+            href="https://play.google.com/store/apps/details?id=co.ex.coffeeforcodeapp"
+            target="_blank"
+            title="Ir para CoffeeForCode"
+          >
+            <img src="./src/assets/img/coffeeforcode.png" height="100%" alt="Textando" />
+            <img src="./src/assets/img/coffeeforcode.png" height="100%" alt="Textando" />
+            <img src="./src/assets/img/coffeeforcode.png" height="100%" alt="Textando" />
+          </a>
+        </div>
+      </div>
+
+      <div class="divider anime-opacity">
+        <span></span><span><i class="fas fa-code"></i></span><span></span>
+      </div>
+
+      <!-- System Stregth Project -->
+      <div class="project gitdex anime-opacity">
+        <div class="article gitdex-progress">
+          <div class="link">
+            <a
+              href="https://gitdex.vercel.app"
+              target="_blank"
+              title="Ir para GitDex"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a
+              href="https://github.com/pedrorivald/gitdex"
+              target="_blank"
+              title="Ir para o repositório"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">3.</span>System-Strength 👨🏻‍💻
+          </div>
+          <div class="project-description anime-opacity">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação para geranciamente interno
+              </li>
+              <li><i class="fas fa-chevron-right"></i> Java</li>
+              <li><i class="fas fa-chevron-right"></i> XML</li>
+              <li><i class="fas fa-chevron-right"></i> SQLITE</li>
+              <li><i class="fas fa-chevron-right"></i> Android</li>
+              <li>
+                <div class="progress">
+                  <div class="progress-done" data-done="80"></div>
+                  <div class="progress-text">
+                    <div>JAVA</div>
+                    <div class="percentage">80 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="70"></div>
+                  <div class="progress-text">
+                    <div>SQLITE</div>
+                    <div class="percentage">70 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-done" data-done="60"></div>
+                  <div class="progress-text">
+                    <div>XML</div>
+                    <div class="percentage">60 <i class="fas fa-percentage"></i></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a
+            href="https://play.google.com/store/apps/details?id=co.x.systemstrength"
+            target="_blank"
+            title="Ir para System-Strength"
+          >
+            <img src="./src/assets/img/systemstrength.png" height="100%" alt="GitDex" />
+            <img src="./src/assets/img/systemstrength.png" height="100%" alt="GitDex" />
+            <img src="./src/assets/img/systemstrength.png" height="100%" alt="GitDex" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="study" id="study">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-study">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Estudos</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="study-article anime">
+        <div class="tech angular tech-border">
+          <div class="tech-title">JAVA</div>
+          <div class="tech-description">
+            Iniciei os estudos com <span>android</span> ao final de
+            <span>2020</span>. Deste então já fiz diversos
+            <span>projetos</span> usando ele. Faço maior uso da linguagem no desenvolvimento mobile
+            e para testes em minhas aulas de <span>Teste e Qualidade de Software</span>.
+          </div>
+          <div class="tech-logo">
+            <i class="fab fa-java"></i>
+          </div>
+        </div>
+        
+        <div class="tech node tech-border">
+          <div class="tech-title">NodeJS</div>
+          <div class="tech-description">
+            Atualmente meu maior <span>foco</span> é Java, porém tenho desejo
+            de ser um desenvolvedor <span>FullStack</span>. Desse modo, estudo
+            NodeJS para utilizar em apis que desenvolvo para meus projetos.
+            <span
+              ><a
+                href="https://github.com/Kauavitorio/PalacePetz_Api"
+                target="_blank"
+                title="Projeto NodeJS NextLevelWeek 4"
+                >API para o Projeto PalacePetz</a
+              ></span
+            >.
+          </div>
+          <div class="tech-logo">
+            <i class="fab fa-node"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="open-source" id="open-source">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-open-source">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Open-Source</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="open-source-article anime">
+        <div class="open-title">
+          PalacePetz API 🐶
+        </div>
+        <div class="open-content">
+          <div class="fire">
+            <img width="60%" style="margin-bottom: 10%;" src="https://acegif.com/wp-content/gifs/dancing-cat-18.gif">
+            <!--<canvas id="fireCanvas"></canvas>-->
+            <a
+              class="btn"
+              href="https://github.com/Kauavitorio/PalacePetz_Api"
+              target="_blank"
+              title="Ir para PalacePetz Api"
+            >
+              <div>Ver Projeto <i class="fas fa-external-link-alt"></i></div>
+            </a>
+          </div>
+          <div class="open-description">
+            PalacePetz API é um projeto desenvolvido para atuar na aplicaçao mobile e no <a href="https://palacepetz.azurewebsites.net">Sistema MVC</a> 
+            do projeto <a>PalacePetz</a>, seus desenvolvedores foram
+            <a
+              href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw"
+              target="_blank"
+              title="Ir para Kauã Vitorio"
+              >Kauã Vitorio</a
+            >,
+            <a
+            href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw"
+            target="_blank"
+            title="Ir para Matheus Souza"
+            > Matheus Souza</a
+          >.
+            Após isso ele publicou um <a
+            href="https://www.youtube.com/watch?v=HCjDjsHPOco"
+            target="_blank"
+            title="Ir para o vídeo"
+            >vídeo</a
+          > sobre as implementações da comunidade,
+              então fiz minha própria <a
+              href="https://github.com/pedrorivald/fire-rgb-canvas"
+              target="_blank"
+              title="Ir para projeto no Github"
+              >versão</a
+            > utilizando <span>Canvas</span> e adicionando
+              a funcionalidade de <span>RGB</span> ao fogo.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-about">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Sobre</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="about-article anime">
+        <div class="about-contact">
+          <div class="img">
+            <img
+              src="https://avatars.githubusercontent.com/u/64799699?s=400&u=1d877c691b917607d7b238b0e5f8e0c694b525df&v=4"
+              alt="Kauã Vitorio"
+              title="Avatar Kauã"
+            />
+          </div>
+
+          <div class="contacts">
+            <div class="contact">
+              <a
+                href="https://github.com/Kauavitorio"
+                target="_blank"
+                title="Github"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+
+            <div class="contact">
+              <a
+                href="mailto:contato.kauavitorio@gmail.com"
+                target="_blank"
+                title="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+
+            <div class="contact">
+              <a
+                href="https://twitter.com/kauavitorioofc"
+                target="_blank"
+                title="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+
+            <div class="contact">
+              <a href="https://github.com/pedrorivald" target="_blank"
+                ><i class="fab fa-discord"></i
+              ></a>
+            </div> 
+
+            <div class="contact">
+              <a
+                href="https://www.linkedin.com/in/kauavitorio/"
+                title="LinkedIn"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="text">
+            <i class="fas fa-quote-left"></i> Em 2020 comecei um
+            <span>curso</span> Técnico de <span>Desenvolvimento de Systema</span>, nesse
+            momento obtive meu primeiro contato com <span>programação</span> e
+            achei <span>surreal</span> o poder que ela tem de
+            <span>transformar</span> o mundo. Desde então me dedico diariamente
+            aos estudos referentes a programação, com <span>foco</span> no
+            desenvolvimento <span>BackEnd</span>.
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/particles.js"></script>
+    <script src="src/js/fire.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="./src/js/scroll.js"></script>
+    <script src="src/js/events.js"></script>
+  </body>
 </html>
