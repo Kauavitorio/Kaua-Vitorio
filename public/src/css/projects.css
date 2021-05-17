@@ -79,7 +79,7 @@
 }
 
 .textando .article:hover {
-  box-shadow: var(--color-purpleUltraLight) 0px 3px 8px;
+  box-shadow: var(--color-lightYellow) 0px 3px 8px;
 }
 
 .gitdex .article:hover {
@@ -87,7 +87,7 @@
 }
 
 .pizza .progress-done { background: var(--color-blue); }
-.textando .progress-done { background: var(--color-purpleUltraLight); }
+.textando .progress-done { background: var(--color-lightYellow); }
 .gitdex .progress-done { background: #02333a; }
 
 .pizza .progress-text .percentage, .pizza .progress-text .percentage i {
@@ -95,7 +95,7 @@
 }
 
 .textando .progress-text .percentage, .textando .progress-text .percentage i {
-  color: var(--color-purpleUltraLight);
+  color: var(--color-lightYellow);
 }
 
 .gitdex .progress-text .percentage, .gitdex .progress-text .percentage i {
@@ -134,8 +134,8 @@
 }
 
 .textando .container {
-  background: var(--color-purpleUltraLight);
-  box-shadow: 0 0 40px var(--color-purpleUltraLight);
+  background: var(--color-lightYellow);
+  box-shadow: 0 0 40px var(--color-lightYellow);
 }
 
 .gitdex .container {

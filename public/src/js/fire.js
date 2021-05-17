@@ -75,5 +75,4 @@ function createFireSource() {
     firePixelsArray[pixelIndex] = 36
   }
 }
-
 start()

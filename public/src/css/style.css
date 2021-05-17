@@ -43,7 +43,7 @@ body {
 
 body::-webkit-scrollbar {
   background-color: #333;
-  width: 8px;
+  width: 7px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -122,6 +122,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .light-green {
   color: var(--color-lightGreen);
+}
+
+.light-blue {
+  color: var(--color-blue);
 }
 
 .tooltip {
