@@ -27,7 +27,7 @@
 }
 
 .menu-icon-click, .menu-icon:hover {
-  color: var(--color-green);
+  color: var(--color-lightYellow);
 }
   
 .menu ul li ul li a {
@@ -69,7 +69,7 @@
 }
 
 .menu ul li ul li:hover a i {
-  color: var(--color-magenta);
+  color: var(--color-blue);
 }
 
 .dropdown-click {
