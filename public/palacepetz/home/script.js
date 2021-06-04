@@ -1,17 +1,14 @@
 //Slideshow com texto e imagem
-let time = 6500,
+let time = 5000,
     currentImageWeb = 0,
     currentTexttitWeb = 0,
     currentTextsubWeb = 0,
-    currentCircle = 0,
     text_tit = document.querySelectorAll(".texts h1"),
     text_sub = document.querySelectorAll(".texts h2"),
-    circle_html = document.querySelectorAll(".circle"),
     images = document.querySelectorAll(".sliders img")
     maximg = images.length;
     maxtexttit = text_tit.length;
     maxtextsub = text_sub.length;
-    maxcircleSize = circle_html.length;
 
     function nextImage(){
         images[currentImageWeb].classList.remove("selected")
@@ -46,17 +43,6 @@ let time = 6500,
         text_sub[currentTextsubWeb].classList.add("first2")
     }
 
-    function circle() {
-        circle_html[currentCircle].classList.remove("circleFirst")
-
-        currentCircle++
-
-        if(currentCircle >= maxcircleSize)
-        currentCircle = 0
-
-        circle_html[currentCircle].classList.add("circleFirst")
-    }
-
     function startImage(){
         setInterval(() => {
             //Troca Imagem
@@ -77,15 +63,6 @@ let time = 6500,
             nextText2();
         }, time)
     }
-
-    function startCircle(){
-        setInterval(() => {
-            //Troca text
-            circle();
-        }, time)
-    }
-
 window.addEventListener("load", startText1)
 window.addEventListener("load", startText2)
 window.addEventListener("load", startImage)
-window.addEventListener("load", startCircle)

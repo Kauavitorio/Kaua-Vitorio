@@ -64,7 +64,6 @@ section .container .user .imgBox{
     justify-content:start;
     align-items: center;
     padding-left:10%;
-    padding-top: 22%;
     transition: 0.5s;
 }
 #text-title {
@@ -102,16 +101,6 @@ section .container .user .imgBox{
     opacity: 50%;
 }
 
-
-.checkbox{
-    border-radius: 10px;
-    border: solid 5px var(--border-field);
-}
-#label{
-    font: regular 1rem Segoe UI;
-    color: var(--text);
-}
-
 .btn {
     color: #fff;
     background: var(--button);
@@ -145,6 +134,7 @@ section .container .user .imgBox{
         font: normal 12pt Segoe UI;
         font-weight: 600;
         text-decoration: underline;
+ 
     }
 
 .text-danger{
@@ -158,5 +148,4 @@ section .container .user .imgBox{
     margin-left: 1%;
     font-style: italic;
 }
-
 

@@ -103,11 +103,8 @@ main{
     width: 32%;
     font: bold 1rem Segoe UI;
     color: rgba(0, 0, 0, 0.39);
-    cursor: text;
+    cursor: pointer;
     margin: 3%;
-}
-.field-select::placeholder{
-    text-transform: none;
 }
 .cards{
     display: flex;
