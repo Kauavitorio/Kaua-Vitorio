@@ -1,4 +1,5 @@
 //Slideshow com texto e imagem
+var id_user = document.getElementById("checkUserId").innerHTML;
 let time = 5000,
     currentImageWeb = 0,
     currentTexttitWeb = 0,
@@ -63,6 +64,49 @@ let time = 5000,
             nextText2();
         }, time)
     }
+
+    function ShoppingCart(){
+        var spanCountCart = document.getElementById('lblCartCount').innerHTML
+        if (spanCountCart == "0" || spanCountCart == "@ViewBag.cartsize" || spanCountCart == "" || spanCountCart == " ") 
+            document.getElementById('lblCartCount').style.display = "none"
+    }
+
+    function LogoutOrLoginText() {
+        var txt_login_or_logout = document.getElementById('LogoutOrLogin')
+        if (id_user != 0) {
+            txt_login_or_logout.innerHTML = "SAIR";   
+            txt_login_or_logout.href = "/logout/1";
+        }
+        else {
+            txt_login_or_logout.innerHTML = "ENTRAR";  
+            txt_login_or_logout.href = "/login";
+        }         
+    } 
+
+    function SeeMyOrders(){
+        var txt_orders = document.getElementById('SeeMyOrders')
+        if (id_user != 0)
+            txt_orders.href = "/meus-pedidos";
+        else
+            alert("Para acessar os pedidos é necessário estar logado.")  
+    }
+    function SeeMyCart(){
+        var txt_cart = document.getElementById('SeeMyCart')
+        if(id_user != 0)
+            txt_cart.href = "/meu-carrinho"
+        else
+            alert("Para acessar o carrinho é necessário estar logado.")
+    }
+    function SeeMyProfile(){
+        var txt_profile = document.getElementById('SeeMyProfile')
+        if(id_user != 0){
+            txt_profile.href = "/perfil"
+        }else
+            alert("Para acessar seu perfil é necessário estar logado.")
+    }
+
 window.addEventListener("load", startText1)
 window.addEventListener("load", startText2)
 window.addEventListener("load", startImage)
+window.addEventListener("load", ShoppingCart)
+window.addEventListener("load", LogoutOrLoginText)

@@ -26,8 +26,9 @@ ul li a{
     cursor: pointer;
 }
 .logo{
-    width: 70px;
-    margin-bottom: 19%
+    width: 85px;
+    height: 85px;
+    margin: -1% 0 0 5px;
 }
 .car{
     width: 40px;

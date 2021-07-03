@@ -9,9 +9,11 @@ particlesJS('particles-js',
           "value_area": 1000
         }
       },
+      //  Particle color
       "color": {
         "value": "#3ebbd1"
       },
+      //  Particle Type ( circle, polygon )
       "shape": {
         "type": "circle",
         "stroke": {
@@ -108,5 +110,4 @@ particlesJS('particles-js',
     },
     "retina_detect": true,
   }
-
 );

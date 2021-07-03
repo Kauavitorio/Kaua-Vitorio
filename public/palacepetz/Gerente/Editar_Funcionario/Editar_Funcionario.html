@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Funcionário - PalacePetz</title>
+    <link rel="shortcut icon" href="https://www.kauavitorio.com/host-itens/logoPalacePetzMVC.png" type="image/x-icon">
+    <link rel="stylesheet" href="Editar_Funcionario.css">
+</head>
+<body>
+    <nav id="menu">
+        <ul id="menu2">
+            <li><img src="/Funcionario/Home/navbar/logo.png" class="logo"></li>
+            <li><img src="/Funcionario/Home/navbar/home.png" alt=""><a alt="">home</a></li>
+            <li><img src="/Funcionario/Home/navbar/veterinario.png" alt=""><a alt="">Serviços</a></li>
+            <li id="loc" ><img src="/Funcionario/Home/navbar/employee.png" alt=""><a alt="">Funcionários</a></li>
+            <li><img src="/Funcionario/Home/navbar/products.png" alt=""><a alt="">produtos</a></li>
+            <li><img src="/Funcionario/Home/navbar/stats.png" alt=""><a alt="">relatório</a></li>
+            <li><img src="/Funcionario/Home/navbar/pedidos.png" alt=""><a alt="">pedidos</a></li>
+            <li><img src="/Funcionario/Home/navbar/info.png" alt=""><a alt="">informações</a></li>
+            <li><img src="/Funcionario/Home/navbar/logout.png" alt=""><a alt="">sair</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2 class="title">Editar Funcionário</h2>
+        <h1 class="text">
+            <a>Consultar Funcionários</a>
+        </h1>
+        <div class="container">
+            <div class="column_one">
+                <label class="label">Nome do Funcionário</label>
+                <input type="text" class="field">
+
+                <label class="label">CPF do Funcionário</label>
+                <input type="text" class="field">
+
+                <label class="label">Telefone do Funcionário</label>
+                <input type="text" class="field">
+
+                <label class="label">Data de Aniversário</label>
+                <input type="text" class="field" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                
+                <label class="label">Cargo</label>
+                <input type="text" class="field">
+				
+				<label class="label">Tipo de Usuário</label>
+                <select name="" id="field"  onclick="Veterinario()"  class="field">
+                    <option value="" >Tipo de Usuário</option>
+                    <option value="1" >1 - Funcionário</option>
+                    <option value="2">2 - Veterinário</option>
+                    <option value="3" >3 - Gerente</option>
+                </select>
+                
+                <label class="label" style="display: none;">CRMV do Veterinário</label>
+                <input type="text" style="display: none;" class="field" id="crmv" placeholder="Número de CRMV">
+            </div>
+            <div class="column_two">
+                <label class="label">CEP</label>
+                <input type="text" class="field">
+
+                <label class="label">Endereço</label>
+                <input type="text" class="field">
+
+                <label class="label">Complemento</label>
+                <input type="text" class="field">
+                
+                <label class="label">E-mail</label>
+                <input type="text" class="field">
+
+                <label class="label">Senha</label>
+                <input type="text" class="field">
+                
+                <div class="container_btn">
+                    <input type="text" class="btn_editar" value="Editar Funcionário">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script> 
+        function Veterinario(){
+            var field_select = document.getElementById("field").value;
+            if(field_select == 2){
+                document.getElementById("crmv").style.display = "flex"
+                document.getElementById("crmv").style.flexDirection = "column"
+            }  else{
+                document.getElementById("crmv").style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
