@@ -82,12 +82,17 @@
   box-shadow: var(--color-lightYellow) 0px 3px 8px;
 }
 
+.squash .article:hover {
+  box-shadow: var(--color-lightYellow) 0px 3px 8px;
+}
+
 .gitdex .article:hover {
   box-shadow: #636466 0px 3px 8px;
 }
 
 .pizza .progress-done { background: var(--color-blue); }
 .textando .progress-done { background: var(--color-lightYellow); }
+.squash .progress-done { background: var(--color-squash-base); }
 .gitdex .progress-done { background: #02333a; }
 
 .pizza .progress-text .percentage, .pizza .progress-text .percentage i {
@@ -98,12 +103,17 @@
   color: var(--color-lightYellow);
 }
 
+.squash .progress-text .percentage, .textando .progress-text .percentage i {
+  color: var(--color-lightGreen);
+}
+
 .gitdex .progress-text .percentage, .gitdex .progress-text .percentage i {
   color: #355caf;
 }
 
 .pizza .progress-text { color: var(--background-color);}
 .textando .progress-text { color: var(--background-color); }
+.squash .progress-text { color: var(--background-color); }
 .gitdex .progress-text { color: var(--color-lightWhite); }
 
 .article .project-name .number {
@@ -136,6 +146,11 @@
 .textando .container {
   background: var(--color-lightYellow);
   box-shadow: 0 0 40px var(--color-lightYellow);
+}
+
+.squash .container {
+  background: var(--color-squash-base);
+  box-shadow: 0 0 40px var(--color-squash-base);
 }
 
 .gitdex .container {

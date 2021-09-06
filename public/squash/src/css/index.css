@@ -1,0 +1,224 @@
+/* ========== GLOBAL ===============*/
+
+:root{
+    --black: #212121;
+    --white: #fff;
+    --orange: #ff6c26;
+    --blue: #4ECAFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; /* Equivale a 15px */
+    overflow: auto;
+}
+
+body{
+    background: var(--white);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.logo {
+    width: 8rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+b{
+    color: var(--blue);
+}
+
+h2 {
+    color: var(--white);
+    font: bold 4rem 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+    font: normal 1.5rem 'Questrial', sans-serif;
+    letter-spacing:1px;
+}
+
+.text-footer {
+    color: #fff;
+    font: normal 1rem 'Questrial', sans-serif;
+    letter-spacing:1px;
+    line-height: 25px;
+    transition: 0.2s;
+}
+.text-footer:hover {
+    text-decoration: underline;
+}
+/* ================= NAVBAR ============================*/
+
+header {
+    background: var(--black);
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.link {
+    color: var(--white);
+}
+.link.squash {
+    background: none;
+    font: normal 2rem 'Roboto', sans-serif;
+}
+
+.link.dev{
+    background: none;
+    font: normal 2rem 'Questrial', sans-serif;
+    letter-spacing:1px;
+}
+
+.link.action{
+    font: normal 1.5rem 'Questrial', sans-serif;
+    letter-spacing: 1px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.link.action:hover{
+    background-color: var(--orange);
+}
+
+
+#loc {
+    color: var(--orange);
+}
+#loc:hover {
+    color: var(--white);
+}
+
+.menu-icon {
+    display: none;
+    visibility: hidden;
+}
+/*================== BANNER =======================*/
+section {
+    background: var(--black);
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+
+.img-banner {
+    margin-right: 6rem;
+    width: 25rem;
+}
+
+button {
+    cursor: pointer;
+    width: 20rem;
+    padding: 15px;
+    background: none;
+    border: solid 2px var(--white);
+    color: var(--white);
+    font-style: bold;
+    text-transform: uppercase;
+    transition:0.4s;
+}
+button:hover {
+    background: var(--blue);
+    border: solid 2px var(--blue);
+    color: var(--white);
+}
+
+
+/* ================== FOOTER ============================== */
+footer {
+    background: var(--black);
+    margin-top: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 2rem;
+}
+
+hr{
+    height: 85%;
+    border-color:#212121;
+    width:0;
+}
+
+.footer.docs, .footer.help {
+    color: var(--white);
+    text-align: center;
+}
+
+/* ================== RESPONSIVE ================== */
+
+@media (max-width: 800px) {
+    html{
+        font-size: 87.5%; /* Equivale a 14px */
+        overflow: auto;
+    }
+    h2{
+        font-size:2rem;
+    }
+    nav {
+        justify-content:space-around;
+    }
+    .logo{
+        width:5rem;
+        margin: 0;
+    }
+    .link.squash, .link.dev{
+        display: none;
+    }
+    .link.action {
+        font: normal 1rem 'Questrial', sans-serif;
+        letter-spacing: 1px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+    } 
+    .menu-icon {
+        display: flex;
+        position: relative;
+        width:3rem;
+        visibility: visible;
+    }
+    h2 {
+        text-align: center;
+    }
+    main {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-banner {
+        display:none;
+    }
+    button {
+        width: 23rem;
+    }
+    footer{
+        overflow: auto;
+    }
+}
