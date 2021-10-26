@@ -5,13 +5,9 @@
 
     
     "rewrites": [
-      {
-        "source": "/*",
-        "destination": "/404.html"
-      }
+      {"source": "/contato", "destination": "/contact/index.html" }
     ],
 
   "cleanUrls": true
-
   }
 }
