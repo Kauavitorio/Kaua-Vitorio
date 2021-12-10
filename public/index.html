@@ -156,7 +156,7 @@
 
         <span class="line">
           <span class="tab key">"age"</span><span class="two-point">:</span>
-          <span class="number">17</span><span class="comma">,</span>
+          <span class="number" id="kaua-age">17</span><span class="comma">,</span>
         </span>
 
         <span class="line">
@@ -221,7 +221,7 @@
       </div>
 
       <!-- Squash Project -->
-      <div class="project squash anime-opacity">
+      <div class="project squash anime-opacity" id="squash-project">
         <div class="article pizza-progress">
           <div class="link">
             <a
@@ -594,7 +594,7 @@
             </a>
           </div>
           <div class="open-description">
-            Squash was founded in July 10th, 2021 by me<a target="_blank" href="https://palacepetz.azurewebsites.net">(Kauã Vitorio)</a> 
+            Squash was founded in July 10th, 2021 by me<a target="_blank" href="#">(Kauã Vitorio)</a> 
             and your CEOs are 
             <a
             href="https://www.linkedin.com/in/matheusssleite/"
@@ -711,5 +711,18 @@
     <script src="src/js/app.js"></script>
     <script src="src/js/scroll.js"></script>
     <script src="src/js/events.js"></script>
+
+    <!-- Calculate age from full birth date -->
+    <script>
+      function calculate_age(dob) { 
+          var diff_ms = Date.now() - dob.getTime();
+          var age_dt = new Date(diff_ms); 
+          return Math.abs(age_dt.getUTCFullYear() - 1970);
+      }
+
+      //  Date format YYYY-MM-DD
+      document.getElementById("kaua-age").innerHTML = calculate_age(new Date(2004, 04, 31));
+
+    </script>
   </body>
 </html>
